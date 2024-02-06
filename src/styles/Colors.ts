@@ -10,11 +10,11 @@ export type ColorsTypes = {
  * Object that defines the colors used in the application.
  */
 export const Colors: ColorsTypes = {
-	primary: '#0F31F2',
-	dark: '#011140',
-	black: '#090909',
-	white: '#FDFDFD',
-	gray: '#687179',
+	primary: "#0F31F2",
+	dark: "#011140",
+	black: "#090909",
+	white: "#FDFDFD",
+	gray: "#687179",
 };
 
 export type GradientTypes = {

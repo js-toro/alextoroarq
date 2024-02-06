@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-width: 0;
+}
+
+html {
+	overflow: auto;
+	width: 100%;
+	min-height: 100dvh;
+	font-size: 62.5%;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	min-height: 100dvh;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+img {
+	max-width: 100%;
+	border-style: none;
+	display: block;
+	object-fit: cover;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+menu,
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box;
+	padding: 0;
+	max-width: 100%;
+	display: table;
+	color: inherit;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+iframe,
+fieldset,
+legend,
+img,
+button,
+input[type="text"] {
+	border: none;
+}
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
