@@ -1,32 +1,39 @@
-import { Button } from "src/styles";
+import React from "react";
+import { IHighlightedProject } from "src/models";
+
 import { SliderLeftButtonIcon, SliderRightButtonIcon } from "./utilities";
 import {
 	LeftButtonContainer,
-	PortfolioButtonContainer,
 	ProjectNameContainer,
 	RightButtonContainer,
 	SliderButton,
 	SliderContainer,
 } from "./styles";
 
-export const Slider = () => {
+type SliderProps = {
+	currentProject: IHighlightedProject;
+	handleNextProject: () => void;
+	handlePreviousProject: () => void;
+};
+
+export const Slider: React.FC<SliderProps> = ({
+	currentProject,
+	handleNextProject,
+	handlePreviousProject,
+}) => {
 	return (
 		<SliderContainer>
-			<LeftButtonContainer>
+			<LeftButtonContainer onClick={handlePreviousProject}>
 				<SliderButton src={SliderLeftButtonIcon} alt="" />
 			</LeftButtonContainer>
 
-			<RightButtonContainer>
+			<RightButtonContainer onClick={handleNextProject}>
 				<SliderButton src={SliderRightButtonIcon} alt="" />
 			</RightButtonContainer>
 
 			<ProjectNameContainer>
-				<span>Casa B2</span>
+				<span>{currentProject.name}</span>
 			</ProjectNameContainer>
-
-			<PortfolioButtonContainer>
-				<Button>Ver Portafolio</Button>
-			</PortfolioButtonContainer>
 		</SliderContainer>
 	);
 };

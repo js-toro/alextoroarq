@@ -20,8 +20,8 @@ export const SliderContainer = styled.div`
 	grid:
 		". . ." 1fr
 		"leftButton . rightButon" 1fr
-		"projectName . portfolioButton" 1fr
-		/ 1fr 0fr 1fr;
+		"projectName projectName projectName" 1fr
+		/ 1fr 1fr 1fr;
 
 	opacity: 1;
 
@@ -47,7 +47,7 @@ export const RightButtonContainer = styled.div`
 export const SliderButton = styled.img`
 	width: 64px;
 
-	@media (min-width: ${Breakpoints.tablet.medium}) {
+	@media (min-width: ${Breakpoints.tablet.large}) {
 		width: 128px;
 	}
 
@@ -64,12 +64,6 @@ export const ProjectNameContainer = styled.div`
 		color: ${Colors.white};
 		font-family: ${FontFamilies.heading};
 		font-weight: 700;
-		font-size: clamp(2rem, 3.5vw, 4.8rem);
+		font-size: clamp(3.2rem, 3.5vw, 4.8rem);
 	}
-`;
-
-export const PortfolioButtonContainer = styled.div`
-	grid-area: portfolioButton;
-	align-self: flex-end;
-	justify-self: flex-end;
 `;

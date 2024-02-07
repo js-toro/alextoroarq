@@ -1,4 +1,4 @@
-import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -8,7 +8,5 @@ type NavIconProps = {
 };
 
 export const NavIcon: React.FC<NavIconProps> = ({ onClick, reference }) => {
-	return (
-		<FontAwesomeIcon icon={faBarsStaggered} onClick={onClick} ref={reference} />
-	);
+	return <FontAwesomeIcon icon={faBars} onClick={onClick} ref={reference} />;
 };

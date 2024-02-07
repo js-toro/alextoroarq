@@ -1,34 +1,34 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from "react-router-dom";
 
-import { Layout } from '../layout';
-import { Home, Portfolio, Services, About, Contact } from '../layout/pages';
+import { Layout } from "../layout";
+import { Home, Portfolio, Services, About, Contact } from "../layout/pages";
 
 /**
  * Object that defines all routes of the application
  */
 export const router = createBrowserRouter([
 	{
-		path: '/',
+		path: "/",
 		Component: Layout,
 		children: [
 			{
-				path: '',
+				path: "",
 				Component: Home,
 			},
 			{
-				path: 'portafolio',
+				path: "portafolio",
 				Component: Portfolio,
 			},
 			{
-				path: 'servicios',
+				path: "servicios",
 				Component: Services,
 			},
 			{
-				path: 'conocenos',
+				path: "nosotros",
 				Component: About,
 			},
 			{
-				path: 'contactanos',
+				path: "contactanos",
 				Component: Contact,
 			},
 		],

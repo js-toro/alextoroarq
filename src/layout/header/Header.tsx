@@ -65,8 +65,8 @@ export const Header = () => {
 						Servicios
 					</AnimatedLink>
 
-					<AnimatedLink to="conocenos" onClick={handleMenuClick}>
-						Conócenos
+					<AnimatedLink to="nosotros" onClick={handleMenuClick}>
+						Nosotros
 					</AnimatedLink>
 
 					<AnimatedLink to="contactanos" onClick={handleMenuClick}>
