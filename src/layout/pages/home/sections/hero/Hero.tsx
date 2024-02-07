@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useHighlightedProjects } from "src/hooks";
 import { IHighlightedProject } from "src/models";
 
@@ -10,41 +10,51 @@ export const Hero = () => {
 	const [isSplashVisible, setIsSplashVisible] = useState(true); // Estado para controlar la visibilidad de Splash
 
 	const projects = useHighlightedProjects();
+
+	const orderedProjects = useMemo(() => {
+		const firstProject = projects.find((project) => project.id === 1491);
+		const otherProjects = projects.filter((project) => project.id !== 1491);
+		const orderedProjects = otherProjects.sort(() => Math.random() - 0.5);
+		orderedProjects.unshift(firstProject as any);
+		return orderedProjects;
+	}, [projects]);
+
 	const [currentProject, setCurrentProject] = useState<IHighlightedProject>(
-		projects[0]
+		orderedProjects[0]
 	);
 
 	// Manejador para el siguiente proyecto
 	const handleNextProject = () => {
-		const currentIndex = projects.indexOf(currentProject);
+		const currentIndex = orderedProjects.indexOf(currentProject);
 
 		// Calculando el índice del siguiente proyecto
-		const nextIndex = currentIndex + 1 < projects.length ? currentIndex + 1 : 0;
-		setCurrentProject(projects[nextIndex]);
+		const nextIndex =
+			currentIndex + 1 < orderedProjects.length ? currentIndex + 1 : 0;
+		setCurrentProject(orderedProjects[nextIndex]);
 	};
 
 	// Manejador para el proyecto anterior
 	const handlePreviousProject = () => {
-		const currentIndex = projects.indexOf(currentProject);
+		const currentIndex = orderedProjects.indexOf(currentProject);
 
 		// Calculando el índice del proyecto anterior
 		const previousIndex =
-			currentIndex - 1 >= 0 ? currentIndex - 1 : projects.length - 1;
-		setCurrentProject(projects[previousIndex]);
+			currentIndex - 1 >= 0 ? currentIndex - 1 : orderedProjects.length - 1;
+		setCurrentProject(orderedProjects[previousIndex]);
 	};
 
 	// Efecto para cambiar el proyecto actual cada cierto tiempo
 	useEffect(() => {
 		const interval = setInterval(() => {
-			const currentIndex = projects.indexOf(currentProject);
+			const currentIndex = orderedProjects.indexOf(currentProject);
 			const nextIndex =
-				currentIndex + 1 < projects.length ? currentIndex + 1 : 0;
-			setCurrentProject(projects[nextIndex]);
+				currentIndex + 1 < orderedProjects.length ? currentIndex + 1 : 0;
+			setCurrentProject(orderedProjects[nextIndex]);
 		}, maxTime * 2);
 
 		// Limpieza del intervalo al desmontar el componente
 		return () => clearInterval(interval);
-	}, [currentProject, projects]);
+	}, [currentProject, orderedProjects]);
 
 	// Efecto para ocultar Splash después de un cierto tiempo
 	useEffect(() => {
@@ -61,7 +71,7 @@ export const Hero = () => {
 	return (
 		<HeroContainer>
 			<BackgroundImage
-				projects={projects}
+				projects={orderedProjects}
 				currentProjectID={currentProject.id}
 			/>
 

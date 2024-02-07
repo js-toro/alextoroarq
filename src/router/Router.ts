@@ -1,7 +1,23 @@
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import { Layout } from "../layout";
-import { Home, Portfolio, Services, About, Contact } from "../layout/pages";
+
+const Home = lazy(() =>
+	import("../layout/pages").then(({ Home }) => ({ default: Home }))
+);
+const Portfolio = lazy(() =>
+	import("../layout/pages").then(({ Portfolio }) => ({ default: Portfolio }))
+);
+const Services = lazy(() =>
+	import("../layout/pages").then(({ Services }) => ({ default: Services }))
+);
+const About = lazy(() =>
+	import("../layout/pages").then(({ About }) => ({ default: About }))
+);
+const Contact = lazy(() =>
+	import("../layout/pages").then(({ Contact }) => ({ default: Contact }))
+);
 
 /**
  * Object that defines all routes of the application

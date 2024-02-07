@@ -19,7 +19,6 @@ export const BackgroundImage: React.FC<BackgroundImageProps> = ({
 					key={index}
 					src={project.mainLandscapeImage}
 					alt={`Hermosa vista de ${project.name}, un proyecto de Alex Toro Arquitectos`}
-					loading="lazy"
 					$isActive={project.id === currentProjectID}
 				/>
 			))}
