@@ -47,15 +47,20 @@ export default function Slider() {
 
 	return (
 		<>
-			{currentProject && (
-				<Image
-					className="absolute inset-0 size-full object-cover"
-					src={currentProject.mainLandscapeImage}
-					alt={`Hermosa vista de ${currentProject.name}, un proyecto de Alex Toro Arquitectos`}
-					width={1920}
-					height={1080}
-				/>
-			)}
+			<div className="absolute inset-0 size-full">
+				{projects.map((project, index) => (
+					<Image
+						key={index}
+						className={`absolute inset-0 size-full object-cover transition-opacity ${
+							project.id === currentProject.id ? 'opacity-100' : 'opacity-0'
+						}`}
+						src={project.mainLandscapeImage}
+						alt={`Hermosa vista de ${project.name}, un proyecto de Alex Toro Arquitectos`}
+						width={1920}
+						height={1080}
+					/>
+				))}
+			</div>
 
 			<SliderContainer className="relative z-10 size-full flex flex-col justify-between">
 				<div className="my-auto flex justify-between">
