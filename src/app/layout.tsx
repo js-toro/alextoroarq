@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { StyledComponentsRegistry } from '@/lib';
+import StylesProvider from '@/styles';
 
 export const metadata: Metadata = {
 	title: 'Alex Toro Arquitectos | Especialistas en Vivienda Multifamiliar',
@@ -15,7 +15,7 @@ export default function RootLayout({
 	return (
 		<html lang="es">
 			<body>
-				<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+				<StylesProvider>{children}</StylesProvider>
 			</body>
 		</html>
 	);

@@ -8,7 +8,7 @@ export type Theme = {
 	typography: Typography;
 };
 
-export const theme: Theme = {
+export const defaultTheme: Theme = {
 	colors,
 	gradient,
 	breakpoints,

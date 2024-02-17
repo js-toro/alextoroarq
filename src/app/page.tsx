@@ -1,3 +1,9 @@
+import HeroLayout from '@/pages/home/HeroLayout';
+
 export default function Home() {
-	return <></>;
+	return (
+		<main className="container mx-auto">
+			<HeroLayout />
+		</main>
+	);
 }

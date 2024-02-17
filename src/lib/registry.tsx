@@ -3,13 +3,14 @@
 import React, { useState } from 'react';
 import { useServerInsertedHTML } from 'next/navigation';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
-import { GlobalStylesProvider } from '@/styles';
 
-export function StyledComponentsRegistry({
+export default function StyledComponentsRegistry({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
+	// Only create stylesheet once with lazy initial state
+	// x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
 	const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet());
 
 	useServerInsertedHTML(() => {
@@ -22,7 +23,7 @@ export function StyledComponentsRegistry({
 
 	return (
 		<StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-			<GlobalStylesProvider>{children}</GlobalStylesProvider>
+			{children}
 		</StyleSheetManager>
 	);
 }

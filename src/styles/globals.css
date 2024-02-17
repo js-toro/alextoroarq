@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset html */
 html {
 	overflow: auto;
 	width: 100%;
 	min-height: 100dvh;
-	font-size: 62.5%;
 	-webkit-text-size-adjust: 100%;
 }
 
+/* reset body */
 body {
 	overflow: hidden;
 	width: 100%;

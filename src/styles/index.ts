@@ -1,1 +1,4 @@
-export * from './globals';
+import StylesProvider from './StylesProvider';
+
+export default StylesProvider;
+export * from './pages';
