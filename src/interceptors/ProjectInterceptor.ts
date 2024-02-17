@@ -1,4 +1,4 @@
-import { highlightedProjetMockData, projetMockData } from "src/mock";
+import { highlightedProjetMockData, projetMockData } from '@/mock';
 
 export const HighlightProjectInterceptor = () => {
 	const data = highlightedProjetMockData;

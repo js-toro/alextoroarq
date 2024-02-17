@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reset html */
+html {
+	overflow: auto;
+	width: 100%;
+	min-height: 100dvh;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* reset body */
+body {
+	overflow: hidden;
+	width: 100%;
+	min-height: 100dvh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	text-wrap: pretty;
+	-webkit-font-smoothing: antialiased;
+}

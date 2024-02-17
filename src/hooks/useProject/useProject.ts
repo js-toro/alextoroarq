@@ -1,14 +1,26 @@
+import { useMemo } from 'react';
+
 import {
 	HighlightProjectInterceptor,
 	ProjectInterceptor,
-} from "src/interceptors";
+} from '@/interceptors';
+import { IHighlightedProject } from '@/models';
 
 /**
  * Hook to get the highlighted projects
  */
 export const useHighlightedProjects = () => {
 	const data = HighlightProjectInterceptor();
-	return data;
+
+	const orderedProjects = useMemo(() => {
+		const firstProject = data.find((project) => project.id === 149);
+		const otherProjects = data.filter((project) => project.id !== 149);
+		const orderedProjects = otherProjects.sort(() => Math.random() - 0.5);
+		orderedProjects.unshift(firstProject as IHighlightedProject);
+		return orderedProjects;
+	}, [data]);
+
+	return orderedProjects;
 };
 
 /**

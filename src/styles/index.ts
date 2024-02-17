@@ -1,5 +1,4 @@
-export * from "./Breakpoints";
-export * from "./Colors";
-export * from "./Typography";
-export * from "./StyledComponents";
-export * from "./GlobalStyles";
+import StylesProvider from './StylesProvider';
+
+export default StylesProvider;
+export * from './pages';

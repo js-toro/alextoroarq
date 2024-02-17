@@ -1,6 +1,4 @@
-import { IHighlightedProject } from "src/models";
-
-import { images } from "src/assets";
+import { IHighlightedProject } from '@/models';
 
 /**
  * Mock data for the project
@@ -8,62 +6,62 @@ import { images } from "src/assets";
 export const highlightedProjetMockData: IHighlightedProject[] = [
 	{
 		id: 65,
-		name: "Hotel Tryp",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage065,
+		name: 'Hotel Tryp',
+		mainLandscapeImage: '/assets/images/highlighted-projects/065.jpg',
 	},
 	{
 		id: 94,
-		name: "Cielo Campestre",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage094,
+		name: 'Cielo Campestre',
+		mainLandscapeImage: '/assets/images/highlighted-projects/094.jpg',
 	},
 	{
 		id: 126,
-		name: "Tibet",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage126,
+		name: 'Tibet',
+		mainLandscapeImage: '/assets/images/highlighted-projects/126.jpg',
 	},
 	{
 		id: 134,
-		name: "Berlín",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage134,
+		name: 'Berlín',
+		mainLandscapeImage: '/assets/images/highlighted-projects/134.jpg',
 	},
 	{
 		id: 139,
-		name: "Senderos de Calasanz",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage139,
+		name: 'Senderos de Calasanz',
+		mainLandscapeImage: '/assets/images/highlighted-projects/139.jpg',
 	},
 	{
 		id: 142,
-		name: "San Sebastián",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage142,
+		name: 'San Sebastián',
+		mainLandscapeImage: '/assets/images/highlighted-projects/142.jpg',
 	},
 	{
 		id: 148,
-		name: "Prado Campestre",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage148,
+		name: 'Prado Campestre',
+		mainLandscapeImage: '/assets/images/highlighted-projects/148.jpg',
 	},
 	{
-		id: 1491,
-		name: "Crystal Living",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage149a,
+		id: 149,
+		name: 'Crystal Living',
+		mainLandscapeImage: '/assets/images/highlighted-projects/149a.jpg',
 	},
 	{
-		id: 1492,
-		name: "Crystal Living",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage149b,
+		id: 149,
+		name: 'Crystal Living',
+		mainLandscapeImage: '/assets/images/highlighted-projects/149b.jpg',
 	},
 	{
 		id: 150,
-		name: "Bosque Aqua",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImage150,
+		name: 'Bosque Aqua',
+		mainLandscapeImage: '/assets/images/highlighted-projects/150.jpg',
 	},
 	{
 		id: 1001,
-		name: "Casa B2",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImageCB2a,
+		name: 'Casa B2',
+		mainLandscapeImage: '/assets/images/highlighted-projects/C-B2a.jpg',
 	},
 	{
 		id: 1002,
-		name: "Casa B2",
-		mainLandscapeImage: images.HighlightedProjects.MainLandscapeImageCB2b,
+		name: 'Casa B2',
+		mainLandscapeImage: '/assets/images/highlighted-projects/C-B2b.jpg',
 	},
 ];
