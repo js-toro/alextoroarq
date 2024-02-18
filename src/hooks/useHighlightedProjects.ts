@@ -35,7 +35,15 @@ export const useHighlightedProjects = () => {
 	}, []);
 
 	useEffect(() => {
-		const interval = setInterval(handleNextProject, 7000);
+		const interval = setInterval(() => {
+			if (currentIndex === projects.length - 1) {
+				setCurrentIndex(0);
+				setCurrentProject(projects[0]);
+			} else {
+				setCurrentIndex(currentIndex + 1);
+				setCurrentProject(projects[currentIndex + 1]);
+			}
+		}, 7000);
 		return () => clearInterval(interval);
 	}, [currentProject, projects]);
 
