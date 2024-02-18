@@ -1,1 +1,1 @@
-export * from "./ProjectInterceptor";
+export * from './projectInterceptor';

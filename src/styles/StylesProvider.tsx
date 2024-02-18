@@ -1,21 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
-import './globals.css';
 import { defaultTheme } from './theme';
+import GlobalStyles from './gobals';
 import StyledComponentsRegistry from '@/lib/registry';
-
-const GlobalStyles = createGlobalStyle`
-	/* TODO - Resolver el problema de lectura indefinida. */
-   body {
-      background-color: ${defaultTheme.colors.white};
-		font-family: ${defaultTheme.typography.body.style.fontFamily};
-		font-size: 1.6rem;
-		line-height: normal;
-   }
-`;
 
 export default function StylesProvider({
 	children,

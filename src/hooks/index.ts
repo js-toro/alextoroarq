@@ -1,1 +1,2 @@
-export * from "./useProject";
+export * from './useHighlightedProjects';
+export * from './useProject';

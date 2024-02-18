@@ -3,7 +3,7 @@ import Slider from './components/Slider';
 
 export default function HeroLayout() {
 	return (
-		<section className="w-full h-dvh p-12">
+		<section className="w-full h-dvh p-8 lg:px-24 lg:py-12">
 			<Splash />
 			<Slider />
 		</section>

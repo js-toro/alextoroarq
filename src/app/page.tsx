@@ -1,8 +1,12 @@
-import HeroLayout from '@/pages/home/HeroLayout';
+import dynamic from 'next/dynamic';
+const HeroLayout = dynamic(() => import('@/layout/home/HeroLayout'), {
+	ssr: true,
+	loading: () => <></>,
+});
 
 export default function Home() {
 	return (
-		<main className="container mx-auto">
+		<main>
 			<HeroLayout />
 		</main>
 	);
