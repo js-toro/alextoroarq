@@ -1,0 +1,3 @@
+export const MasterLayout = () => {
+	return <></>;
+};

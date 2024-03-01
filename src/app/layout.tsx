@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import StylesProvider from '@/styles';
 
-import HeaderLayout from '../layout/header/HeaderLayout';
+import { ThemeProvider } from '@/ui/theme/ThemeProvider';
 
 export const metadata: Metadata = {
 	title: 'Alex Toro Arquitectos | Especialistas en Vivienda Multifamiliar',
@@ -16,11 +15,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="es">
-			<body className="overflow-hidden">
-				<StylesProvider>
-					<HeaderLayout />
-					{children}
-				</StylesProvider>
+			<body>
+				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
 	);

@@ -1,13 +1,5 @@
-import dynamic from 'next/dynamic';
-const HeroLayout = dynamic(() => import('@/layout/home/HeroLayout'), {
-	ssr: true,
-	loading: () => <></>,
-});
+import { MasterLayout } from '@/ui/layout/landing';
 
 export default function Home() {
-	return (
-		<main>
-			<HeroLayout />
-		</main>
-	);
+	return <MasterLayout />;
 }
