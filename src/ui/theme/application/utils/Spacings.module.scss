@@ -1,0 +1,145 @@
+@import '../../domain/enums/sizes';
+
+// Margings
+.m_auto {
+	margin: auto;
+}
+
+.m_0 {
+	margin: 0;
+}
+
+@each $size in $sizes {
+	.m_#{$size} {
+		margin: var(--spacing-#{$size});
+	}
+
+	.mt_#{$size} {
+		margin-top: var(--spacing-#{$size});
+	}
+
+	.mr_#{$size} {
+		margin-right: var(--spacing-#{$size});
+	}
+
+	.mb_#{$size} {
+		margin-bottom: var(--spacing-#{$size});
+	}
+
+	.ml_#{$size} {
+		margin-left: var(--spacing-#{$size});
+	}
+
+	.mx_#{$size} {
+		margin-left: var(--spacing-#{$size});
+		margin-right: var(--spacing-#{$size});
+	}
+
+	.my_#{$size} {
+		margin-top: var(--spacing-#{$size});
+		margin-bottom: var(--spacing-#{$size});
+	}
+}
+
+// Paddings
+.p_0 {
+	padding: 0;
+}
+
+@each $size in $sizes {
+	.p_#{$size} {
+		padding: var(--spacing-#{$size});
+	}
+
+	.pt_#{$size} {
+		padding-top: var(--spacing-#{$size});
+	}
+
+	.pr_#{$size} {
+		padding-right: var(--spacing-#{$size});
+	}
+
+	.pb_#{$size} {
+		padding-bottom: var(--spacing-#{$size});
+	}
+
+	.pl_#{$size} {
+		padding-left: var(--spacing-#{$size});
+	}
+
+	.px_#{$size} {
+		padding-left: var(--spacing-#{$size});
+		padding-right: var(--spacing-#{$size});
+	}
+
+	.py_#{$size} {
+		padding-top: var(--spacing-#{$size});
+		padding-bottom: var(--spacing-#{$size});
+	}
+}
+
+// gap
+.gap_0 {
+	gap: 0;
+}
+
+@each $size in $sizes {
+	.gap_#{$size} {
+		gap: var(--spacing-#{$size});
+	}
+}
+
+// width
+.w_auto {
+	width: auto;
+}
+
+.w_0 {
+	width: 0;
+}
+
+.w_full {
+	width: 100%;
+}
+
+.w_dfull {
+	width: 100dvw;
+}
+
+// height
+.h_auto {
+	height: auto;
+}
+
+.h_0 {
+	height: 0;
+}
+
+.h_full {
+	height: 100%;
+}
+
+.h_dfull {
+	height: 100dvh;
+}
+
+// size
+.size_auto {
+	width: auto;
+	height: auto;
+}
+
+.size_0 {
+	width: 0;
+	height: 0;
+}
+
+.size_full {
+	width: 100%;
+	height: 100%;
+}
+
+.size_dfull {
+	width: 100dvw;
+	height: 100dvh;
+}

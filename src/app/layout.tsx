@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import StylesProvider from '@/styles';
-
-import HeaderLayout from '../layout/header/HeaderLayout';
+import ThemeProvider from '@/ui/theme';
+import BaseHeader from '@/ui/layout/header';
+import BaseFooter from '@/ui/layout/footer';
+import SmoothScroll from '@/ui/components/smoothScroll';
 
 export const metadata: Metadata = {
 	title: 'Alex Toro Arquitectos | Especialistas en Vivienda Multifamiliar',
-	description:
-		'Alex Toro Arquitectos | Especialistas en Vivienda Multifamiliar',
+	description: 'Alex Toro Arquitectos | Especialistas en Vivienda Multifamiliar',
 };
 
 export default function RootLayout({
@@ -16,12 +16,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="es">
-			<body className="overflow-hidden">
-				<StylesProvider>
-					<HeaderLayout />
+			<ThemeProvider>
+				<SmoothScroll>
+					<BaseHeader />
 					{children}
-				</StylesProvider>
-			</body>
+					<BaseFooter />
+				</SmoothScroll>
+			</ThemeProvider>
 		</html>
 	);
 }

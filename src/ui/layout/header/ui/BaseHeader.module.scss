@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	align-items: center;
+}
+.header_logo {
+	margin-right: auto;
+
+	img {
+		display: inline;
+		object-fit: contain;
+	}
+}
+.header_home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	max-width: 100%;
+
+	a,
+	button {
+		color: var(--color-white);
+
+		&:hover {
+			color: var(--color-white);
+		}
+
+		&::after {
+			background-color: var(--color-white);
+		}
+	}
+}

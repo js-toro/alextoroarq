@@ -1,0 +1,13 @@
+@import '../../domain/enums/breakpoints';
+
+@mixin responsiveUp($breakpoint) {
+	@media (min-width: map-get($breakpoints, $breakpoint)) {
+		@content;
+	}
+}
+
+@mixin responsiveDown($breakpoint) {
+	@media (max-width: map-get($breakpoints, $breakpoint)) {
+		@content;
+	}
+}

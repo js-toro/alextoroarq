@@ -1,0 +1,146 @@
+// ------- Aligns
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_justify {
+	text-align: justify;
+}
+
+// ------- Transforms
+.text_uppercase {
+	text-transform: uppercase;
+}
+
+.text_lowercase {
+	text-transform: lowercase;
+}
+
+.text_capitalize {
+	text-transform: capitalize;
+}
+
+// ------- Weights
+.text_light {
+	font-weight: var(--font-weight-light);
+}
+
+.text_regular {
+	font-weight: var(--font-weight-regular);
+}
+
+.text_medium {
+	font-weight: var(--font-weight-medium);
+}
+
+.text_bold {
+	font-weight: var(--font-weight-bold);
+}
+
+// ------- style
+.text_italic {
+	font-style: italic;
+}
+
+.text_normal {
+	font-style: normal;
+}
+
+// ------- Decoration
+.text_decoration_none {
+	text-decoration: none;
+}
+
+.text_decoration_underline {
+	text-decoration: underline;
+}
+
+.text_decoration_line_through {
+	text-decoration: line-through;
+}
+
+// ------- Colors
+.text_color_primary {
+	color: var(--color-primary);
+}
+
+.text_color_secondary {
+	color: var(--color-secondary);
+}
+
+.text_color_tertiary {
+	color: var(--color-tertiary);
+}
+
+.text_color_success {
+	color: var(--color-success);
+}
+
+.text_color_warning {
+	color: var(--color-warning);
+}
+
+.text_color_danger {
+	color: var(--color-danger);
+}
+
+.text_color_background {
+	color: var(--color-background);
+}
+
+.text_color_black {
+	color: var(--color-black);
+}
+
+.text_color_white {
+	color: var(--color-white);
+}
+
+.text_color_muted {
+	color: var(--color-muted);
+}
+
+// ------- Sizes
+.text_size_xxxs {
+	font-size: var(--font-size-xxxs);
+}
+
+.text_size_xxs {
+	font-size: var(--font-size-xxs);
+}
+
+.text_size_xs {
+	font-size: var(--font-size-xs);
+}
+
+.text_size_sm {
+	font-size: var(--font-size-sm);
+}
+
+.text_size_md {
+	font-size: var(--font-size-md);
+}
+
+.text_size_lg {
+	font-size: var(--font-size-lg);
+}
+
+.text_size_xl {
+	font-size: var(--font-size-xl);
+}
+
+.text_size_xxl {
+	font-size: var(--font-size-xxl);
+}
+
+.text_size_xxxl {
+	font-size: var(--font-size-xxxl);
+}

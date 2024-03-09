@@ -1,0 +1,10 @@
+@import '/src/ui/theme/application/mixings/breakpoints';
+
+.nav {
+	display: flex;
+	gap: var(--spacing-md);
+
+	@include responsiveDown('lg') {
+		display: none;
+	}
+}
