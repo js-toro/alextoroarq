@@ -14,23 +14,12 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
 	// 3.
 	const data = useMemo(() => {
 		return {
-			ease: 0.1,
+			ease: 0.075,
 			current: 0,
 			previous: 0,
 			rounded: 0,
 		};
 	}, []);
-
-	// 4.
-	useEffect(() => {
-		setBodyHeight();
-	}, [windowSize.height]);
-
-	const setBodyHeight = () => {
-		document.body.style.height = `${
-			scrollingContainerRef.current?.getBoundingClientRect().height
-		}px`;
-	};
 
 	// 5.
 	const smoothScrollingHandler = useCallback(() => {
@@ -39,6 +28,9 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
 		data.rounded = Math.round(data.previous * 100) / 100;
 
 		if (!scrollingContainerRef.current) return;
+		document.body.style.height = `${
+			scrollingContainerRef.current?.getBoundingClientRect().height
+		}px`;
 		scrollingContainerRef.current.style.transform = `translateY(-${data.previous}px)`;
 
 		// Recursive call

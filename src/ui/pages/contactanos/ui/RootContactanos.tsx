@@ -1,5 +1,11 @@
+import ContactForm from './contactForm';
+
 const RootContactanos = () => {
-	return <></>;
+	return (
+		<main>
+			<ContactForm />
+		</main>
+	);
 };
 
 export default RootContactanos;

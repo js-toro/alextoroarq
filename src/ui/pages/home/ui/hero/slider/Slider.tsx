@@ -20,7 +20,7 @@ const Slider = () => {
 					<Image
 						key={index}
 						className={`${Styles.highlightedProject} ${
-							project.id === currentProject.id ? Styles.highlightedProjectActive : ''
+							project.order === currentProject.order ? Styles.highlightedProjectActive : ''
 						}`}
 						src={project.mainLandscapeImage}
 						alt={`Una hermosa vista de ${project.name}, un proyecto de Alex Toro Arquitectos`}

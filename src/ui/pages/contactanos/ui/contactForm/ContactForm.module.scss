@@ -1,0 +1,21 @@
+@import '/src/ui/theme/application/mixings/breakpoints';
+
+.form {
+	display: grid;
+	gap: var(--spacing-md);
+	margin-top: var(--spacing-md);
+
+	&_group {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--spacing-md);
+
+		> label:last-child {
+			display: grid;
+		}
+
+		@include responsiveUp('lg') {
+			grid-template-columns: 300px 1fr;
+		}
+	}
+}

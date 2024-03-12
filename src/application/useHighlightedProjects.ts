@@ -18,6 +18,16 @@ export const useHighlightedProjects = () => {
 
 	useEffect(() => {
 		data.sort((a, b) => {
+			if (a.order > b.order) {
+				return -1;
+			}
+			if (a.order < b.order) {
+				return 1;
+			}
+			return 0;
+		});
+
+		data.sort((a, b) => {
 			if (a.priority < b.priority) {
 				return -1;
 			}

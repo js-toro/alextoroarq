@@ -28,12 +28,18 @@
 	color: var(--color-black);
 	font-size: var(--font-size-xxxl);
 	display: flex;
+
+	@at-root .wrapper_active & {
+		color: var(--color-white) !important;
+	}
 }
 
 .nav {
+	margin-top: var(--spacing-lg);
 	position: absolute;
-	inset: 0;
-	z-index: var(--index-900);
+	left: 0;
+	right: 0;
+	z-index: var(--index-800);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -50,8 +56,9 @@
 
 	a {
 		font-size: var(--font-size-xl);
-
+		
 		@at-root .wrapper_active & {
+			font-size: var(--font-size-lg);
 			color: var(--color-white) !important;
 		}
 	}
@@ -71,7 +78,7 @@
 			transform: rotate(-45deg) scaleX(1.5) scaleY(7);
 
 			@include responsiveUp('sm') {
-				transform: rotate(-45deg) scaleX(3) scaleY(7);
+				transform: rotate(-45deg) scaleX(2) scaleY(7);
 			}
 		}
 	}

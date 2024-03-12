@@ -47,7 +47,7 @@ h6 {
 
 p {
 	font-size: var(--font-size-md);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-regular);
 	color: var(--text-color-body);
 	text-wrap: balance;
 }
@@ -117,5 +117,44 @@ section {
 
 	&-track {
 		background-color: var(--color-white);
+	}
+}
+
+input[type='text'],
+input[type='email'],
+label,
+textarea {
+	font-size: var(--font-size-md);
+	font-weight: var(--font-weight-regular);
+	color: var(--text-color-body);
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+	outline: none;
+	padding: var(--spacing-xxs);
+	border: 1px solid var(--color-black);
+	background-color: var(--color-white);
+	transition: border-color var(--timing-3) ease-in-out;
+
+	&:focus {
+		border-color: var(--color-primary);
+	}
+}
+
+button[type='submit'] {
+	font-size: var(--font-size-md);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	padding: var(--spacing-sm) var(--spacing-lg);
+	border: none;
+	border-radius: var(--border-radius);
+	transition: background-color var(--timing-3) ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--color-primary-2);
 	}
 }

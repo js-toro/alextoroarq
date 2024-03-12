@@ -6,7 +6,7 @@ const BaseFooter = () => {
 
 	return (
 		<footer className={Utils.text_center}>
-			<p className={Utils.my_xxs}>Alex Toro Arquitectos S.A.S</p>
+			<p className={`${Utils.my_xxs} ${Utils.text_bold}`}>Alex Toro Arquitectos S.A.S</p>
 			<small>Todos los derechos reservados &copy; {year}</small>
 		</footer>
 	);
