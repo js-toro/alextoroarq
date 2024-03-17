@@ -1,11 +1,19 @@
 import Hero from './hero';
-import ContactForm from '@/ui/pages/contactanos/ui/contactForm';
+import Welcome from './welcome';
+import We from './we';
+import OurProjects from './ourProjects';
+import OurServices from './ourServices';
+import ContactUs from './contactUs';
 
 const RootHome = () => {
 	return (
 		<main>
 			<Hero />
-			<ContactForm />
+			<Welcome />
+			<We />
+			<OurProjects />
+			<OurServices />
+			<ContactUs />
 		</main>
 	);
 };

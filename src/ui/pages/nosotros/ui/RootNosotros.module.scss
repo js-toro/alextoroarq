@@ -1,0 +1,8 @@
+.wrapper {
+	display: grid;
+	gap: var(--spacing-md);
+	align-content: center;
+	min-height: 75dvh;
+	margin-top: var(--spacing-lg);
+	margin-bottom: var(--spacing-lg);
+}

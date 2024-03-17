@@ -17,9 +17,9 @@ const MobileNav = () => {
 			</button>
 
 			<nav className={`${Styles.nav}`}>
-				<Link href="/portafolio" onClick={handleOpen}>
+				{/* <Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
-				</Link>
+				</Link> */}
 
 				<Link href="/servicios" onClick={handleOpen}>
 					Servicios
