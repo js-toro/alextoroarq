@@ -26,7 +26,7 @@
 	position: relative;
 	z-index: var(--index-900);
 	color: var(--color-black);
-	font-size: var(--font-size-xxxl);
+	font-size: var(--font-size-xxl);
 	display: flex;
 
 	@at-root .wrapper_active & {
@@ -56,7 +56,7 @@
 
 	a {
 		font-size: var(--font-size-xl);
-		
+
 		@at-root .wrapper_active & {
 			font-size: var(--font-size-lg);
 			color: var(--color-white) !important;

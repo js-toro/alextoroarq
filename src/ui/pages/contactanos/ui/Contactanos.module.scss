@@ -1,0 +1,12 @@
+@import '/src/ui/theme/application/mixings/breakpoints';
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-lg);
+	align-items: center;
+
+	@include responsiveUp('lg') {
+		grid-template-columns: 1fr 1fr;
+	}
+}

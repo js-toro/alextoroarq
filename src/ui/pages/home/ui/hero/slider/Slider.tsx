@@ -30,7 +30,7 @@ const Slider = () => {
 				))}
 			</div>
 
-			<div className={Styles.grid}>
+			<section className={Styles.grid}>
 				<button
 					className={`${Styles.controllButton} ${Styles.left_button}`}
 					onClick={handlePreviousProject}>
@@ -44,7 +44,7 @@ const Slider = () => {
 				</button>
 
 				<span className={Styles.title}>{currentProject.name}</span>
-			</div>
+			</section>
 		</>
 	);
 };

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { HiViewGrid } from 'react-icons/hi';
+import { HiMenu } from 'react-icons/hi';
 
 import Styles from './MobileNav.module.scss';
 
@@ -13,17 +13,17 @@ const MobileNav = () => {
 			<div className={`${Styles.ghostBackground}`} onClick={handleOpen} />
 
 			<button className={`${Styles.button}`} onClick={handleOpen}>
-				<HiViewGrid />
+				<HiMenu />
 			</button>
 
 			<nav className={`${Styles.nav}`}>
-				{/* <Link href="/portafolio" onClick={handleOpen}>
+				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
-				</Link> */}
-
-				<Link href="/servicios" onClick={handleOpen}>
-					Servicios
 				</Link>
+
+				{/* <Link href="/servicios" onClick={handleOpen}>
+					Servicios
+				</Link> */}
 
 				<Link href="/nosotros" onClick={handleOpen}>
 					Nosotros
