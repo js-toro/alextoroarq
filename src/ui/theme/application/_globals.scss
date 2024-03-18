@@ -7,6 +7,7 @@ body {
 	background-color: var(--color-background);
 	font-family: var(--font-family-body);
 	line-height: var(--line-height);
+	font-size: var(--spacing-xs);
 }
 
 h1,
@@ -108,9 +109,12 @@ section {
 	display: grid;
 	gap: var(--spacing-md);
 	align-content: center;
-	min-height: 75dvh;
 	margin-top: var(--spacing-lg);
 	margin-bottom: var(--spacing-lg);
+
+	@include responsiveUp('lg') {
+		min-height: 75dvh;
+	}
 }
 
 ::-webkit-scrollbar {

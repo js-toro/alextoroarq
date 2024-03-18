@@ -8,11 +8,13 @@ const RootContactanos = () => {
 		<main>
 			<section className={`${Styles.grid}`}>
 				<div className={`${Utils.d_grid} ${Utils.gap_sm}`}>
-					<span>
-						<b>PONERSE EN CONTACTO</b>
-					</span>
+					<div className={`${Utils.d_grid} ${Utils.gap_xxs}`}>
+						<span className={`${Utils.text_heading}`}>
+							<b>PONERSE EN CONTACTO</b>
+						</span>
 
-					<h4>Contacta con nosotros y hablemos de su proyecto</h4>
+						<h4>Contacta con nosotros y hablemos de su proyecto</h4>
+					</div>
 
 					<p>
 						Estamos aquí para convertir tus sueños en realidad. Completa el formulario de contacto y

@@ -1,10 +1,17 @@
 import Styles from './RootNosotros.module.scss';
+import Utils from '@/ui/theme/application/utils/Utils.module.scss';
 
 const RootNosotros = () => {
 	return (
 		<main>
 			<section className={`${Styles.wrapper}`}>
-				<h2>Nosotros</h2>
+				<div className={`${Utils.d_grid} ${Utils.gap_xxs}`}>
+					<span className={`${Utils.text_heading}`}>
+						<b>ACERCA DE</b>
+					</span>
+
+					<h3>Nosotros</h3>
+				</div>
 
 				<p>
 					La mayoría de las grandes ciudades latinoamericanas ha experimentado, en las últimas
@@ -40,7 +47,13 @@ const RootNosotros = () => {
 			</section>
 
 			<section>
-				<h2>Nuestros servicios</h2>
+				<div className={`${Utils.d_grid} ${Utils.gap_xxs}`}>
+					<span className={`${Utils.text_heading}`}>
+						<b>DESCUBRE</b>
+					</span>
+
+					<h3>Nuestros servicios</h3>
+				</div>
 				<p>
 					Descubre cómo transformamos ideas en realidades habitables. Nuestra oferta integral de
 					servicios abarca tanto el diseño arquitectónico, como también el modelado BIM y la

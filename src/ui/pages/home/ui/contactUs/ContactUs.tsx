@@ -7,7 +7,7 @@ const ContactUs = () => {
 	return (
 		<section className={`${Styles.grid}`}>
 			<div className={`${Utils.d_grid} ${Utils.gap_xs}`}>
-				<span>
+				<span className={`${Utils.text_heading}`}>
 					<b>PONERSE EN CONTACTO</b>
 				</span>
 
