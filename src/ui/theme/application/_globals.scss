@@ -111,10 +111,6 @@ section {
 	align-content: center;
 	margin-top: var(--spacing-lg);
 	margin-bottom: var(--spacing-lg);
-
-	@include responsiveUp('lg') {
-		min-height: 75dvh;
-	}
 }
 
 ::-webkit-scrollbar {
