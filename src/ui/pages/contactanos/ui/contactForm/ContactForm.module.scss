@@ -1,1 +1,66 @@
 @import '/src/ui/theme/application/mixings/breakpoints';
+
+.section {
+	margin: var(--spacing-xxxl) var(--spacing-md);
+}
+
+.grid {
+	margin: var(--spacing-xxxl) 0;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: var(--spacing-xxxl) var(--spacing-md);
+
+	@include responsiveDown('lg') {
+		grid-template-columns: 1fr;
+		gap: var(--spacing-md);
+	}
+}
+
+.form {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--spacing-md);
+
+	> div {
+		grid-column: span 12;
+
+		&:nth-child(1) {
+			grid-column: span 6;
+		}
+
+		&:nth-child(2) {
+			grid-column: span 6;
+		}
+	}
+
+	label,
+	small {
+		color: var(--color-white-4);
+		transition: color var(--timing-3) ease-in-out;
+	}
+
+	&_group {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--spacing-xs);
+		height: min-content;
+
+		&:focus-within {
+			@at-root .form & {
+				label,
+				small {
+					color: var(--color-white);
+				}
+			}
+		}
+
+		input:not(:placeholder-shown) {
+			@at-root .form & {
+				label,
+				small {
+					color: var(--color-white) !important;
+				}
+			}
+		}
+	}
+}
