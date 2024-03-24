@@ -74,9 +74,7 @@ a {
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
+			inset: auto 0 0 0;
 			display: block;
 			width: 0%;
 			height: 2px;
@@ -85,9 +83,6 @@ a {
 		}
 
 		&:hover {
-			color: var(--color-white);
-			font-weight: var(--font-weight-regular);
-
 			&::after {
 				width: 100%;
 			}

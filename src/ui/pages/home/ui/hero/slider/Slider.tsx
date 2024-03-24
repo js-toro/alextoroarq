@@ -30,21 +30,23 @@ const Slider = () => {
 				))}
 			</div>
 
-			<section className={Styles.grid}>
-				<button
-					className={`${Styles.controllButton} ${Styles.left_button}`}
-					onClick={handlePreviousProject}>
-					<HiArrowLeft />
-				</button>
+			<div className={Styles.grid}>
+				<div className={`${Styles.left_button}`}>
+					<button className={`${Styles.controllButton} `} onClick={handlePreviousProject}>
+						<HiArrowLeft />
+					</button>
+				</div>
 
-				<button
-					className={`${Styles.controllButton} ${Styles.right_button}`}
-					onClick={handleNextProject}>
-					<HiArrowRight />
-				</button>
+				<div className={`${Styles.right_button}`}>
+					<button className={`${Styles.controllButton}`} onClick={handleNextProject}>
+						<HiArrowRight />
+					</button>
+				</div>
 
-				<span className={Styles.title}>{currentProject.name}</span>
-			</section>
+				<div className={`${Styles.title}`}>
+					<span>Arquitectos especialistas en Vivienda Multifamiliar</span>
+				</div>
+			</div>
 		</>
 	);
 };

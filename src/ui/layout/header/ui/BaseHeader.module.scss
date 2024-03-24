@@ -17,8 +17,8 @@
 	justify-content: space-between;
 	padding: var(--spacing-xs);
 
-	@include responsiveDown('sm') {
-		padding: var(--spacing-xxs);
+	@include responsiveDown('lg') {
+		padding: var(--spacing-xs) var(--spacing-md);
 	}
 }
 
