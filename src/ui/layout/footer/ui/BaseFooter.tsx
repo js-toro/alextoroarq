@@ -1,32 +1,37 @@
-import useYear from '../application/useYear';
-import Utils from '@/ui/theme/application/utils/Utils.module.scss';
+import Link from 'next/link';
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
-import { FaFacebook } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
-import { TbBrandYoutubeFilled } from 'react-icons/tb';
+import useYear from '../application/useYear';
+import Style from './BaseFooter.module.scss';
+import Utils from '@/ui/theme/application/utils/Utils.module.scss';
 
 const BaseFooter = () => {
 	const year = useYear();
 
 	return (
-		<footer className={Utils.text_center}>
-			<div className={`${Utils.d_flex} ${Utils.gap_sm} ${Utils.justify_center}`}>
-				<button className={`${Utils.button_icon}`}>
-					<FaFacebook />
-				</button>
-				<button className={`${Utils.button_icon}`}>
-					<AiFillInstagram />
-				</button>
-				<button className={`${Utils.button_icon}`}>
-					<TbBrandYoutubeFilled />
-				</button>
+		<footer className={`${Style.footer} ${Utils.container}`}>
+			<div>
+				<p className={`${Utils.text_light}`}>Alex Toro Arquitectos S.A.S</p>
+				<small>Todos los derechos reservados &copy; {year}</small>
 			</div>
 
-			<p className={`${Utils.mt_sm} ${Utils.mb_xxs} ${Utils.text_bold}`}>
-				Alex Toro Arquitectos S.A.S
-			</p>
+			<nav className={`${Style.socials}`}>
+				<Link href="https://www.facebook.com">
+					<FaFacebook />
+				</Link>
 
-			<small>Todos los derechos reservados &copy; {year}</small>
+				<Link href="https://www.facebook.com">
+					<FaInstagram />
+				</Link>
+
+				<Link href="https://www.facebook.com">
+					<FaYoutube />
+				</Link>
+
+				<Link href="https://www.facebook.com">
+					<FaLinkedin />
+				</Link>
+			</nav>
 		</footer>
 	);
 };
