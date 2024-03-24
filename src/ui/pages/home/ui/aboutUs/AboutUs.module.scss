@@ -1,18 +1,21 @@
 @import '/src/ui/theme/application/mixings/breakpoints';
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: var(--spacing-xl);
-	align-items: center;
+.section {
+	margin: var(--spacing-xxxl) var(--spacing-md);
 
-	@include responsiveUp('lg') {
-		grid-template-columns: 1fr 1fr;
-	}
+	background-image: url('/assets/images/aboutUs-bg.jpg');
+	backdrop-filter: blur(10px);
+	background-size: cover;
+	background-position: top center;
 }
 
-.image {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 1 / 1;
+.wrapper {
+	min-height: 35dvh;
+	backdrop-filter: brightness(0.7);
+	padding: var(--spacing-md);
+}
+
+.seeMore {
+	width: max-content;
+	margin-left: auto;
 }
