@@ -1,9 +1,0 @@
-@import '/src/ui/theme/application/mixings/breakpoints';
-
-.container {
-	padding: var(--spacing-lg) var(--spacing-xxl);
-
-	@include responsiveDown('sm') {
-		padding: var(--spacing-md);
-	}
-}

@@ -17,20 +17,16 @@ const MobileNav = () => {
 			</button>
 
 			<nav className={`${Styles.nav}`}>
+				<Link href="/nosotros" onClick={handleOpen}>
+					La firma
+				</Link>
+
 				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
 				</Link>
 
-				{/* <Link href="/servicios" onClick={handleOpen}>
-					Servicios
-				</Link> */}
-
-				<Link href="/nosotros" onClick={handleOpen}>
-					Nosotros
-				</Link>
-
-				<Link href="/contactanos" onClick={handleOpen}>
-					Contáctanos
+				<Link href="/contacto" onClick={handleOpen}>
+					Contacto
 				</Link>
 			</nav>
 		</div>

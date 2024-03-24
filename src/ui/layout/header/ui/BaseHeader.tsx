@@ -1,31 +1,30 @@
 'use client';
-import { usePathname } from 'next/navigation';
-import { useLogo } from '@/application';
-
-import Styles from './BaseHeader.module.scss';
-import MobileNav from './mobileNav';
-import DesktopNav from './desktopNav';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import Styles from './BaseHeader.module.scss';
+import Utils from '@/ui/theme/application/utils/Utils.module.scss';
+
+import MobileNav from './mobileNav';
+import DesktopNav from './desktopNav';
+
 const BaseHeader = () => {
-	const pathname = usePathname();
-	const logo = useLogo(pathname);
-
 	return (
-		<header className={`${Styles.header} ${pathname === '/' ? Styles.header_home : ''}`}>
-			<Link href="/" className={Styles.header_logo}>
-				<Image
-					src={logo}
-					alt="Logo de Alex Toro Arquitectos"
-					width={128}
-					height={50}
-					quality={100}
-				/>
-			</Link>
+		<header className={`${Styles.header}`}>
+			<div className={`${Styles.container} ${Utils.container}`}>
+				<Link href="/" className={`${Styles.header_logo} ${Utils.link_outline_off}`}>
+					<Image
+						src={'/assets/icons/logo.png'}
+						alt="Logo de Alex Toro Arquitectos"
+						width={128}
+						height={50}
+						quality={100}
+					/>
+				</Link>
 
-			<MobileNav />
-			<DesktopNav />
+				<MobileNav />
+				<DesktopNav />
+			</div>
 		</header>
 	);
 };

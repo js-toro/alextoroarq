@@ -1,0 +1,21 @@
+@import '/src/ui/theme/application/mixings/breakpoints';
+
+.section {
+	margin: var(--spacing-xxxl) var(--spacing-md);
+
+	background-image: url('/assets/images/aboutUs-bg.jpg');
+	backdrop-filter: blur(10px);
+	background-size: cover;
+	background-position: top center;
+}
+
+.wrapper {
+	min-height: 35dvh;
+	backdrop-filter: brightness(0.7);
+	padding: var(--spacing-md);
+}
+
+.seeMore {
+	width: max-content;
+	margin-left: auto;
+}

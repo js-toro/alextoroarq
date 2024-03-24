@@ -1,0 +1,15 @@
+@import '../mixings/breakpoints';
+
+.container {
+	margin: 0 auto;
+	max-width: var(--max-width);
+}
+
+.link_outline_off {
+	@include responsiveUp('md') {
+		// reset stlyes after
+		&::after {
+			height: 0;
+		}
+	}
+}

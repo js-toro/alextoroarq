@@ -1,11 +1,15 @@
 @import '/src/ui/theme/application/mixings/breakpoints';
 
-.nav {
+.footer {
 	display: flex;
-	gap: var(--spacing-md);
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacing-xxs);
+
+	padding: var(--spacing-md);
 
 	@include responsiveDown('lg') {
-		display: none;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -16,9 +20,5 @@
 		font-size: var(--spacing-sm);
 		padding: var(--spacing-xs);
 		line-height: normal;
-	}
-
-	@include responsiveDown('lg') {
-		display: none;
 	}
 }

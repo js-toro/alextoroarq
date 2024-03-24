@@ -17,33 +17,33 @@ h4,
 h5,
 h6 {
 	font-family: var(--font-family-heading);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-light);
 	color: var(--text-color-headings);
 	text-wrap: pretty;
 }
 
 h1 {
-	font-size: var(--font-size-xxxl);
-}
-
-h2 {
 	font-size: var(--font-size-xxl);
 }
 
-h3 {
+h2 {
 	font-size: var(--font-size-xl);
 }
 
-h4 {
+h3 {
 	font-size: var(--font-size-lg);
 }
 
-h5 {
+h4 {
 	font-size: var(--font-size-md);
 }
 
-h6 {
+h5 {
 	font-size: var(--font-size-sm);
+}
+
+h6 {
+	font-size: var(--font-size-xs);
 }
 
 p {
@@ -51,66 +51,43 @@ p {
 	font-weight: var(--font-weight-regular);
 	color: var(--text-color-body);
 	text-wrap: stable;
+	text-align: justify;
 }
 
 small {
 	font-size: var(--font-size-xs);
 	font-weight: var(--font-weight-regular);
-	color: var(--text-color-muted);
+	color: var(--text-color-body);
 	text-wrap: balance;
 }
 
 a {
 	position: relative;
-	font-size: var(--font-size-md);
-	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-regular);
 	color: var(--text-color-links);
 	text-decoration: none;
+	line-height: var(--spacing-lg);
 	transition: color var(--timing-3) ease-in-out;
 
-	@include responsiveUp('md') {
+	@include responsiveUp('lg') {
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
+			inset: auto 0 0 0;
 			display: block;
 			width: 0%;
-			height: 3px;
-			border-radius: 2px;
-			background-color: var(--color-primary);
+			height: 2px;
+			background-color: var(--color-white);
 			transition: width var(--timing-3) ease-in-out;
 		}
 
 		&:hover {
-			color: var(--color-primary);
-
 			&::after {
 				width: 100%;
 			}
 		}
 	}
-}
-
-header,
-footer,
-section {
-	margin: 0 auto;
-	padding: var(--spacing-lg) var(--spacing-xxl);
-	max-width: var(--max-width);
-
-	@include responsiveDown('sm') {
-		padding: var(--spacing-md);
-	}
-}
-
-section {
-	display: grid;
-	gap: var(--spacing-md);
-	align-content: center;
-	margin-top: var(--spacing-lg);
-	margin-bottom: var(--spacing-lg);
 }
 
 ::-webkit-scrollbar {
@@ -125,7 +102,7 @@ section {
 	}
 
 	&-track {
-		background-color: var(--color-white);
+		background-color: var(--color-background);
 	}
 }
 
@@ -144,9 +121,9 @@ input[type='tel'],
 input[type='email'],
 textarea {
 	outline: none;
-	padding: var(--spacing-xxs);
+	padding: var(--spacing-xs);
 	border: none;
-	border-bottom: 1px solid var(--color-white-3);
+	border: 1px solid var(--color-white-4);
 	background-color: transparent;
 	transition: border-color var(--timing-3) ease-in-out;
 

@@ -1,32 +1,32 @@
+@import '/src/ui/theme/application/mixings/breakpoints';
+
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: var(--index-900);
+
+	background-color: var(--color-background-2);
+	backdrop-filter: blur(2px);
+}
+
+.container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacing-xs);
+
+	@include responsiveDown('lg') {
+		padding: var(--spacing-xs) var(--spacing-md);
+	}
 }
+
 .header_logo {
-	margin-right: auto;
+	display: flex;
 
 	img {
 		display: inline;
 		object-fit: contain;
-	}
-}
-.header_home {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1000;
-
-	a,
-	button {
-		color: var(--color-white);
-
-		&:hover {
-			color: var(--color-white);
-		}
-
-		&::after {
-			background-color: var(--color-white);
-		}
 	}
 }

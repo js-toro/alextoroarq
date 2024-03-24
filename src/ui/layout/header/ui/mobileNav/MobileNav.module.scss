@@ -25,20 +25,16 @@
 .button {
 	position: relative;
 	z-index: var(--index-900);
-	color: var(--color-black);
+	color: var(--color-white) !important;
 	font-size: var(--font-size-xxl);
 	display: flex;
-
-	@at-root .wrapper_active & {
-		color: var(--color-white) !important;
-	}
 }
 
 .nav {
 	margin-top: var(--spacing-lg);
 	position: absolute;
-	left: 0;
-	right: 0;
+	left: var(--spacing-xxs);
+	right: var(--spacing-xxs);
 	z-index: var(--index-800);
 	display: flex;
 	flex-direction: column;
@@ -55,10 +51,11 @@
 	}
 
 	a {
+		text-wrap: nowrap;
 		font-size: var(--font-size-xl);
 
 		@at-root .wrapper_active & {
-			font-size: var(--font-size-lg);
+			font-size: var(--font-size-md);
 			color: var(--color-white) !important;
 		}
 	}
@@ -68,7 +65,8 @@
 		position: absolute;
 		inset: 0;
 		z-index: var(--index-100);
-		background-color: var(--color-tertiary);
+		background-color: var(--color-background-2);
+		backdrop-filter: blur(3px);
 		transition: transform var(--timing-5);
 		transform: rotate(-45deg) scaleX(0) scaleY(7);
 

@@ -3,35 +3,13 @@
 :root {
 	@include responsiveDown('md') {
 		--font-size-xxxs: 0.7rem;
-		--font-size-xxs: 0.9rem;
+		--font-size-xxs: 1rem;
 		--font-size-xs: 1.2rem;
-		--font-size-sm: 1.6rem;
+		--font-size-sm: 1.4rem;
 		--font-size-md: 2rem;
 		--font-size-lg: 2.4rem;
 		--font-size-xl: 3.2rem;
-		--font-size-xxl: 4.8rem;
-		--font-size-xxxl: 6.4rem;
-
-		--spacing-xxxs: 3px;
-		--spacing-xxs: 6px;
-		--spacing-xs: 10px;
-		--spacing-sm: 16px;
-		--spacing-md: 24px;
-		--spacing-lg: 32px;
-		--spacing-xl: 48px;
-		--spacing-xxl: 64px;
-		--spacing-xxxl: 96px;
-	}
-
-	@include responsiveDown('sm') {
-		--font-size-xxxs: 0.6rem;
-		--font-size-xxs: 0.8rem;
-		--font-size-xs: 1rem;
-		--font-size-sm: 1.2rem;
-		--font-size-md: 1.6rem;
-		--font-size-lg: 2rem;
-		--font-size-xl: 2.4rem;
-		--font-size-xxl: 3.2rem;
+		--font-size-xxl: 4rem;
 		--font-size-xxxl: 4.8rem;
 
 		--spacing-xxxs: 2px;
@@ -43,5 +21,27 @@
 		--spacing-xl: 32px;
 		--spacing-xxl: 48px;
 		--spacing-xxxl: 64px;
+	}
+
+	@include responsiveDown('sm') {
+		--font-size-xxxs: 0.6rem;
+		--font-size-xxs: 0.8rem;
+		--font-size-xs: 1rem;
+		--font-size-sm: 1.2rem;
+		--font-size-md: 1.6rem;
+		--font-size-lg: 2rem;
+		--font-size-xl: 2.4rem;
+		--font-size-xxl: 3.2rem;
+		--font-size-xxxl: 4rem;
+
+		--spacing-xxxs: 1px;
+		--spacing-xxs: 2px;
+		--spacing-xs: 4px;
+		--spacing-sm: 8px;
+		--spacing-md: 12px;
+		--spacing-lg: 16px;
+		--spacing-xl: 24px;
+		--spacing-xxl: 32px;
+		--spacing-xxxl: 48px;
 	}
 }
