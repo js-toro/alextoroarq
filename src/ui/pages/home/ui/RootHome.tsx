@@ -1,8 +1,7 @@
 import Hero from './hero';
 import Welcome from './welcome';
-import We from './we';
-import OurProjects from './ourProjects';
-import OurServices from './ourServices';
+import AboutUs from './aboutUs';
+import Projects from './projects';
 import ContactUs from './contactUs';
 
 const RootHome = () => {
@@ -10,9 +9,8 @@ const RootHome = () => {
 		<main>
 			<Hero />
 			<Welcome />
-			<We />
-			<OurProjects />
-			<OurServices />
+			<AboutUs />
+			<Projects />
 			<ContactUs />
 		</main>
 	);

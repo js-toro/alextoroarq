@@ -1,4 +1,4 @@
-import { Inter, Red_Hat_Display } from 'next/font/google';
+import { Inter, Open_Sans } from 'next/font/google';
 
 export const heading = Inter({ variable: '--font-family-heading', subsets: ['latin'] });
-export const body = Red_Hat_Display({ variable: '--font-family-body', subsets: ['latin'] });
+export const body = Open_Sans({ variable: '--font-family-body', subsets: ['latin'] });

@@ -51,6 +51,7 @@ p {
 	font-weight: var(--font-weight-regular);
 	color: var(--text-color-body);
 	text-wrap: stable;
+	text-align: justify;
 }
 
 small {
@@ -125,7 +126,7 @@ section {
 	}
 
 	&-track {
-		background-color: var(--color-white);
+		background-color: var(--color-background);
 	}
 }
 

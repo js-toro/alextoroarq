@@ -1,9 +1,5 @@
 const RootServicios = () => {
-	return (
-		<main>
-			<section></section>
-		</main>
-	);
+	return <></>;
 };
 
 export default RootServicios;

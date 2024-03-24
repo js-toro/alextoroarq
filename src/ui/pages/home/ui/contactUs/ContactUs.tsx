@@ -5,20 +5,12 @@ import ContactForm from '@/ui/pages/contactanos/ui/contactForm';
 
 const ContactUs = () => {
 	return (
-		<section className={`${Styles.grid}`}>
-			<div className={`${Utils.d_grid} ${Utils.gap_xs}`}>
-				<span className={`${Utils.text_heading}`}>
-					<b>PONERSE EN CONTACTO</b>
-				</span>
-
-				<h4>Establece contacto con nosotros para tener el gusto de atenderlo</h4>
-			</div>
-
+		<section>
 			<div>
-				<p>
-					En nuestra empresa de arquitectura, el proceso de diseño comienza con un análisis
-					exhaustivo de los requisitos del cliente, las condiciones del emplazamiento y la normativa
-					local para sentar las bases de un proyecto de éxito.
+				<p className={`${Utils.text_italic}`}>
+					Estamos aquí para convertir tus sueños en realidad, Completa el formulario de contacto y
+					nos pondremos en contacto contigo para discutir cómo podemos colaborar en tu próximo
+					proyecto arquitectónico.
 				</p>
 			</div>
 
