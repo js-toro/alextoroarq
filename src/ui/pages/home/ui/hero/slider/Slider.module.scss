@@ -38,8 +38,9 @@
 	height: max-content;
 	padding: var(--spacing-md);
 	border-radius: 50%;
-	background-color: var(--color-background-3);
-	backdrop-filter: blur(2px);
+	background-color: var(--color-background-4);
+	backdrop-filter: blur(5px);
+	border: 1px solid var(--color-white);
 	color: var(--color-white);
 	font-size: var(--font-size-md);
 	cursor: pointer;
@@ -67,13 +68,13 @@
 	justify-content: center;
 
 	background-color: var(--color-background-2);
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(5px);
 
 	span {
 		font-family: var(--font-family-heading);
 		font-weight: var(--font-weight-regular);
 		color: var(--color-white);
-		font-size: var(--font-size-md);
+		font-size: var(--font-size-lg);
 		text-align: center;
 	}
 }

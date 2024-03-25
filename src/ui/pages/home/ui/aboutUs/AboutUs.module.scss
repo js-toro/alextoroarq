@@ -10,12 +10,12 @@
 }
 
 .wrapper {
-	min-height: 35dvh;
-	backdrop-filter: brightness(0.7);
-	padding: var(--spacing-md);
+	min-height: 600px;
+	backdrop-filter: brightness(0.75);
+	padding: var(--spacing-md);	
 }
 
 .seeMore {
 	width: max-content;
-	margin-left: auto;
+	margin-left: auto;	
 }

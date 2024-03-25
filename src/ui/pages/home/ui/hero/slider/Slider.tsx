@@ -44,7 +44,7 @@ const Slider = () => {
 				</div>
 
 				<div className={`${Styles.title}`}>
-					<span>Arquitectos especialistas en Vivienda Multifamiliar</span>
+					<span>Arquitectos Especialistas en Vivienda Multifamiliar</span>
 				</div>
 			</div>
 		</>

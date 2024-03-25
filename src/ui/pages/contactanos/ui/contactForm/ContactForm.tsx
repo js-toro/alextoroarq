@@ -1,20 +1,20 @@
-import Image from 'next/image';
-import Styles from './ContactForm.module.scss';
-import Utils from '@/ui/theme/application/utils/Utils.module.scss';
+import Image from "next/image";
+import Styles from "./ContactForm.module.scss";
+import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
 const ContactForm = () => {
 	return (
 		<section className={`${Styles.section}`}>
 			<div className={`${Utils.container}`}>
 				<p className={`${Utils.text_italic}`}>
-					Estamos aquí para convertir tus sueños en realidad, Completa el formulario de contacto y
-					nos pondremos en contacto contigo para discutir cómo podemos colaborar en tu próximo
-					proyecto arquitectónico.
+					Estamos aquí para convertir tus sueños en realidad, Completa el
+					formulario de contacto y nos pondremos en contacto contigo para
+					discutir cómo podemos colaborar en tu próximo proyecto arquitectónico.
 				</p>
 
 				<div className={`${Styles.grid}`}>
 					<div>
-						<h3 className={`${Utils.mb_sm}`}>Ubicación</h3>
+						<h3 className={`${Utils.mb_sm} ${Utils.text_light}`}>UBICACIÓN</h3>
 
 						<p>
 							<small>Carrera 49 # 45-48 (Of 2006)</small>
@@ -31,26 +31,22 @@ const ContactForm = () => {
 
 					<div>
 						<Image
-							src="/images/contactanos/mapa.png"
-							alt="Mapa de ubicación"
-							width={400}
-							height={400}
+							src="/assets/images/ubicacion.jpg"
+							alt="Ubicación"
+							width={500}
+							height={500}
 						/>
 					</div>
 
 					<div>
-						<h3 className={`${Utils.mb_sm}`}>Teléfono</h3>
+						<h3 className={`${Utils.mb_sm} ${Utils.text_light}`}>TELÉFONO</h3>
 
 						<p>
-							<small>Carrera 49 # 45-48 (Of 2006)</small>
+							<small>+57 - 574 462 8823</small>
 						</p>
 
 						<p>
-							<small>Condominio Santa Clara - Bello, Antioquia</small>
-						</p>
-
-						<p>
-							<small>Colombia</small>
+							<small>+57 - 313 646 5462</small>
 						</p>
 					</div>
 
@@ -92,12 +88,19 @@ const ContactForm = () => {
 								<span>Mensaje</span> <small>(requerido)</small>
 							</label>
 
-							<textarea id="message" required placeholder="" rows={5}></textarea>
+							<textarea
+								id="message"
+								required
+								placeholder=""
+								rows={5}
+							></textarea>
 						</div>
 
-						<button type="submit" className={`${Utils.btn_primary} ${Utils.button}`}>
-							Enviar / Submit
-						</button>
+						<div>
+							<button type="submit" className={`${Utils.button_outline_light}`}>
+								ENVIAR
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>
