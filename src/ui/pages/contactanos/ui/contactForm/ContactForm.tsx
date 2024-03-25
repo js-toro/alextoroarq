@@ -1,8 +1,12 @@
-import Image from "next/image";
+"use client";
 import Styles from "./ContactForm.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
+import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
+import useResend from "@/application/useResend";
 
 const ContactForm = () => {
+	const { handleSubmit } = useResend();
+
 	return (
 		<section className={`${Styles.section}`}>
 			<div className={`${Utils.container}`}>
@@ -30,12 +34,7 @@ const ContactForm = () => {
 					</div>
 
 					<div>
-						<Image
-							src="/assets/images/ubicacion.jpg"
-							alt="Ubicación"
-							width={500}
-							height={500}
-						/>
+						<GoogleMap />
 					</div>
 
 					<div>
@@ -50,37 +49,37 @@ const ContactForm = () => {
 						</p>
 					</div>
 
-					<form className={`${Styles.form}`} action="#">
+					<form className={`${Styles.form}`} onSubmit={handleSubmit}>
 						<div className={`${Styles.form_group}`}>
 							<label htmlFor="name">
 								<span>Nombre</span> <small>(requerido)</small>
 							</label>
 
-							<input type="text" id="name" required placeholder="" />
+							<input id="name" type="text" required />
+						</div>
+
+						<div className={`${Styles.form_group}`}>
+							<label htmlFor="phone">
+								<span>Teléfono</span>
+							</label>
+
+							<input id="phone" type="text" />
 						</div>
 
 						<div className={`${Styles.form_group}`}>
 							<label htmlFor="email">
-								<span>Teléfono</span> <small>(requerido)</small>
-							</label>
-
-							<input type="email" id="email" required placeholder="" />
-						</div>
-
-						<div className={`${Styles.form_group}`}>
-							<label htmlFor="phone">
 								<span>Correo</span> <small>(requerido)</small>
 							</label>
 
-							<input type="text" id="phone" required placeholder="" />
+							<input id="email" type="email" required />
 						</div>
 
 						<div className={`${Styles.form_group}`}>
-							<label htmlFor="phone">
+							<label htmlFor="subject">
 								<span>Asunto</span> <small>(requerido)</small>
 							</label>
 
-							<input type="text" id="phone" required placeholder="" />
+							<input id="subject" type="text" required />
 						</div>
 
 						<div className={`${Styles.form_group}`}>
@@ -88,12 +87,7 @@ const ContactForm = () => {
 								<span>Mensaje</span> <small>(requerido)</small>
 							</label>
 
-							<textarea
-								id="message"
-								required
-								placeholder=""
-								rows={5}
-							></textarea>
+							<textarea id="message" required rows={5}></textarea>
 						</div>
 
 						<div>

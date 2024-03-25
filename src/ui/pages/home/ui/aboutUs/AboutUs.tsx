@@ -6,7 +6,7 @@ const AboutUs = () => {
 	return (
 		<section className={`${Styles.section}`}>
 			<div className={`${Styles.wrapper}`}>
-				<div className={`${Utils.container} ${Utils.d_grid}`}>
+				<div className={`${Utils.container} ${Utils.d_grid} ${Utils.gap_sm}`}>
 					<h2>Nosotros</h2>
 
 					<p>
@@ -16,7 +16,7 @@ const AboutUs = () => {
 
 					<Link
 						href="/nosotros"
-						className={`${Styles.seeMore} ${Utils.button_outline}`}
+						className={`${Styles.seeMore} ${Utils.button_outline} ${Utils.link_outline_off}`}
 					>
 						Ver Mas
 					</Link>
