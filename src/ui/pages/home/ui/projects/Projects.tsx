@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Style from "./Projects.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import Image from "next/image";
 import { useState } from "react";
 
 const Projects = () => {
@@ -38,12 +37,9 @@ const Projects = () => {
 					<div className={`${Style.projects}`}>
 						{[1, 2, 3, 4, 5, 6].map((_, index) => (
 							<div key={index}>
-								<Image
+								<img
 									src="/assets/images/highlighted-projects/142.jpg"
 									alt="Demo"
-									width={2160}
-									height={2160}
-									quality={70}
 								/>
 
 								<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
@@ -55,12 +51,9 @@ const Projects = () => {
 						{showMore &&
 							[1, 2, 3, 4, 5, 6].map((_, index) => (
 								<div key={index}>
-									<Image
+									<img
 										src="/assets/images/highlighted-projects/142.jpg"
 										alt="Demo"
-										width={2160}
-										height={2160}
-										quality={70}
 									/>
 
 									<p className={`${Utils.text_center} ${Utils.mt_sm}`}>

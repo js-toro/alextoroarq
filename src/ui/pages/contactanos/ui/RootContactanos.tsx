@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Styles from "./RootContactanos.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
@@ -10,12 +8,10 @@ const RootContactanos = () => {
 		<>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
-					<Image
+					<img
 						className={`${Styles.cover}`}
 						src={"/assets/images/contacto/banner-contacto.jpg"}
 						alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
-						width={3200}
-						height={940}
 					/>
 				</div>
 
