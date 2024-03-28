@@ -37,10 +37,7 @@ const Projects = () => {
 					<div className={`${Style.projects}`}>
 						{[1, 2, 3, 4, 5, 6].map((_, index) => (
 							<div key={index}>
-								<img
-									src="/assets/images/highlighted-projects/142.jpg"
-									alt="Demo"
-								/>
+								<img src="/assets/images/nosotros/nosotros-1.jpg" alt="Demo" />
 
 								<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
 									Crystal Living
@@ -52,7 +49,7 @@ const Projects = () => {
 							[1, 2, 3, 4, 5, 6].map((_, index) => (
 								<div key={index}>
 									<img
-										src="/assets/images/highlighted-projects/142.jpg"
+										src="/assets/images/nosotros/nosotros-1.jpg"
 										alt="Demo"
 									/>
 

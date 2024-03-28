@@ -2,7 +2,7 @@
 import Styles from "./ContactForm.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
-import useResend from "@/application/useResend";
+import { useResend } from "@/application";
 
 const ContactForm = () => {
 	const { handleSubmit } = useResend();

@@ -17,7 +17,7 @@ async function send() {
 	}
 }
 
-export default function () {
+export function useResend() {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		e.currentTarget.reset();

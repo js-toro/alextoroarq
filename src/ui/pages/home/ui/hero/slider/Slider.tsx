@@ -1,55 +1,44 @@
 "use client";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
-import { useHighlightedProjects } from "@/application";
 
 import Styles from "./Slider.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
+import { useSliderApplication } from "@/application/useSliderApplication";
 
 const Slider = () => {
-	const {
-		isLoaded,
-		currentProject,
-		projects,
-		handlePreviousProject,
-		handleNextProject,
-	} = useHighlightedProjects();
+	const { isLoading, images, currentImage, handlePrev, handleNext } =
+		useSliderApplication();
 
-	if (!isLoaded) return <></>;
+	if (isLoading) {
+		return <></>;
+	}
 
 	return (
 		<>
 			<div
 				className={`${Utils.background_tertiary} ${Utils.absolute} ${Utils.position_full} ${Utils.z_index_n100}`}
 			>
-				{projects.map((project, index) => (
+				{images.map((image: string, index: any) => (
 					<img
 						key={index}
 						className={`${Styles.highlightedProject} ${
-							project.order === currentProject.order
-								? Styles.highlightedProjectActive
-								: ""
+							index == currentImage && Styles.highlightedProjectActive
 						}`}
-						src={project.mainLandscapeImage}
-						alt={`Una hermosa vista de ${project.name}, un proyecto de Alex Toro Arquitectos`}
+						src={image}
+						alt={`Una hermosa vista de un proyecto de Alex Toro Arquitectos`}
 					/>
 				))}
 			</div>
 
 			<div className={Styles.grid}>
 				<div className={`${Styles.left_button}`}>
-					<button
-						className={`${Styles.controllButton} `}
-						onClick={handlePreviousProject}
-					>
+					<button className={`${Styles.controllButton} `} onClick={handlePrev}>
 						<HiArrowLeft />
 					</button>
 				</div>
 
 				<div className={`${Styles.right_button}`}>
-					<button
-						className={`${Styles.controllButton}`}
-						onClick={handleNextProject}
-					>
+					<button className={`${Styles.controllButton}`} onClick={handleNext}>
 						<HiArrowRight />
 					</button>
 				</div>

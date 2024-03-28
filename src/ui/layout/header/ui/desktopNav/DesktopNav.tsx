@@ -8,24 +8,24 @@ const DesktopNav = () => {
 		<>
 			<nav className={`${Styles.nav}`}>
 				<Link href="/nosotros">La Firma</Link>
-				{/* <Link href="/portafolio">Portafolio</Link> */}
+				<Link href="/portafolio">Portafolio</Link>
 				<Link href="/contacto">Contacto</Link>
 			</nav>
 
 			<nav className={`${Styles.socials}`}>
-				<Link href="https://www.facebook.com">
+				<Link href="https://www.facebook.com/alextoro.arquitectos">
 					<FaFacebook />
 				</Link>
 
-				<Link href="https://www.facebook.com">
+				<Link href="https://www.instagram.com">
 					<FaInstagram />
 				</Link>
 
-				<Link href="https://www.facebook.com">
+				<Link href="https://www.youtube.com/channel/UCvQWsRrgbx2oR4UU2Z5Up1Q">
 					<FaYoutube />
 				</Link>
 
-				<Link href="https://www.facebook.com">
+				<Link href="https://www.linkedin.com/in/alextoroarquitectos/">
 					<FaLinkedin />
 				</Link>
 			</nav>

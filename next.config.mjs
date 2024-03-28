@@ -9,6 +9,8 @@ const nextConfig = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, "ui/application/mixings")],
 	},
+	output: "export",
+	distDir: "build",
 };
 
 export default nextConfig;
