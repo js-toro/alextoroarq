@@ -1,2 +1,2 @@
-export * from "./useSlider";
+export * from "./useSliderApplication";
 export * from "./useResend";

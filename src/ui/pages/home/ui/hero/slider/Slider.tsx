@@ -3,7 +3,7 @@ import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import Styles from "./Slider.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import { useSliderApplication } from "@/application/useSliderApplication";
+import { useSliderApplication } from "@/application";
 
 const Slider = () => {
 	const { isLoading, images, currentImage, handlePrev, handleNext } =
