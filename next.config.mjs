@@ -6,9 +6,6 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	compiler: {
-		styledComponents: true,
-	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'ui/application/mixings')],
 	},

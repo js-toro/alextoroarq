@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
-import Styles from './DesktopNav.module.scss';
+import Styles from "./DesktopNav.module.scss";
 
 const DesktopNav = () => {
 	return (
 		<>
 			<nav className={`${Styles.nav}`}>
 				<Link href="/nosotros">La Firma</Link>
-				<Link href="/portafolio">Portafolio</Link>
+				{/* <Link href="/portafolio">Portafolio</Link> */}
 				<Link href="/contacto">Contacto</Link>
 			</nav>
 
