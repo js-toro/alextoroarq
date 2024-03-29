@@ -5,7 +5,7 @@ import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
 import { useResend } from "@/application";
 
 const ContactForm = () => {
-	const { handleSubmit } = useResend();
+	const { values, onChangeValues, handleSubmit } = useResend();
 
 	return (
 		<section className={`${Styles.section}`}>
@@ -55,7 +55,14 @@ const ContactForm = () => {
 								<span>Nombre</span> <small>(requerido)</small>
 							</label>
 
-							<input id="name" type="text" required />
+							<input
+								id="name"
+								name="name"
+								type="text"
+								value={values.name}
+								onChange={onChangeValues}
+								required
+							/>
 						</div>
 
 						<div className={`${Styles.form_group}`}>
@@ -63,7 +70,13 @@ const ContactForm = () => {
 								<span>Teléfono</span>
 							</label>
 
-							<input id="phone" type="text" />
+							<input
+								id="phone"
+								name="phone"
+								type="text"
+								value={values.phone}
+								onChange={onChangeValues}
+							/>
 						</div>
 
 						<div className={`${Styles.form_group}`}>
@@ -71,7 +84,14 @@ const ContactForm = () => {
 								<span>Correo</span> <small>(requerido)</small>
 							</label>
 
-							<input id="email" type="email" required />
+							<input
+								id="email"
+								name="email"
+								type="email"
+								value={values.email}
+								onChange={onChangeValues}
+								required
+							/>
 						</div>
 
 						<div className={`${Styles.form_group}`}>
@@ -79,7 +99,14 @@ const ContactForm = () => {
 								<span>Asunto</span> <small>(requerido)</small>
 							</label>
 
-							<input id="subject" type="text" required />
+							<input
+								id="subject"
+								name="subject"
+								type="text"
+								value={values.subject}
+								onChange={onChangeValues}
+								required
+							/>
 						</div>
 
 						<div className={`${Styles.form_group}`}>
@@ -87,7 +114,14 @@ const ContactForm = () => {
 								<span>Mensaje</span> <small>(requerido)</small>
 							</label>
 
-							<textarea id="message" required rows={5}></textarea>
+							<textarea
+								id="message"
+								name="message"
+								value={values.message}
+								onChange={onChangeValues}
+								required
+								rows={5}
+							></textarea>
 						</div>
 
 						<div>

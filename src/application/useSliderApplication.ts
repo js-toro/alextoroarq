@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { sliderRepository } from "@/infrastructure/repositories/sliderRepository";
-import { ISlider } from "@/domain/interfaces/ISlider";
+import { sliderRepository } from "@/infrastructure/repositories";
 
 export const useSliderApplication = () => {
 	const [isLoading, setIsLoading] = useState(true);
