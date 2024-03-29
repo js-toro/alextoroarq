@@ -21,9 +21,9 @@ const MobileNav = () => {
 					La firma
 				</Link>
 
-				{/* <Link href="/portafolio" onClick={handleOpen}>
+				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
-				</Link> */}
+				</Link>
 
 				<Link href="/contacto" onClick={handleOpen}>
 					Contacto
