@@ -1,7 +1,7 @@
-@forward './reset';
-@forward './responsive';
+@forward "./reset";
+@forward "./responsive";
 
-@import './mixings/breakpoints';
+@import "./mixings/breakpoints";
 
 body {
 	background-color: var(--color-background);
@@ -52,7 +52,7 @@ p {
 	color: var(--text-color-body);
 	text-align: justify;
 
-	@include responsiveDown('md') {
+	@include responsiveDown("md") {
 		text-align: left;
 	}
 }
@@ -73,9 +73,9 @@ a {
 	line-height: var(--spacing-lg);
 	transition: color var(--timing-3) ease-in-out;
 
-	@include responsiveUp('lg') {
+	@include responsiveUp("lg") {
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			inset: auto 0 0 0;
 			display: block;
@@ -94,13 +94,13 @@ a {
 }
 
 ::-webkit-scrollbar {
-	width: 0.5rem;
+	width: 1rem;
 
 	&-thumb {
 		background-color: var(--color-primary-2);
 
 		&:hover {
-			background-color: var(--color-tertiary);
+			background-color: var(--color-secondary);
 		}
 	}
 
@@ -109,9 +109,9 @@ a {
 	}
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
 label,
 textarea {
 	font-size: var(--font-size-sm);
@@ -119,9 +119,9 @@ textarea {
 	color: var(--color-white);
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
 textarea {
 	outline: none;
 	padding: var(--spacing-xs);

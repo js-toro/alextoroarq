@@ -1,7 +1,11 @@
-import ContactForm from '@/ui/pages/contactanos/ui/contactForm';
+import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
 
 const ContactUs = () => {
-	return <ContactForm />;
+	return (
+		<main>
+			<ContactForm />
+		</main>
+	);
 };
 
 export default ContactUs;

@@ -1,4 +1,4 @@
-@import '/src/ui/theme/application/mixings/breakpoints';
+@import "/src/ui/theme/application/mixings/breakpoints";
 
 .section {
 	margin: var(--spacing-xxxl) var(--spacing-md);
@@ -10,7 +10,7 @@
 	grid-template-columns: 1fr 2fr;
 	gap: var(--spacing-xxxl) var(--spacing-md);
 
-	@include responsiveDown('lg') {
+	@include responsiveDown("lg") {
 		grid-template-columns: 1fr;
 		gap: var(--spacing-md);
 	}

@@ -1,0 +1,40 @@
+@import "/src/ui/theme/application/mixings/breakpoints";
+
+.section {
+	margin: var(--spacing-xxxl) var(--spacing-md);
+}
+
+.category {
+	font-style: italic;
+}
+
+.projects {
+	margin: var(--spacing-xxxl) auto 0 auto;
+	width: 100%;
+	min-width: 75%;
+	max-width: var(--max-width);
+	padding: var(--spacing-lg) 0;
+	border-top: 3px solid var(--color-white-5);
+	border-bottom: 3px solid var(--color-white-5);
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: var(--spacing-md);
+
+	@include responsiveDown("xxl") {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@include responsiveDown("md") {
+		grid-template-columns: 1fr;
+	}
+
+	> div {
+		height: min-content;
+
+		img {
+			width: auto;
+			height: 100%;
+			aspect-ratio: 10/17;
+		}
+	}
+}

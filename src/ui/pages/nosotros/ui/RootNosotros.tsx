@@ -28,7 +28,7 @@ const RootNosotros = () => {
 				</div>
 			</section>
 
-			<section className={`${Styles.section} `}>
+			<main className={`${Styles.section} `}>
 				<div className={`${Utils.container} ${Styles.nosotros}`}>
 					<div>
 						<h3 className={`${Utils.text_light}`}>Contexto</h3>
@@ -67,6 +67,7 @@ const RootNosotros = () => {
 						<img
 							src={"/assets/images/nosotros/nosotros-1.jpg"}
 							alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
+							loading="lazy"
 						/>
 					</div>
 
@@ -120,6 +121,7 @@ const RootNosotros = () => {
 						<img
 							src={"/assets/images/nosotros/nosotros-2.jpg"}
 							alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
+							loading="lazy"
 						/>
 					</div>
 
@@ -142,7 +144,7 @@ const RootNosotros = () => {
 						</p>
 					</div>
 				</div>
-			</section>
+			</main>
 
 			<section>
 				<ContactForm />

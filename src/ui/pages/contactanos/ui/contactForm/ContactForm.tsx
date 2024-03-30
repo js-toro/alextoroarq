@@ -33,9 +33,7 @@ const ContactForm = () => {
 						</p>
 					</div>
 
-					<div>
-						<GoogleMap />
-					</div>
+					<GoogleMap />
 
 					<div>
 						<h3 className={`${Utils.mb_sm} ${Utils.text_light}`}>TELÉFONO</h3>
