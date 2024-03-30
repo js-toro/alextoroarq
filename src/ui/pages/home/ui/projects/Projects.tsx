@@ -1,11 +1,17 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
+
 import Style from "./Projects.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import { useState } from "react";
+import { useHighlightedProjects } from "@/application";
+import { IProject } from "@/domain/interfaces";
 
 const Projects = () => {
 	const [showMore, setShowMore] = useState(false);
+	const { isLoading, projects, handleShowMore } = useHighlightedProjects();
+
+	if (isLoading) return <></>;
 
 	return (
 		<>
@@ -35,29 +41,24 @@ const Projects = () => {
 					</h2>
 
 					<div className={`${Style.projects}`}>
-						{[1, 2, 3, 4, 5, 6].map((_, index) => (
-							<div key={index}>
-								<img src="/assets/images/nosotros/nosotros-1.jpg" alt="Demo" />
-
-								<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
-									Crystal Living
-								</p>
-							</div>
-						))}
-
-						{showMore &&
-							[1, 2, 3, 4, 5, 6].map((_, index) => (
-								<div key={index}>
+						{projects.map((project: IProject) => (
+							<div key={project.id}>
+								<Link
+									href={`/portafolio/${project.id}`}
+									className={`${Utils.link_outline_off}`}
+								>
 									<img
-										src="/assets/images/nosotros/nosotros-1.jpg"
-										alt="Demo"
+										src={project.thumb}
+										alt={`Hermosa vista de ${project.name}, un proyecto de ${project.category} de Alex Toro Arquitectos.`}
+										loading="lazy"
 									/>
 
 									<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
-										Crystal Living
+										{project.name}
 									</p>
-								</div>
-							))}
+								</Link>
+							</div>
+						))}
 					</div>
 				</div>
 
@@ -67,7 +68,10 @@ const Projects = () => {
 					{!showMore && (
 						<button
 							className={`${Utils.button_outline_light} ${Utils.ml_auto}`}
-							onClick={() => setShowMore(true)}
+							onClick={() => {
+								setShowMore(true);
+								handleShowMore();
+							}}
 						>
 							Ver Más
 						</button>
@@ -76,7 +80,7 @@ const Projects = () => {
 					{showMore && (
 						<Link
 							href="/portafolio"
-							className={`${Utils.button_outline_light} ${Utils.ml_auto}`}
+							className={`${Utils.button_outline_light} ${Utils.link_outline_off} ${Utils.ml_auto}`}
 						>
 							Ver Todos
 						</Link>

@@ -1,7 +1,15 @@
+import Link from "next/link";
+
 import Styles from "./Multifamiliar.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
+import { useProjectApplication } from "@/application";
+import { IProject } from "@/domain/interfaces";
+import { Category } from "@/domain/enums";
+
 export default function Multifamiliar() {
+	const { isLoading, filterByCategory } = useProjectApplication();
+
 	return (
 		<section className={`${Styles.section}`}>
 			<div className={`${Utils.container} ${Styles.category}`}>
@@ -13,21 +21,30 @@ export default function Multifamiliar() {
 				</p>
 			</div>
 
-			<div className={`${Styles.projects}`}>
-				{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((_, index) => (
-					<div key={index}>
-						<img
-							src="/assets/images/nosotros/nosotros-1.jpg"
-							alt="Demo"
-							loading="lazy"
-						/>
+			{!isLoading && (
+				<div className={`${Styles.projects}`}>
+					{filterByCategory(Category.Multifamiliar)?.map(
+						(project: IProject) => (
+							<div key={project.id}>
+								<Link
+									href={`/portafolio/${project.id}`}
+									className={`${Utils.link_outline_off}`}
+								>
+									<img
+										src={project.thumb}
+										alt={`Hermosa vista de ${project.name}, un proyecto de ${project.category} de Alex Toro Arquitectos.`}
+										loading="lazy"
+									/>
 
-						<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
-							Crystal Living
-						</p>
-					</div>
-				))}
-			</div>
+									<p className={`${Utils.text_center} ${Utils.mt_sm}`}>
+										{project.name}
+									</p>
+								</Link>
+							</div>
+						)
+					)}
+				</div>
+			)}
 		</section>
 	);
 }

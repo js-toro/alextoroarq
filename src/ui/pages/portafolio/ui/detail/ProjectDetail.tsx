@@ -5,49 +5,59 @@ import { HiOutlineChevronLeft } from "react-icons/hi";
 import Style from "./ProjectDetail.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
+import { useEffect } from "react";
+import { useProjectApplication } from "@/application";
 
 type ProjectDetailProps = {
 	projectKey: string;
 };
 
 export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
+	const { isLoading, findedProject, findProject } = useProjectApplication();
+
+	useEffect(() => {
+		findProject(parseInt(projectKey));
+	}, [isLoading]);
+
+	if (isLoading || !findedProject) return <></>;
+
 	return (
 		<>
 			<div className={`${Style.cover}`}>
-				<img src="/assets/images/nosotros/nosotros-1.jpg" alt="Demo" />
+				<img
+					src={findedProject.thumb}
+					alt={`Hermosa vista de ${findedProject.name}, un proyecto de ${findedProject.category} de Alex Toro Arquitectos.`}
+				/>
 			</div>
 
 			<main className={`${Style.main}`}>
 				<div className={`${Utils.container} ${Utils.d_grid} ${Utils.gap_lg}`}>
 					<div className={`${Style.projectDetail}`}>
 						<div>
-							<h1>Edificio</h1>
-							<p className={`${Style.subheading}`}>Livorno</p>
+							<h1 className={`${Style.heading}`}>{findedProject.name}</h1>
+							<p className={`${Style.subheading}`}>{findedProject.category}</p>
 						</div>
 
 						<div>
-							<p className={`${Style.detail}`}>
-								Promotor: Constructora Belarrú
-							</p>
-							<p className={`${Style.detail}`}>2021</p>
-							<p className={`${Style.detail}`}>3100 m2</p>
+							<p className={`${Style.detail}`}>{findedProject.builder}</p>
+							<p className={`${Style.detail}`}>{findedProject.year}</p>
+							<p className={`${Style.detail}`}>{findedProject.lenght} m2</p>
 						</div>
 					</div>
 
-					<div>
-						<p className={`${Utils.text_italic}`}>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Praesentium, reprehenderit qui quisquam ex quidem ad aut,
-							dignissimos distinctio quibusdam ut possimus dicta? Voluptatem
-							necessitatibus velit, iste rerum maiores dolor quia.
-						</p>
-					</div>
+					{findedProject.description && (
+						<div>
+							<p className={`${Utils.text_italic}`}>
+								{findedProject.description}
+							</p>
+						</div>
+					)}
 
-					{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((_, index) => (
+					{findedProject.images.map((image, index) => (
 						<div key={index}>
 							<img
-								src="/assets/images/nosotros/nosotros-2.jpg"
-								alt="Demo"
+								src={image}
+								alt={`Hermosa vista de ${findedProject.name}, un proyecto de ${findedProject.category} de Alex Toro Arquitectos.`}
 								loading="lazy"
 							/>
 						</div>

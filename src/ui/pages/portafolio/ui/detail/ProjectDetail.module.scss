@@ -2,10 +2,14 @@
 
 .cover {
 	width: 100%;
-	height: 66px;
+	height: 70px;
 
-	@include responsiveUp("md") {
-		height: 70px;
+	@include responsiveDown("md") {
+		height: 66px;
+	}
+
+	@include responsiveDown("sm") {
+		height: 58px;
 	}
 
 	img {
@@ -30,7 +34,7 @@
 	align-items: center;
 
 	@include responsiveUp("lg") {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr auto;
 		grid-gap: var(--spacing-md);
 
 		div:last-child {
@@ -40,8 +44,12 @@
 		}
 	}
 
+	.heading {
+		font-size: var(--font-size-xl);
+	}
+
 	.subheading {
-		font-size: var(--font-size-lg);
+		font-size: var(--font-size-md);
 	}
 
 	.detail {
