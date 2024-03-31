@@ -1,9 +1,10 @@
 "use client";
+import { useSliderApplication } from "@/application";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import Styles from "./Slider.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import { useSliderApplication } from "@/application";
+import Image from "next/image";
 
 const Slider = () => {
 	const { isLoading, images, currentImage, handlePrev, handleNext } =
@@ -19,13 +20,22 @@ const Slider = () => {
 				className={`${Utils.background_tertiary} ${Utils.absolute} ${Utils.position_full} ${Utils.z_index_n100}`}
 			>
 				{images.map((image: string, index: any) => (
-					<img
+					<Image
 						key={index}
 						className={`${Styles.highlightedProject} ${
 							index == currentImage && Styles.highlightedProjectActive
 						}`}
 						src={image}
 						alt={`Una hermosa vista de un proyecto de Alex Toro Arquitectos`}
+						width={1920}
+						height={1080}
+						sizes="100vw"
+						quality={70}
+						style={{
+							width: "auto",
+							height: "auto",
+						}}
+						priority={index === 0}
 					/>
 				))}
 			</div>

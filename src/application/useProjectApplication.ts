@@ -19,7 +19,6 @@ export const useProjectApplication = () => {
 				return a.priority - b.priority;
 			});
 
-			console.log(projectsSorted);
 			setProjects(projectsSorted);
 			setIsLoading(false);
 		});

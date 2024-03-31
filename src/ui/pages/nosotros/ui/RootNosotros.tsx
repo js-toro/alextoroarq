@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Styles from "./RootNosotros.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
@@ -8,10 +9,18 @@ const RootNosotros = () => {
 		<>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
-					<img
+					<Image
 						className={`${Styles.cover}`}
-						src={"/assets/images/nosotros/banner-nosotros.jpg"}
-						alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
+						src="/assets/images/nosotros/banner-nosotros.jpg"
+						alt="Una hermosa vista de Medellín, cerca de un proyecto de Alex Toro Arquitectos"
+						width={1920}
+						height={720}
+						sizes="100vw"
+						quality={70}
+						style={{
+							height: "auto",
+						}}
+						priority
 					/>
 				</div>
 
@@ -63,11 +72,17 @@ const RootNosotros = () => {
 						</p>
 					</div>
 
-					<div className={`${Styles.mobileImage}`}>
-						<img
-							src={"/assets/images/nosotros/nosotros-1.jpg"}
-							alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
-							loading="lazy"
+					<div className={`${Styles.image}`}>
+						<Image
+							src="/assets/images/nosotros/nosotros-1.jpg"
+							alt="Una hermosa vista de un render para un proyecto de Alex Toro Arquitectos"
+							width={1100}
+							height={395}
+							sizes="100vw"
+							quality={70}
+							style={{
+								height: "auto",
+							}}
 						/>
 					</div>
 
@@ -117,11 +132,17 @@ const RootNosotros = () => {
 						</p>
 					</div>
 
-					<div className={`${Styles.mobileImage}`}>
-						<img
-							src={"/assets/images/nosotros/nosotros-2.jpg"}
-							alt={`Una hermosa vista de xxx, un proyecto de Alex Toro Arquitectos`}
-							loading="lazy"
+					<div className={`${Styles.image}`}>
+						<Image
+							src="/assets/images/nosotros/nosotros-2.jpg"
+							alt="Una hermosa vista de un render, un proyecto de Alex Toro Arquitectos"
+							width={1080}
+							height={608}
+							sizes="100vw"
+							quality={70}
+							style={{
+								height: "auto",
+							}}
 						/>
 					</div>
 

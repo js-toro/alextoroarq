@@ -4,12 +4,11 @@
 	position: absolute;
 	inset: 0px;
 	width: 100%;
-	height: 100%;
+	height: 100% !important;
 	object-fit: cover;
 	object-position: center center;
 	color: transparent;
 	filter: brightness(0.85);
-	opacity: 1;
 
 	&_wrapper {
 		position: relative;
@@ -31,8 +30,6 @@
 				"title . ." 1fr
 				"subtitle subtitle subtitle" 1fr
 				/ 1fr 1fr 1fr;
-			opacity: 1;
-			visibility: visible;
 		}
 
 		.title {
@@ -87,14 +84,15 @@
 		gap: var(--spacing-xl);
 	}
 
-	.mobileImage {
+	.image {
 		@include responsiveUp("lg") {
 			grid-column: span 2;
 		}
 
 		img {
-			width: 100%;
-			height: auto;
+			width: 100% !important;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 

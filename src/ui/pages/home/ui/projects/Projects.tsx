@@ -6,6 +6,7 @@ import Style from "./Projects.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import { useHighlightedProjects } from "@/application";
 import { IProject } from "@/domain/interfaces";
+import Image from "next/image";
 
 const Projects = () => {
 	const [showMore, setShowMore] = useState(false);
@@ -47,10 +48,17 @@ const Projects = () => {
 									href={`/portafolio/${project.id}`}
 									className={`${Utils.link_outline_off}`}
 								>
-									<img
+									<Image
 										src={project.thumb}
 										alt={`Hermosa vista de ${project.name}, un proyecto de ${project.category} de Alex Toro Arquitectos.`}
-										loading="lazy"
+										width={320}
+										height={544}
+										sizes="100vw"
+										quality={70}
+										style={{
+											width: "auto",
+											height: "auto",
+										}}
 									/>
 
 									<p className={`${Utils.text_center} ${Utils.mt_sm}`}>

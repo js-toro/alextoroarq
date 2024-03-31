@@ -30,10 +30,14 @@
 
 	> div {
 		height: min-content;
+		transition: filter var(--timing-4);
+
+		&:hover {
+			filter: sepia(0.9);
+		}
 
 		img {
-			width: 100%;
-			height: auto;
+			width: 100% !important;
 			aspect-ratio: 10/17;
 		}
 	}

@@ -696,6 +696,32 @@
 			"virtualTours": []
 		},
 		{
+			"id": 82,
+			"name": "Sanin Tomas",
+			"description": "",
+			"category": "Vivienda Multifamiliar",
+			"priority": 1,
+			"builder": "Grupo San Remo",
+			"year": 2011,
+			"length": 7900,
+			"thumb": "/data/03-projects/82/Thumb.jpg",
+			"images": [
+				"/data/03-projects/82/1.jpg",
+				"/data/03-projects/82/2.jpg",
+				"/data/03-projects/82/3.jpg",
+				"/data/03-projects/82/4.jpg",
+				"/data/03-projects/82/5.jpg",
+				"/data/03-projects/82/6.jpg",
+				"/data/03-projects/82/7.jpg",
+				"/data/03-projects/82/8.jpg",
+				"/data/03-projects/82/9.jpg",
+				"/data/03-projects/82/10.jpg",
+				"/data/03-projects/82/11.jpg"
+			],
+			"youtube": [],
+			"virtualTours": []
+		},
+		{
 			"id": 83,
 			"name": "Pamplona",
 			"description": "",
@@ -853,31 +879,6 @@
 				"/data/03-projects/92/7.jpg",
 				"/data/03-projects/92/8.jpg",
 				"/data/03-projects/92/9.jpg"
-			],
-			"youtube": [],
-			"virtualTours": []
-		},
-		{
-			"id": 93,
-			"name": "Nepal",
-			"description": "",
-			"category": "Vivienda Multifamiliar",
-			"priority": 2,
-			"builder": "Grupo Turipaná",
-			"year": 2013,
-			"length": 5450,
-			"thumb": "/data/03-projects/93/Thumb.jpg",
-			"images": [
-				"/data/03-projects/93/1.jpg",
-				"/data/03-projects/93/2.jpg",
-				"/data/03-projects/93/3.jpg",
-				"/data/03-projects/93/4.jpg",
-				"/data/03-projects/93/5.jpg",
-				"/data/03-projects/93/6.jpg",
-				"/data/03-projects/93/7.jpg",
-				"/data/03-projects/93/8.jpg",
-				"/data/03-projects/93/9.jpg",
-				"/data/03-projects/93/10.jpg"
 			],
 			"youtube": [],
 			"virtualTours": []
@@ -1935,7 +1936,6 @@
 			"images": [
 				"/data/03-projects/151/1.jpg",
 				"/data/03-projects/151/2.jpg",
-				"/data/03-projects/151/3.jpg",
 				"/data/03-projects/151/4.jpg",
 				"/data/03-projects/151/5.jpg",
 				"/data/03-projects/151/6.jpg",

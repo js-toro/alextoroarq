@@ -24,12 +24,19 @@
 	}
 
 	> div {
+		aspect-ratio: 10/17;
 		height: min-content;
+		transition: filter var(--timing-4);
+
+		&:hover {
+			filter: sepia(0.9);
+		}
 
 		img {
-			width: auto;
-			height: 100%;
-			aspect-ratio: 10/17;
+			width: 100% !important;
+			height: auto !important;
+			object-fit: cover;
+			object-position: center center;
 		}
 	}
 }

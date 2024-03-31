@@ -7,6 +7,7 @@ import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
 import Multifamiliar from "./multifamiliar";
 import Unifamiliar from "./unifamiliar";
 import Otros from "./otros";
+import Image from "next/image";
 
 const RootPortafolio = () => {
 	const { activeCategory, handleCategory } = useProjectLayout();
@@ -15,7 +16,7 @@ const RootPortafolio = () => {
 		<>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
-					<img
+					<Image
 						className={`${Styles.cover}`}
 						src={
 							activeCategory === Category.Multifamiliar
@@ -24,7 +25,15 @@ const RootPortafolio = () => {
 								? "/assets/images/portafolio/portafolio-unifamiliar.jpg"
 								: "/assets/images/portafolio/portafolio-otros.jpg"
 						}
-						alt={`Una hermosa vista de un proyecto de Alex Toro Arquitectos`}
+						alt="Una hermosa vista de un proyecto de Alex Toro Arquitectos"
+						width={1920}
+						height={720}
+						sizes="100vw"
+						quality={70}
+						style={{
+							height: "auto",
+						}}
+						priority
 					/>
 				</div>
 

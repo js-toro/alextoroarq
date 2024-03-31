@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import Styles from "./Unifamiliar.module.scss";
@@ -29,10 +30,16 @@ export default function Unifamiliar() {
 								href={`/portafolio/${project.id}`}
 								className={`${Utils.link_outline_off}`}
 							>
-								<img
+								<Image
 									src={project.thumb}
 									alt={`Hermosa vista de ${project.name}, un proyecto de ${project.category} de Alex Toro Arquitectos.`}
-									loading="lazy"
+									width={300}
+									height={510}
+									sizes="100vw"
+									quality={70}
+									style={{
+										height: "auto",
+									}}
 								/>
 
 								<p className={`${Utils.text_center} ${Utils.mt_sm}`}>

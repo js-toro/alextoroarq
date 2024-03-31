@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 
@@ -17,16 +18,25 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 
 	useEffect(() => {
 		findProject(parseInt(projectKey));
-	}, [isLoading]);
+	}, [isLoading, findedProject, findProject, projectKey]);
 
 	if (isLoading || !findedProject) return <></>;
 
 	return (
 		<>
 			<div className={`${Style.cover}`}>
-				<img
+				<Image
 					src={findedProject.thumb}
 					alt={`Hermosa vista de ${findedProject.name}, un proyecto de ${findedProject.category} de Alex Toro Arquitectos.`}
+					width={1920}
+					height={66}
+					sizes="100vw"
+					quality={70}
+					style={{
+						width: "auto",
+						height: "auto",
+					}}
+					priority
 				/>
 			</div>
 
@@ -55,10 +65,17 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 
 					{findedProject.images.map((image, index) => (
 						<div key={index}>
-							<img
+							<Image
+								className={`${Style.image}`}
 								src={image}
 								alt={`Hermosa vista de ${findedProject.name}, un proyecto de ${findedProject.category} de Alex Toro Arquitectos.`}
-								loading="lazy"
+								width={1080}
+								height={608}
+								sizes="100vw"
+								quality={70}
+								style={{
+									height: "auto",
+								}}
 							/>
 						</div>
 					))}

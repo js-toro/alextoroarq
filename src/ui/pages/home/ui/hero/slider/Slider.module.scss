@@ -1,8 +1,8 @@
 .highlightedProject {
 	position: absolute;
 	inset: 0px;
-	width: 100%;
-	height: 100%;
+	width: 100% !important;
+	height: 100% !important;
 	object-fit: cover;
 	object-position: center center;
 	color: transparent;
@@ -19,9 +19,9 @@
 	height: 100%;
 	display: grid;
 	grid:
-		'. . .' 1fr
-		'left_button . right_button' 1fr
-		'title title title' 1fr
+		". . ." 1fr
+		"left_button . right_button" 1fr
+		"title title title" 1fr
 		/ 1fr 1fr 1fr;
 	opacity: 1;
 	visibility: visible;

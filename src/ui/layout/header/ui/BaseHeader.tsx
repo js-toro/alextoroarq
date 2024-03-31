@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 import Styles from "./BaseHeader.module.scss";
@@ -15,11 +16,13 @@ const BaseHeader = () => {
 					href="/"
 					className={`${Styles.header_logo} ${Utils.link_outline_off}`}
 				>
-					<img
-						src={"/assets/icons/logo.png"}
+					<Image
+						src="/assets/icons/logo.png"
 						alt="Logo de Alex Toro Arquitectos"
 						width={128}
 						height={50}
+						quality={70}
+						priority
 					/>
 				</Link>
 
