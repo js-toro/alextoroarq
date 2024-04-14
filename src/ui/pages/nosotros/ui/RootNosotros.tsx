@@ -27,7 +27,7 @@ const RootNosotros = () => {
 				<div className={Styles.grid}>
 					<div className={`${Styles.title}`}>
 						<div>
-							<h4>La Firma</h4>
+							<h4>Nosotros</h4>
 						</div>
 					</div>
 
@@ -166,10 +166,6 @@ const RootNosotros = () => {
 					</div>
 				</div>
 			</main>
-
-			<section>
-				<ContactForm />
-			</section>
 		</>
 	);
 };

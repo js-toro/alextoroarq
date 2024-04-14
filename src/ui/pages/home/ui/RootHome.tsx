@@ -1,8 +1,7 @@
-import Hero from './hero';
-import Welcome from './welcome';
-import AboutUs from './aboutUs';
-import Projects from './projects';
-import ContactUs from './contactUs';
+import Hero from "./hero";
+import Welcome from "./welcome";
+import AboutUs from "./aboutUs";
+import Projects from "./projects";
 
 const RootHome = () => {
 	return (
@@ -11,7 +10,6 @@ const RootHome = () => {
 			<Welcome />
 			<AboutUs />
 			<Projects />
-			<ContactUs />
 		</main>
 	);
 };

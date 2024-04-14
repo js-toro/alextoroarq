@@ -5,10 +5,11 @@ import { projectRepository } from "@/infrastructure/repositories";
 import { IProject } from "@/domain/interfaces";
 
 export const useHighlightedProjects = () => {
-	const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [highlightedProjects, setHighlightedProjects] = useState<number[]>([]);
 	const [projects, setProjects] = useState<IProject[]>([]);
-	const [currentShowCount, setCurrentShowCount] = useState(6);
+	const [currentShowCount, setCurrentShowCount] = useState<number>(6);
+	const [showMore, setShowMore] = useState<boolean>(false);
 
 	useEffect(() => {
 		highlightedProjectsRepository().then(({ highlightedProjects }) => {
@@ -41,7 +42,8 @@ export const useHighlightedProjects = () => {
 
 	const handleShowMore = () => {
 		setCurrentShowCount(currentShowCount + 6);
+		setShowMore(true);
 	};
 
-	return { isLoading, projects, handleShowMore };
+	return { isLoading, projects, showMore, handleShowMore };
 };

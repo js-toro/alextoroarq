@@ -1,16 +1,19 @@
 "use client";
-import Styles from "./RootPortafolio.module.scss";
-import useProjectLayout from "@/application/hooks/useProjectLayout";
-import { Category } from "@/domain/enums";
+import Image from "next/image";
 
+import Styles from "./RootPortafolio.module.scss";
+
+import { Category } from "@/domain/enums";
 import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
+
+import useProjectLayout from "@/ui/pages/portafolio/application";
 import Multifamiliar from "./multifamiliar";
 import Unifamiliar from "./unifamiliar";
 import Otros from "./otros";
-import Image from "next/image";
+import FullProjects from "./fullProjects/FullProjects";
 
 const RootPortafolio = () => {
-	const { activeCategory, handleCategory } = useProjectLayout();
+	const { banner, activeCategory, handleCategory } = useProjectLayout();
 
 	return (
 		<>
@@ -18,13 +21,7 @@ const RootPortafolio = () => {
 				<div>
 					<Image
 						className={`${Styles.cover}`}
-						src={
-							activeCategory === Category.Multifamiliar
-								? "/assets/images/portafolio/portafolio-multifamiliar.jpg"
-								: activeCategory === Category.Unifamiliar
-								? "/assets/images/portafolio/portafolio-unifamiliar.jpg"
-								: "/assets/images/portafolio/portafolio-otros.jpg"
-						}
+						src={banner}
 						alt="Una hermosa vista de un proyecto de Alex Toro Arquitectos"
 						width={1920}
 						height={720}
@@ -45,6 +42,16 @@ const RootPortafolio = () => {
 					</div>
 
 					<div className={`${Styles.categories}`}>
+						<button
+							className={`
+								${Styles.button} 
+								${activeCategory === Category.Untracked ? Styles.button_active : ""}
+							`}
+							onClick={() => handleCategory(Category.Untracked)}
+						>
+							Todos las Categorías
+						</button>
+
 						<button
 							className={`
 								${Styles.button} 
@@ -78,13 +85,10 @@ const RootPortafolio = () => {
 				</div>
 			</section>
 
+			{activeCategory === Category.Untracked && <FullProjects />}
 			{activeCategory === Category.Multifamiliar && <Multifamiliar />}
 			{activeCategory === Category.Unifamiliar && <Unifamiliar />}
 			{activeCategory === Category.Otros && <Otros />}
-
-			<section>
-				<ContactForm />
-			</section>
 		</>
 	);
 };

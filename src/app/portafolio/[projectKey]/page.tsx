@@ -1,4 +1,12 @@
-import ProjectDetail from "@/ui/pages/portafolio/ui/detail/ProjectDetail";
+import dynamic from "next/dynamic";
+
+const ProjectDetail = dynamic(
+	() => import("@/ui/pages/portafolio/ui/detail/ProjectDetail"),
+	{
+		ssr: true,
+		loading: () => <></>,
+	}
+);
 
 type Params = {
 	projectKey: string;

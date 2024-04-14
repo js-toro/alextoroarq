@@ -1,12 +1,12 @@
 "use client";
-import { useSliderApplication } from "@/application";
+import Image from "next/image";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import Styles from "./Slider.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import Image from "next/image";
+import useSliderApplication from "@/ui/pages/home/application/useSliderApplication";
 
-const Slider = () => {
+const Slider = (): JSX.Element => {
 	const { isLoading, images, currentImage, handlePrev, handleNext } =
 		useSliderApplication();
 
@@ -22,9 +22,10 @@ const Slider = () => {
 				{images.map((image: string, index: any) => (
 					<Image
 						key={index}
-						className={`${Styles.highlightedProject} ${
-							index == currentImage && Styles.highlightedProjectActive
-						}`}
+						className={`
+							${Styles.highlightedProject} 
+							${index == currentImage && Styles.highlightedProjectActive}
+						`}
 						src={image}
 						alt={`Una hermosa vista de un proyecto de Alex Toro Arquitectos`}
 						width={1920}
@@ -54,7 +55,10 @@ const Slider = () => {
 				</div>
 
 				<div className={`${Styles.title}`}>
-					<span>Arquitectos Especialistas en Vivienda Multifamiliar</span>
+					<span>
+						<em>Arquitectos</em> Especialistas en{" "}
+						<strong>Vivienda Multifamiliar</strong>
+					</span>
 				</div>
 			</div>
 		</>

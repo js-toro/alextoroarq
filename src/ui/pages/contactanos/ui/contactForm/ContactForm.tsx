@@ -2,10 +2,10 @@
 import Styles from "./ContactForm.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
-import { useResend } from "@/application";
+import { useContactForm } from "@/application";
 
 const ContactForm = () => {
-	const { values, onChangeValues, handleSubmit } = useResend();
+	const { values, onChangeValues, handleSubmit } = useContactForm();
 
 	return (
 		<section className={`${Styles.section}`}>

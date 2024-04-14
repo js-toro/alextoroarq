@@ -4,7 +4,15 @@ import { IProject } from "@/domain/interfaces";
 import { projectRepository } from "@/infrastructure/repositories";
 import { Category } from "@/domain/enums";
 
-export const useProjectApplication = () => {
+interface IUseProjectApplication {
+	isLoading: boolean;
+	projects: IProject[];
+	findedProject?: IProject;
+	findProject: (id: number) => void;
+	filterByCategory: (category: Category) => IProject[] | undefined;
+}
+
+export const useProjectApplication = (): IUseProjectApplication => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [projects, setProjects] = useState<IProject[]>([]);
 	const [findedProject, setFindedProject] = useState<IProject>();

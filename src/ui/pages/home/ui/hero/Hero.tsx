@@ -1,6 +1,6 @@
-import Utils from '@/ui/theme/application/utils/Utils.module.scss';
+import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-import Slider from './slider';
+import Slider from "./slider";
 
 const Hero = () => {
 	return (

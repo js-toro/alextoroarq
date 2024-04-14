@@ -7,7 +7,7 @@ const DesktopNav = () => {
 	return (
 		<>
 			<nav className={`${Styles.nav}`}>
-				<Link href="/nosotros">La Firma</Link>
+				<Link href="/nosotros">Nosotros</Link>
 				<Link href="/portafolio">Portafolio</Link>
 				<Link href="/contacto">Contacto</Link>
 			</nav>

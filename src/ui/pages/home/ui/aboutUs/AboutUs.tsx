@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import Styles from "./AboutUs.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 

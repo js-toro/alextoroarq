@@ -51,7 +51,7 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 						<div>
 							<p className={`${Style.detail}`}>{findedProject.builder}</p>
 							<p className={`${Style.detail}`}>{findedProject.year}</p>
-							<p className={`${Style.detail}`}>{findedProject.lenght} m2</p>
+							<p className={`${Style.detail}`}>{findedProject.length} m²</p>
 						</div>
 					</div>
 

@@ -54,7 +54,7 @@
 
 			display: flex;
 			justify-content: center;
-			gap: var(--spacing-xxl);
+			gap: var(--spacing-xl);
 
 			text-align: center;
 			background-color: var(--color-background-2);
@@ -70,7 +70,7 @@
 				font-family: var(--font-family-heading);
 				font-weight: var(--font-weight-regular);
 				color: var(--color-white-4);
-				font-size: var(--font-size-md);
+				font-size: var(--font-size-sm);
 				text-align: center;
 				transition: color var(--timing-3) ease;
 

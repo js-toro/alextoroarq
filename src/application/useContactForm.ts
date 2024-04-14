@@ -5,23 +5,25 @@ import { IContactForm } from "@/domain/interfaces";
 import { resendRepository } from "@/infrastructure/repositories";
 import { validateContactForm } from "@/infrastructure/validation/validateContactForm";
 
-export function useResend() {
-	const [values, setValues] = useState<IContactForm>({
-		name: "",
-		phone: "",
-		email: "",
-		subject: "",
-		message: "",
-	});
+const initialValues: IContactForm = {
+	name: "",
+	phone: "",
+	email: "",
+	message: "",
+	subject: "",
+};
+
+export function useContactForm() {
+	const [values, setValues] = useState<IContactForm>(initialValues);
 
 	const onChangeValues = (
 		e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
+	): void => {
 		const { name, value } = e.currentTarget;
 		setValues({ ...values, [name]: value });
 	};
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
 		e.preventDefault();
 		e.currentTarget.reset();
 
@@ -33,6 +35,7 @@ export function useResend() {
 		}
 
 		resendRepository(values).then((response) => console.log(response));
+		setValues(initialValues);
 	};
 
 	return {

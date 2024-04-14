@@ -1,18 +1,19 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
-
-import Style from "./Projects.module.scss";
-import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import { useHighlightedProjects } from "@/application";
-import { IProject } from "@/domain/interfaces";
 import Image from "next/image";
 
-const Projects = () => {
-	const [showMore, setShowMore] = useState(false);
-	const { isLoading, projects, handleShowMore } = useHighlightedProjects();
+import { IProject } from "@/domain/interfaces";
+import { useHighlightedProjects } from "@/application";
+import Utils from "@/ui/theme/application/utils/Utils.module.scss";
+import Style from "./Projects.module.scss";
 
-	if (isLoading) return <></>;
+const Projects = () => {
+	const { isLoading, projects, showMore, handleShowMore } =
+		useHighlightedProjects();
+
+	if (isLoading) {
+		return <></>;
+	}
 
 	return (
 		<>
@@ -76,10 +77,7 @@ const Projects = () => {
 					{!showMore && (
 						<button
 							className={`${Utils.button_outline_light} ${Utils.ml_auto}`}
-							onClick={() => {
-								setShowMore(true);
-								handleShowMore();
-							}}
+							onClick={handleShowMore}
 						>
 							Ver Más
 						</button>
