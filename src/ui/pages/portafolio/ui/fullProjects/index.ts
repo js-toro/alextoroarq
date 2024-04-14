@@ -1,2 +1,2 @@
-import Multifamiliar from "./Multifamiliar";
-export default Multifamiliar;
+import FullProjects from "./FullProjects";
+export default FullProjects;

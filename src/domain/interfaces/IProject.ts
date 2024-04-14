@@ -8,7 +8,7 @@ export interface IProject {
 	category: Category;
 	priority: Priority;
 	builder: string;
-	year: number | string;
+	year: number;
 	length: number | string;
 	thumb: string;
 	images: string[];

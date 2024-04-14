@@ -10,7 +10,7 @@ import useProjectLayout from "@/ui/pages/portafolio/application";
 import Multifamiliar from "./multifamiliar";
 import Unifamiliar from "./unifamiliar";
 import Otros from "./otros";
-import FullProjects from "./fullProjects/FullProjects";
+import FullProjects from "./fullProjects";
 
 const RootPortafolio = () => {
 	const { banner, activeCategory, handleCategory } = useProjectLayout();
