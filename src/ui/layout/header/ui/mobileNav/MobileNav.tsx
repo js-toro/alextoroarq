@@ -18,7 +18,11 @@ const MobileNav = () => {
 
 			<nav className={`${Styles.nav}`}>
 				<Link href="/nosotros" onClick={handleOpen}>
-					La firma
+					Nosotros
+				</Link>
+
+				<Link href="/servicios" onClick={handleOpen}>
+					Servicios
 				</Link>
 
 				<Link href="/portafolio" onClick={handleOpen}>

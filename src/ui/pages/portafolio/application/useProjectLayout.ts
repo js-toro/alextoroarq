@@ -1,15 +1,27 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 import { Category } from "@/domain/enums";
 
-export default function useProjectLayout() {
-	const [activeCategory, setActiveCategory] = useState<Category>(
-		Category.Untracked
-	);
+export default function useProjectLayout(
+	currentScroll: number,
+	activeCategory: Category
+) {
 	const [banner, setBanner] = useState<string>(
 		"/assets/images/portafolio/portafolio-multifamiliar.jpg"
 	);
+
+	useLayoutEffect(() => {
+		// set time out
+		const timer = setTimeout(() => {
+			window.scrollTo({
+				top: currentScroll,
+				behavior: "smooth",
+			});
+		}, 250);
+
+		return () => clearTimeout(timer);
+	}, []);
 
 	useEffect(() => {
 		switch (activeCategory) {
@@ -28,9 +40,5 @@ export default function useProjectLayout() {
 		}
 	}, [activeCategory]);
 
-	const handleCategory = (category: Category) => {
-		setActiveCategory(category);
-	};
-
-	return { banner, activeCategory, handleCategory };
+	return { banner };
 }

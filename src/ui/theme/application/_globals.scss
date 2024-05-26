@@ -46,7 +46,8 @@ h6 {
 	font-size: var(--font-size-xs);
 }
 
-p {
+p,
+ul {
 	font-size: var(--font-size-md);
 	font-weight: var(--font-weight-regular);
 	color: var(--text-color-body);
@@ -55,6 +56,11 @@ p {
 	@include responsiveDown("md") {
 		text-align: left;
 	}
+}
+
+ul {
+	list-style: circle;
+	list-style-position: inside;
 }
 
 small {

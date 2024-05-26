@@ -4,7 +4,7 @@ import Image from "next/image";
 import Styles from "./RootPortafolio.module.scss";
 
 import { Category } from "@/domain/enums";
-import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
+import useScroll from "@/application/useCases/useScroll";
 
 import useProjectLayout from "@/ui/pages/portafolio/application";
 import Multifamiliar from "./multifamiliar";
@@ -13,7 +13,8 @@ import Otros from "./otros";
 import FullProjects from "./fullProjects";
 
 const RootPortafolio = () => {
-	const { banner, activeCategory, handleCategory } = useProjectLayout();
+	const { scroll, category, setCategory } = useScroll();
+	const { banner } = useProjectLayout(scroll, category);
 
 	return (
 		<>
@@ -45,9 +46,9 @@ const RootPortafolio = () => {
 						<button
 							className={`
 								${Styles.button} 
-								${activeCategory === Category.Untracked ? Styles.button_active : ""}
+								${category === Category.Untracked ? Styles.button_active : ""}
 							`}
-							onClick={() => handleCategory(Category.Untracked)}
+							onClick={() => setCategory(Category.Untracked)}
 						>
 							Todos las Categorías
 						</button>
@@ -55,9 +56,9 @@ const RootPortafolio = () => {
 						<button
 							className={`
 								${Styles.button} 
-								${activeCategory === Category.Multifamiliar ? Styles.button_active : ""}
+								${category === Category.Multifamiliar ? Styles.button_active : ""}
 							`}
-							onClick={() => handleCategory(Category.Multifamiliar)}
+							onClick={() => setCategory(Category.Multifamiliar)}
 						>
 							Vivienda Multifamiliar
 						</button>
@@ -65,9 +66,9 @@ const RootPortafolio = () => {
 						<button
 							className={`
 								${Styles.button} 
-								${activeCategory === Category.Unifamiliar ? Styles.button_active : ""}
+								${category === Category.Unifamiliar ? Styles.button_active : ""}
 							`}
-							onClick={() => handleCategory(Category.Unifamiliar)}
+							onClick={() => setCategory(Category.Unifamiliar)}
 						>
 							Vivienda Unifamiliar
 						</button>
@@ -75,9 +76,9 @@ const RootPortafolio = () => {
 						<button
 							className={`
 								${Styles.button} 
-								${activeCategory === Category.Otros ? Styles.button_active : ""}
+								${category === Category.Otros ? Styles.button_active : ""}
 							`}
-							onClick={() => handleCategory(Category.Otros)}
+							onClick={() => setCategory(Category.Otros)}
 						>
 							Hotelería y Otros
 						</button>
@@ -85,10 +86,10 @@ const RootPortafolio = () => {
 				</div>
 			</section>
 
-			{activeCategory === Category.Untracked && <FullProjects />}
-			{activeCategory === Category.Multifamiliar && <Multifamiliar />}
-			{activeCategory === Category.Unifamiliar && <Unifamiliar />}
-			{activeCategory === Category.Otros && <Otros />}
+			{category === Category.Untracked && <FullProjects />}
+			{category === Category.Multifamiliar && <Multifamiliar />}
+			{category === Category.Unifamiliar && <Unifamiliar />}
+			{category === Category.Otros && <Otros />}
 		</>
 	);
 };

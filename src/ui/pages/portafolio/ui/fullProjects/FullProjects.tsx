@@ -7,9 +7,11 @@ import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import { useProjectApplication } from "@/application";
 import { IProject } from "@/domain/interfaces";
 import { Category } from "@/domain/enums";
+import useScroll from "@/application/useCases/useScroll";
 
 export default function FullProjects() {
 	const { isLoading, projects } = useProjectApplication();
+	const { setCurrentScroll } = useScroll();
 
 	return (
 		<section className={`${Styles.section}`}>
@@ -29,6 +31,7 @@ export default function FullProjects() {
 							<Link
 								href={`/portafolio/${project.id}`}
 								className={`${Utils.link_outline_off}`}
+								onClick={() => setCurrentScroll(window.scrollY)}
 							>
 								<Image
 									src={project.thumb}

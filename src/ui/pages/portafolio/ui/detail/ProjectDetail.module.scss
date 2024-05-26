@@ -63,3 +63,12 @@
 	object-fit: cover;
 	object-position: center;
 }
+
+.video {
+	display: grid;
+	place-items: center;
+}
+
+.iframe {
+	width: 100%;
+}

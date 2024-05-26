@@ -6,7 +6,7 @@ import { HiOutlineChevronLeft } from "react-icons/hi";
 import Style from "./ProjectDetail.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useProjectApplication } from "@/application";
 
 type ProjectDetailProps = {
@@ -15,6 +15,10 @@ type ProjectDetailProps = {
 
 export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 	const { isLoading, findedProject, findProject } = useProjectApplication();
+
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	useEffect(() => {
 		findProject(parseInt(projectKey));
@@ -73,12 +77,39 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 								height={608}
 								sizes="100vw"
 								quality={70}
+								priority={index === 0}
 								style={{
 									height: "auto",
 								}}
 							/>
 						</div>
 					))}
+
+					{findedProject.virtualTours &&
+						findedProject.virtualTours.map((tour, index) => (
+							<iframe
+								key={index}
+								src={tour}
+								width={1080}
+								height={608}
+								className={`${Style.iframe}`}
+								allowFullScreen
+							/>
+						))}
+
+					{findedProject.youtube &&
+						findedProject.youtube.map((video, index) => (
+							<div key={index} className={`${Style.video}`}>
+								<iframe
+									width="560"
+									height="315"
+									src={video}
+									title="YouTube video player"
+									allowFullScreen
+									allow="allowfullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								></iframe>
+							</div>
+						))}
 
 					<div className={`${Utils.d_flex} ${Utils.justify_center}`}>
 						<Link
@@ -90,10 +121,6 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 					</div>
 				</div>
 			</main>
-
-			<section>
-				<ContactForm />
-			</section>
 		</>
 	);
 }

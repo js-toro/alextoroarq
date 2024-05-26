@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import StoreProvider from "@/infrastructure/store";
 import ThemeProvider from "@/ui/theme";
 import BaseHeader from "@/ui/layout/header";
 import BaseFooter from "@/ui/layout/footer";
@@ -42,9 +43,11 @@ export default function RootLayout({
 	return (
 		<html lang="es">
 			<ThemeProvider>
-				<BaseHeader />
-				{children}
-				<BaseFooter />
+				<StoreProvider>
+					<BaseHeader />
+					{children}
+					<BaseFooter />
+				</StoreProvider>
 			</ThemeProvider>
 		</html>
 	);

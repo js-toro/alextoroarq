@@ -3,7 +3,7 @@
 		{
 			"id": -1,
 			"name": "Halcones de Santafe",
-			"description": "",
+			"description": "Esta casa de verano de 280 m2 se encuentra emplazada en un lote rectangular plano, producto de la parcelación Halcones en Santafé de Antioquia. El eje principal de distribución de la casa es una línea curva, que responde geométricamente a la forma de la piscina y al que se le han adosado varios volúmenes rectangulares que contienen las alcobas, para romper la monotonía de su forma. La orientación de los espacios de la casa se ha dispuesto teniendo en cuenta las condiciones de asoleamiento, y se han aplicado conceptos bioclimáticos para garantizar la ventilación necesaria para generar ambientes confortables al interior.",
 			"category": "Vivienda Unifamiliar",
 			"priority": 2,
 			"builder": "J.J. Velasquez",
@@ -30,7 +30,7 @@
 		{
 			"id": -2,
 			"name": "Bosques de Salamanca",
-			"description": "",
+			"description": "Esta vivienda unifamiliar de 350 m2 se encuentra ubicada en la parcelación Bosques de Salamanca en el municipio de El Retiro, Antioquia. El diseño de la casa se ha organizado con base a un eje longitudinal, correspondiente a un muro en Piedra que marca desde un principio el acceso a la casa y que genera expectativa. Después de atravesar el umbral del portón principal, el espacio se abre en su totalidad a la belleza del paisaje circundante, gracias a su vidriera continua y al vacío central a doble altura que separa en el piso superior las alcobas del salón de juegos al que se accede por un puente metálico. En fachada, gracias a la elección de materiales y al juego formal entre la ventaneria y las columnas redondas que sostienen el segundo nivel, el volumen de alcoba principal parece desafiar la gravedad. ",
 			"category": "Vivienda Unifamiliar",
 			"priority": 2,
 			"builder": "J.G. Velasquez",
@@ -56,13 +56,13 @@
 				"/data/03-projects/-2/16.jpg",
 				"/data/03-projects/-2/17.jpg"
 			],
-			"youtube": [],
-			"virtualTours": []
+			"youtube": ["https://www.youtube.com/embed/Co6cyQSfORA"],
+			"virtualTours": ["https://alextoroarq.github.io/360_Casa_B2/"]
 		},
 		{
 			"id": -3,
 			"name": "Alamos del Escobero",
-			"description": "",
+			"description": "Este Unifamiliar de carácter residencial fijo se encuentra ubicado en la parcelación Álamos del Escobero en Envigado, Antioquia, Lote 25. Este lote presenta la característica de estar situado en un punto estratégico, lo que le garantizaba una excelente vista sobre el valle. La Casa de 465 m2 distribuye sus espacios con respecto a un eje longitudinal marcado por el acceso principal y la zona social en primer piso. En fachada, el volumen que contiene las escalas es tratado con una elección juiciosa de materiales y formas, que le dan carácter escultórico y embellecen el acceso. ",
 			"category": "Vivienda Unifamiliar",
 			"priority": 2,
 			"builder": "Quadra Constructores",
@@ -92,7 +92,7 @@
 		{
 			"id": -4,
 			"name": "Casandra",
-			"description": "",
+			"description": "Casandra es una vivienda unifamiliar ubicada en la parcelación Entrebosques de San Sebastián, en el municipio de El Retiro, Antioquia. Esta casa de 320 m2 tiene una disposición en forma de Ele. Las grandes áreas sociales en primer nivel y la alcoba principal en segundo nivel, dominan las mejores vistas de la zona. ",
 			"category": "Vivienda Unifamiliar",
 			"priority": 2,
 			"builder": "Constructora Croacia",
@@ -100,7 +100,7 @@
 			"length": 320,
 			"thumb": "/data/03-projects/-4/Thumb.jpg",
 			"images": [
-				"/data/03-projects/-4/1.jpg",
+				"/data/03-projects/-4/1.png",
 				"/data/03-projects/-4/2.jpg",
 				"/data/03-projects/-4/3.jpg",
 				"/data/03-projects/-4/4.jpg",
@@ -113,7 +113,7 @@
 		{
 			"id": -5,
 			"name": "Mayuran",
-			"description": "",
+			"description": "Mayuran es una Vivienda Unifamiliar emplazada en un lote con grandes vistas al Valle de Copacabana. En este lote quebrado se ha realizado un movimiento de tierras para nivelar el terreno y que ha generado un muro de contención en piedra que se ha usado para ordenar los espacios de la casa. En esta casa de 150 m2 se ha optado por separar el área social de la zona de alcobas por medio de un juego de patios semi privados que brindan ambientes naturales a las circulaciones internas. ",
 			"category": "Vivienda Unifamiliar",
 			"priority": 2,
 			"builder": "Grupo Marozzi",
@@ -137,7 +137,7 @@
 		{
 			"id": 1,
 			"name": "Colección 1998 - 2002",
-			"description": "",
+			"description": "Proyectos diseñados por Alex Toro Arquitectos en la ciudad de Medellín en los primeros 4 años de labores, destacan acá, Portón de San Pedro y San Pablo, Edificio Santhelmo, Refugio de Santa Teresita, Torre Alicante, Condominio Bosnia y Torreón de Bolivariana. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -158,7 +158,7 @@
 		{
 			"id": 2,
 			"name": "Colección 2003 - 2004",
-			"description": "",
+			"description": "Proyectos diseñados por Alex Toro Arquitectos en el sector de Laureles en Medellín. El gran reto por enfrentar en este tipo de lotes entre medianeros consistía en lograr una iluminación eficiente en todas las estancias solo por dos fachadas y a su vez generar distribuciones óptimas, sin desperdicio de áreas en circulación. En esta colección encontramos a Edificio Belarru, Edificio Bayona, Torrealba, Torre Alta, Sendero de Santa Teresita, Edificio Sevilla Plaza, Torre Salzburgo, Torre Yakarta, Álamos del Parque y Condominio Bosnia.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -184,7 +184,7 @@
 		{
 			"id": 3,
 			"name": "Colección 2005",
-			"description": "",
+			"description": "Colección de Algunos de Los Edificios diseñados en 2005 en Medellín. Como la mayoría de los proyectos diseñados por Alex Toro Arquitectos en esta época, se aprovechan los balcones para generar volúmenes escultóricos para dar riqueza formal a las fachadas, sin comprometer la funcionalidad del interior de los apartamentos. Presentes acá, Palmar de San Fernando, Santa Rita Real, Torre Tikal, Edificio Bermeo, Torre Mauritania, Serrafuerte, Manantiales.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -206,7 +206,7 @@
 		{
 			"id": 4,
 			"name": "Colección 2006",
-			"description": "",
+			"description": "Edifico Cracovia, Plaza Linares, Península, Catarroja, Bariloche, Senderos de Santa Teresita, Brescia, Serbia, Esparta, son algunos de los proyectos diseñados en 2006, en la ciudad de Medellín, por Alex Toro Arquitectos.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -235,7 +235,7 @@
 		{
 			"id": 5,
 			"name": "Colección 2007 - 2008",
-			"description": "",
+			"description": "Algunos de los proyectos de Vivienda Multifamiliar desarrollados entre 2007 y 2008 por Alex Toro Arquitectos en Medellín, son ellos, Edificio Nayarit, Senderos del Parque, Potenza, Palo Alto, Puerto Bahía, Provenza, Edificio Atlantis y Stanford.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -264,7 +264,7 @@
 		{
 			"id": 6,
 			"name": "Colección 2009",
-			"description": "",
+			"description": "En el 2009 en la ciudad de Medellín Alex Toro Arquitectos diseñó los siguientes proyectos de vivienda Multifamiliar: Fuente Clara, Sinaloa, Torre Ibiza. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Varios",
@@ -289,7 +289,7 @@
 		{
 			"id": 21,
 			"name": "Zúccaro",
-			"description": "",
+			"description": "El Edificio Zuccaro esta ubicado en la Circular 73 con Transversal 39, sector de Laureles, Medellín, y fue diseñado por Alex Toro Arquitectos en el año 2005. Se ha aprovechado la condición de esquina, para levantar un par de volúmenes curvos en los balcones de cada apartamento en la planta típica, para después unirlos en los últimos pisos, brindando a la ciudad una fachada escultórica de mucha aceptación; al interior de los apartamentos se distribuyen las estancias principales hacia la fachada y agrupa las zonas húmedas hacia la parte posterior. El giro a 45° en la distribución favorece las vistas y a la vez controla los efectos del poniente.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Belarrú",
@@ -297,13 +297,13 @@
 			"length": 6600,
 			"thumb": "/data/03-projects/21/Thumb.jpg",
 			"images": ["/data/03-projects/21/1.jpg", "/data/03-projects/21/2.jpg"],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/IIOiwLyxbs8"],
 			"virtualTours": []
 		},
 		{
 			"id": 33,
 			"name": "Torre Salamanca",
-			"description": "",
+			"description": "Torre Salamanca es un proyecto de vivienda multifamiliar, diseñado para Constructora Guigo en el año 2006 por Alex Toro Arquitectos. Con el animo de controlar el poniente, el punto fijo se ha ubicado en la esquina, los ambientes de la zona social de los apartamentos se han rotado de un modo práctico y se han usado los Vestier de alcobas principales para apantallarla de los rayos del sol directo, sin sacrificar iluminación.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Guigo",
@@ -311,13 +311,13 @@
 			"length": 4900,
 			"thumb": "/data/03-projects/33/Thumb.jpg",
 			"images": ["/data/03-projects/33/1.jpg", "/data/03-projects/33/2.jpg"],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/N_Yq1r_u9HE"],
 			"virtualTours": []
 		},
 		{
 			"id": 34,
 			"name": "Edificio Eslovaquia",
-			"description": "",
+			"description": "Ubicado en Medellín, sector de Laureles, en la Circular 4 #73-53, El edificio Eslovaquia ha sido implantado en un espacio integrado por 4 lotes contiguos, logrando así un único lote con muy buen frente. Alex Toro Arquitectos, para aprovechar esta condición ha usado el recurso de desplazar la torre a uno de los costados, liberando así una tercera fachada apta para iluminación directa y logrando volumétricamente una sensación de ser un edificio esquinero. Para aumentar la riqueza formal, la estructura de la torre se desplaza hacia el interior generando unos voladizos que son aprovechados para usar líneas curvas que dan dinamismo y sombra a la fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Croacia",
@@ -336,7 +336,7 @@
 		{
 			"id": 36,
 			"name": "Faro de San Sebastián",
-			"description": "",
+			"description": "Faro de San Sebastián es un proyecto de Vivienda Multifamiliar Ubicado en Medellín, sector de Laureles, en la Transversal 38 con Carrera 71… En este proyecto se ha optado por el desplazamiento de la torre a uno de sus costados, para lograr una tercera fachada óptima para iluminación directa y obteniendo a su vez una sensación de esquina en un lote con medianeros. Para aumentar la riqueza formal, se aprovechan los voladizos de la estructura, generando balcones con líneas curvas y volúmenes girados para dar dinamismo y carácter escultórico. Fue diseñado por Alex Toro Arquitectos en 2006, para Inversiones y Construcciones Prisma.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -352,13 +352,13 @@
 				"/data/03-projects/36/6.jpg",
 				"/data/03-projects/36/7.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/WloewkWIkpk"],
 			"virtualTours": []
 		},
 		{
 			"id": 37,
 			"name": "Torre Vicenzo",
-			"description": "",
+			"description": "Torre Vicenzo es un proyecto de vivienda multifamiliar ubicado en la esquina de la carrera 77 con 33ª en Laureles, Medellín y diseñado por Alex toro Arquitectos en el año 2006… Este atrevido edificio está conformado por lujosos apartamentos de 220 m2, uno por piso y un penthouse de dos niveles de 500m2. Para controlar el poniente, el punto fijo se ubica en la esquina y es girado, estratégicamente en conjunto con les espacios del área social, para apantallar la vivienda frente a los efectos del poniente, generando buenas vistas y ambientes confortables al interior. El ladrillo bocadillo fue un gran aliado para dar la forma de doble curva a los balcones, que con su sinuosidad dan sensación de libertad.En La Circular 74ª #74-88 del barrio laureles en la ciudad de Medellín, se implanta el edificio San Remo en un lote que por su morfología permitía usar sus 4 fachadas para iluminar, ya que sólo tenia un costado medianero. En estas condiciones el equipo de Alex Toro Arquitectos, se ingenió un proyecto de vivienda multifamiliar con dos apartamentos por piso de 160 m2. Formalmente, los apartamentos están envueltos por los balcones, que en conjunto forman un cilindro interrumpido por los volúmenes girados de las alcobas principales. Las áreas de servicios absorben la irregularidad de estos giros permitiendo que las áreas principales del apartamento sean lo suficientemente funcionales para el amoblamiento. También, el uso de diferentes tipos de ladrillo ayudó a dar dinamismo a la fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Belarrú",
@@ -377,13 +377,13 @@
 				"/data/03-projects/37/9.jpg",
 				"/data/03-projects/37/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/XgHYftjWGNs"],
 			"virtualTours": []
 		},
 		{
 			"id": 39,
 			"name": "Edificio San Remo",
-			"description": "",
+			"description": "En La Circular 74ª #74-88 del barrio laureles en la ciudad de Medellín, se implanta el edificio San Remo en un lote que por su morfología permitía usar sus 4 fachadas para iluminar, ya que sólo tenia un costado medianero. En estas condiciones el equipo de Alex Toro Arquitectos, se ingenió un proyecto de vivienda multifamiliar con dos apartamentos por piso de 160 m2. Formalmente, los apartamentos están envueltos por los balcones, que en conjunto forman un cilindro interrumpido por los volúmenes girados de las alcobas principales. Las áreas de servicios absorben la irregularidad de estos giros permitiendo que las áreas principales del apartamento sean lo suficientemente funcionales para el amoblamiento. También, el uso de diferentes tipos de ladrillo ayudó a dar dinamismo a la fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo San Remo",
@@ -401,13 +401,13 @@
 				"/data/03-projects/39/8.jpg",
 				"/data/03-projects/39/9.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/s9eEORnUPdY"],
 			"virtualTours": []
 		},
 		{
 			"id": 60,
 			"name": "Edimburgo",
-			"description": "",
+			"description": "Edimburgo esta ubicado en la carrera 72 entre Transvesal 39 y 39ª, en Medellín; su planta típica alberga 2 apartamentos que son divididos por el punto fijo y las zonas húmedas de cada uno, despejando las zonas principales del apartamento hacia las 3 fachadas disponibles, logrando una distribución y zonificación estratégica, para reducir la circulación entre espacios. Los resultados de todo esto son, unos apartamentos óptimos en términos de espacialidad y ricos para habitar y sentir.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Croacia",
@@ -425,13 +425,13 @@
 				"/data/03-projects/60/8.jpg",
 				"/data/03-projects/60/9.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/tXzRBFVXIxU"],
 			"virtualTours": []
 		},
 		{
 			"id": 64,
 			"name": "Mandarin",
-			"description": "",
+			"description": "Mandarín, es un proyecto de vivienda multifamiliar, elaborado para Bienes y Bienes en sociedad con Conhogar, por Alex Toro Arquitectos en el año 2009, está ubicado en Medellín, Laureles, Circular 74 # 33B-99. Es un edificio de 19 pisos, entre medianeros y consta de 2 apartamentos por piso de 115 m2 y 155 m2, respectivamente. La Estructura de soporte del edificio se retranquea, para permitir, gracias a los voladizos, algunas formas sinuosas en la fachada y de este modo brindar dinamismo a la volumetría.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Bienes & Bienes",
@@ -446,13 +446,13 @@
 				"/data/03-projects/64/5.jpg",
 				"/data/03-projects/64/6.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/AS8DiCpmRWw"],
 			"virtualTours": []
 		},
 		{
 			"id": 65,
 			"name": "Hotel Trip",
-			"description": "",
+			"description": "El Hotel Tryp Medellín, se encuentra ubicado en la calle Colombia, frente al estadio Atanasio Girardot; en el año 2009, la firma Alex Toro Arquitectos, lo diseñó por encargo de la Constructora Babel, en un lote que tiene acceso por dos vias, Los primeros 3 niveles comprenden: el gran lobby a doble altura, las áreas comerciales y las zonas al servicio del hotel; las habitaciones se distribuyen en doble crujía a partir del cuarto nivel… en total son 120 habitaciones. Para romper la monotonía del volumen cuadrado se optó por un juego de materiales, entre ladrillo a la vista revoque y vidrio. Rematándolo con la zona de gimnasio en la parte superior.",
 			"category": "Hotelería y Otros",
 			"priority": 1,
 			"builder": "Babel Constructores",
@@ -478,7 +478,7 @@
 		{
 			"id": 69,
 			"name": "San Marino",
-			"description": "",
+			"description": "San Marino es el segundo edificio diseñado por Alex Toro Arquitectos para la constructora Grupo San Remo en Laureles Medellín, Este edificio de 13 pisos de altura consta de 30 apartamentos distribuidos de a 3 por piso con áreas entre 85 m2 y 115 m2; para mejorar las condiciones de iluminación al estar entre medianeros, el edificio se desplaza hacia uno de los costados liberando una tercera fachada. La distribución de los apartamentos minimiza los desperdicios de áreas en circulación, pero logrando a su vez la suficiente privacidad en las zonas de alcobas.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo San Remo",
@@ -496,13 +496,13 @@
 				"/data/03-projects/69/8.jpg",
 				"/data/03-projects/69/9.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/_oyEctnqr2U"],
 			"virtualTours": []
 		},
 		{
 			"id": 70,
 			"name": "Faro de Alejandria",
-			"description": "",
+			"description": "Faro de Alejandría es un lujoso proyecto de vivienda multifamiliar en altura, diseñado por Alex Toro Arquitectos por encargo de Inversiones y Construcciones Prisma en el año 2010. Este edificio se encuentra localizado en la Circular 73 #37-06 en Laureles, Medellín. Sus 20 apartamentos están desarrollados en 12 pisos de altura, con 2 destinaciones por piso y áreas de 135 m2 y 157 m2. Con la combinación de 3 tipos de ladrillos y revoque ranurado, la fachada, rica formalmente le entrega a la ciudad un volumen vistoso.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -523,13 +523,13 @@
 				"/data/03-projects/70/11.jpg",
 				"/data/03-projects/70/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/Gfl_wFBi9PY"],
 			"virtualTours": []
 		},
 		{
 			"id": 73,
 			"name": "Fte de Santa Teresa",
-			"description": "",
+			"description": "Ubicado en la esquina Noroeste del cruce entre la Carrera 77 con calle 35 en Laureles, Medellín, Fuerte de Santa Teresa es un proyecto de vivienda multifamiliar, diseñado por Alex Toro Arquitectos para Constructora Borinquen en el año 2010.  Para maximizar las vistas al Valle de Aburrá, el punto fijo se ha desplazado hacia la parte posterior, en la planta típica se distribuyen tres apartamentos por piso con áreas de 88 m2, 124 m2 y 130 m2, el apartamento pequeño ocupa la parte central y se ilumina totalmente por fachada. De nuevo acá se utiliza el recurso de mezclar diferentes tonos de mampostería, para enriquecer y enfatizar los elementos vistosos de la fachada principal.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Borinquen",
@@ -551,13 +551,13 @@
 				"/data/03-projects/73/12.jpg",
 				"/data/03-projects/73/13.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/JmdBoq48-8U"],
 			"virtualTours": []
 		},
 		{
 			"id": 75,
 			"name": "Tel Aviv",
-			"description": "",
+			"description": "Tel Aviv es un diseño de vivienda multifamiliar de Alex Toro Arquitectos ejecutado en el año 2015, para Constructora Belarrú, en un lote ubicado en la Circular 77 # 38-113 en Laureles, Medellín. El proyecto consta de 4 apartamentos por piso, con áreas de 75 m2, 95 m2, y dos de 130 m2. El reto que enfrentamos como arquitectos era lograr unos apartamentos con iluminación eficiente y una distribución óptima, sin desperdicios de circulación. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Belarrú",
@@ -577,13 +577,13 @@
 				"/data/03-projects/75/10.jpg",
 				"/data/03-projects/75/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/2KZs4fi6LEI"],
 			"virtualTours": []
 		},
 		{
 			"id": 76,
 			"name": "Sonata",
-			"description": "",
+			"description": "Alex Toro Arquitectos, tuvo la oportunidad de diseñar para Quadra Constructores, en el año 2010, este proyecto denominado Sonata, en un lote ubicado en Envigado en la Loma del Esmeraldal, a la altura de la carrera 27B Sur. Este proyecto de vivienda Multifamiliar consta de 58 apartamentos, distribuidos en 12 pisos, con áreas entre 62 m2 y 95 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Quadra Constructores",
@@ -610,7 +610,7 @@
 		{
 			"id": 77,
 			"name": "Livorno",
-			"description": "",
+			"description": "Livorno es un proyecto de vivienda multifamiliar en un lote entre medianeros cercano a la Estación Floresta del metro, en la Carrera 79 # 45GG-54, diseñado por Alex Toro Arquitectos, para Constructora Belarrú, en el año 2011. Se planteó en su punto fijo y área social un giro a 45°, para controlar los efectos del poniente, dando además como resultado, una volumetría particular a la fachada. La planta típica está compuesta por dos apartamentos por piso de 91 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Belarrú",
@@ -632,13 +632,13 @@
 				"/data/03-projects/77/12.jpg",
 				"/data/03-projects/77/13.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/tHDZFbZH1PQ"],
 			"virtualTours": []
 		},
 		{
 			"id": 78,
 			"name": "Santa Maria del Parque",
-			"description": "",
+			"description": "Ubicado en el sector de Santa María de Los Ángeles, en la Calle 17C # 44-137, el proyecto de Santa María del Parque, fue el primer proyecto de Constructores Turipaná, fuera de Laureles y con posibilidad de iluminar por cuatro fachadas, lo que permitió una iluminación eficiente en todos los ambientes de los apartamentos. Este Multifamiliar conta de 24 destinaciones de vivienda, en 13 pisos de altura.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo Turipaná",
@@ -657,13 +657,13 @@
 				"/data/03-projects/78/9.jpg",
 				"/data/03-projects/78/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/-TGsfQrcxU0"],
 			"virtualTours": []
 		},
 		{
 			"id": 79,
 			"name": "Bucharest",
-			"description": "",
+			"description": "Bucharest es un edificio de vivienda multifamiliar ubicado en Laureles, Medellín en la Circular 2° # 74-38, diseño de Alex Toro Arquitectos, para Constructora Croacia, en el año 2010. Cuenta con 18 apartamentos distribuidos en 10 pisos de altura, con un punto fijo central girado a 45° que separa los dos apartamentos por piso de 105 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Croacia",
@@ -677,7 +677,7 @@
 		{
 			"id": 80,
 			"name": "Argomaniz",
-			"description": "",
+			"description": "El proyecto Agomaniz es un edificio de vivienda multifamiliar, elaborado para la empresa Constructora Guigo en el año 2010, por Alex Toro Arquitectos. En este edificio entre medianeros, ubicado en Laureles, en la Carrera 80C con Calle 33, se logra una distribución eficiente, sin desperdicios de área y una iluminación eficiente en toda la vivienda, haciendo de ellas un espacio digno para habitar.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Guigo",
@@ -694,13 +694,13 @@
 				"/data/03-projects/80/7.jpg",
 				"/data/03-projects/80/8.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/ZuwthJXK-1s"],
 			"virtualTours": []
 		},
 		{
 			"id": 82,
-			"name": "Sanin Tomas",
-			"description": "",
+			"name": "Saint Thomas",
+			"description": "Saint Thomas esta ubicado en la calle 17 sur # 44-207, en el sector de Santa María de Los Angeles, en Medellín. En este proyecto de vivienda Multifamiliar elaborado para la Constructora Grupo San Remo, el equipo de Alex Toro Arquitectos, tuvo como reto principal, enfrentarse a un lote triangular con una pendiente grande, para sacar el máximo provecho en la distribución de parqueaderos… ya, en la parte superior, en planta típica, saca ventaja de los voladizos para idearse un volumen curvo, que contiene el vestier, balcón y baño de alcoba principal, para darle carácter a la esquina. Para componer el resto de las fachadas se emplean detalles arquitectónicos jugando con los perfiles de ventanería y los diferentes materiales de fachada. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo San Remo",
@@ -720,13 +720,13 @@
 				"/data/03-projects/82/10.jpg",
 				"/data/03-projects/82/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/rjFVUUqh9og"],
 			"virtualTours": []
 		},
 		{
 			"id": 83,
 			"name": "Pamplona",
-			"description": "",
+			"description": "Pamplona es un edificio de Vivienda Multifamiliar con 12 pisos de altura, con un apartamento por piso, ubicado en el sector de Conquistadores, en la Circular 2° #68 32, diseñado por Alex Toro Arquitectos en el año 2011, para la Constructora ABA. El edificio consta de un apartamento por piso de 88 m2 con una excelente distribución arquitectónica, brindando toda la fachada para iluminar la zona social, y las alcobas ocupan la parte posterior del edificio. El resultado final es un apartamento donde no hay desperdicios de área en circulación.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora ABA",
@@ -745,7 +745,7 @@
 		{
 			"id": 84,
 			"name": "Praga",
-			"description": "",
+			"description": "En el Barrio Conquistadores, en la Circular 2° # 68-31, se encuentra ubicado Praga, un edificio de vivienda multifamiliar con dos apartamentos por piso uno de 67 m2 y otro de 85 m2 en 8 pisos de altura, diseñado para Constructora ABA en el año 2011.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora ABA",
@@ -765,7 +765,7 @@
 		{
 			"id": 85,
 			"name": "Alcazar del Parque",
-			"description": "",
+			"description": "Alcazar del Parque es un proyecto de vivienda multifamiliar elaborado para Costructora Belarrú en el año 2017. En este edificio, controlado por altura de Aeronáutica civil, se vio la necesidad de diseñar una planta típica con cuatro apartamentos por piso de 75 m2. Dos de ellos hacia el frente del edificio y dos hacia la parte posterior, disfrutando de la vista de las zonas comunes y del Valle de Aburrá.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Belarrú",
@@ -779,13 +779,13 @@
 				"/data/03-projects/85/4.jpg",
 				"/data/03-projects/85/5.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/7b5LgiJnITQ"],
 			"virtualTours": []
 		},
 		{
 			"id": 89,
 			"name": "Bariloche Guigo",
-			"description": "",
+			"description": "Areka esta ubicado en La Loma del Esmeraldal, en la Calle 27 Sur con Carrera 27D, es un Multifamiliar, diseñado por Alex Toro Arquitectos, para Quadra Constructores, en el año 2012. Cuenta con 66 apartamentos distribuidos en 16 pisos, con 5 apartamentos por piso áreas entre 67 m2 y 95 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Guigo",
@@ -805,13 +805,13 @@
 				"/data/03-projects/89/10.jpg",
 				"/data/03-projects/89/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/Gs2V5fmcDt0"],
 			"virtualTours": []
 		},
 		{
 			"id": 90,
 			"name": "Areka",
-			"description": "",
+			"description": "Areka esta ubicado en La Loma del Esmeraldal, en la Calle 27 Sur con Carrera 27D, es un Multifamiliar, diseñado por Alex Toro Arquitectos, para Quadra Constructores, en el año 2012. Cuenta con 66 apartamentos distribuidos en 16 pisos, con 5 apartamentos por piso áreas entre 67 m2 y 95 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Quadra Constructores",
@@ -836,7 +836,7 @@
 		{
 			"id": 91,
 			"name": "Condominio Santa Clara",
-			"description": "",
+			"description": "Condominio Santa Clara, es un proyecto de vivienda multifamiliar, que se encuentra ubicado en el barrio Manchester de Bello a dos cuadras de la estación del metro. Fue diseñado por Alex Toro Arquitectos, para Constructora Belarrú en el año 2012. Consta de 158 apartamentos distribuidos en 26 pisos, de a 7 apartamentos por nivel, con áreas entre 58 m2 y 81 m2. Posee un par de locales de grandes en primer piso, parqueaderos entre semisótano y tercer piso, las zonas comunes se han ubicado en el 4 nivel.  ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Belarrú",
@@ -858,13 +858,13 @@
 				"/data/03-projects/91/12.jpg",
 				"/data/03-projects/91/13.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/Ekc86ywuASw"],
 			"virtualTours": []
 		},
 		{
 			"id": 92,
 			"name": "Sion",
-			"description": "",
+			"description": "En la Carrera 44 # 17 Sur-59, Barrio Santa Maria de Los Angeles, en Medellín, se encuentra ubicado SION Apartamentos, un edificio de vivienda multifamiliar, emplazado en un lote triangular, donde se han acomodado dos apartamentos por piso y dos penthouse en los pisos superiores… Este proyecto fue diseñado para Constructora Borinquen, en el año 2013, por Alex Toro Arquitectos.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Borinquen",
@@ -888,7 +888,7 @@
 		{
 			"id": 93,
 			"name": "Nepal",
-			"description": "",
+			"description": "Nepal es un edificio de vivienda multifamiliar, elaborado por Alex Toro Arquitectos, para Grupo Turipaná, en el año 2013, se encuentra ubicado en la esquina de la carrera 44 con calle 10 Sur, del barrio La Aguacatala, en Medellín. De nuevo acá, el funcionalismo de los apartamentos fue un aspecto primordial por cuidar en su distribución, garantizando una excelente iluminación en cada espacio, y a su vez, proporcionando los elementos necesarios para enriquecer la fachada formalmente.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo Turipaná",
@@ -907,13 +907,13 @@
 				"/data/03-projects/93/9.jpg",
 				"/data/03-projects/93/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/78w3zjgi_II"],
 			"virtualTours": []
 		},
 		{
 			"id": 94,
 			"name": "Cielo Campestre",
-			"description": "",
+			"description": "Alex Toro Arquitectos tuvo la oportunidad de diseñar este edificio de Vivienda Multifamiliar en el año 2013 para una empresa de inversión privada, Cielo del Campestre está ubicado en la transversal inferior, frente al Club Campestre. Cuenta con un gran Local comercial, dando frente a la Inferior, los primeros pisos albergan dos apartamentos por piso, que se integran en los pisos superiores conformando apartamentos de gran formato en un solo nivel.  Los balcones, el diseño de la ventanería y el juego de materiales, fueron nuestros aliados, para dar riqueza visual al volumen de fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Inversión Privada",
@@ -939,7 +939,7 @@
 		{
 			"id": 95,
 			"name": "Nairobi",
-			"description": "",
+			"description": "Nairobi, es un edificio de vivienda multifamiliar, desarrollado en 5 pisos de altura, en el barrio Obrero de Bello, fue diseñado en el año 2012 para Constructora Belarru, en este proyecto emplazado en una esquina con poco fondo, Alex Toro Arquitectos, distribuyó cinco apartamentos por piso, todos con frente hacia la via pública. El revoque ranurado blanco y el ladrillo chocolate, fueron los materiales elegidos para contrastar los volúmenes de fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Belarrú",
@@ -956,13 +956,13 @@
 				"/data/03-projects/95/7.jpg",
 				"/data/03-projects/95/8.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/dDLOdKkXR-U"],
 			"virtualTours": []
 		},
 		{
 			"id": 97,
 			"name": "San Miguel",
-			"description": "",
+			"description": "San Miguel es un lujoso edificio de vivienda multifamiliar, que domina las vistas de la ciudad en 360° gracias a sus apartamentos de 270 m2 en un solo nivel. Se encuentra localizado en la Loma de Los González con acceso por la Carrera 38 # 4ª Sur-7. Las áreas comunes del edificio se han ubicado en un volumen independiente para brindar mas comodidad a sus ocupantes. Fue diseñado por Alex Toro Arquitectos para Grupo San Remo en el año 2013. Para minimizar la sensación de grandes desplazamientos en un apartamento tan grande, el acceso se ha ubicado en el medio, dividiendo el área social de la zona de alcobas… a su vez, para potenciar las vistas, el área de salón comedor se ubica en una e las esquinas, garantizando una mayor visibilidad del entorno. La zona de baño y vestier de alcoba principal, se disponen de un modo tal que controlan el poniente dentro de la alcoba, sin obstaculizar la vista.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo San Remo",
@@ -986,13 +986,13 @@
 				"/data/03-projects/97/14.jpg",
 				"/data/03-projects/97/15.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/52jFDkvlPdU"],
 			"virtualTours": []
 		},
 		{
 			"id": 98,
 			"name": "La Rochelle",
-			"description": "",
+			"description": "La Rochelle, es una unidad residencial, de casas, ubicada en Envigado en la Carrera 25B con Calle 23 Sur, fue diseñado para Quadra Constructores en el año 2015, por Alex Toro Arquitectos, consta de 24 casas de dos niveles con un área construida de 175 m2 y un área libre de 80 m2. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Quadra Constructores",
@@ -1017,7 +1017,7 @@
 		{
 			"id": 99,
 			"name": "Aquaviva",
-			"description": "",
+			"description": "Aquaviva es un lujoso proyecto de vivienda multifamiliar diseñado por Alex Toro Arquitectos en el año 2014 para la Constructora Guigo. Consta de 26 apartamentos en 16 pisos. Aprovechando la condición de esquina se planteó un Car Lobby tipo hotel para dar acceso al edificio. Las grandes áreas sociales ocupan todo el segundo piso. los dos apartamentos por piso de la planta típica tienen 145 m2 y 165 m2, respectivamente. Para potenciar las vistas, la disposición del salón comedor se acomoda en esquina, junto a un escultural balcón que le da vida a la fachada principal. El acceso a cada uno de los apartamentos se dispone en el medio, para minimizar las sensaciones de recorridos largos en un apartamento grande, y a su vez divide el área social de la zona de alcobas de manera estratégica. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1042,13 +1042,13 @@
 				"/data/03-projects/99/15.jpg",
 				"/data/03-projects/99/16.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/e1NwuP0Uif8"],
 			"virtualTours": []
 		},
 		{
 			"id": 100,
 			"name": "Jardines de Santa Teresa",
-			"description": "",
+			"description": "Jardines de Santa Teresa, fue diseñado para Inversiones y Construcciones Prisma en el año 2014 y se encuentra ubicado en el barrio Laureles, en la Avenida jardín, Circular 74 # 76-91. Este Edificio de Vivienda Multifamiliar, diseñado por Alex Toro Arquitectos, cuenta con 25 apartamentos, distribuidos en 10 pisos; los tres apartamentos por piso de la planta típica tienen áreas de 90 m2 110 m2 y 135 m2, respectivamente.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -1069,16 +1069,16 @@
 				"/data/03-projects/100/11.jpg",
 				"/data/03-projects/100/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/A_3YLSNVBFc"],
 			"virtualTours": []
 		},
 		{
 			"id": 102,
 			"name": "Edificio Monaco",
-			"description": "",
+			"description": "En la esquina de la Carrera 79 con Calle 36 del barrio Laureles se levanta el Edificio Mónaco, diseñado por Alex Toro Arquitectos para Constructora Anrol. En este proyecto con un apartamento por piso de 110 m2, y para mejorar la distribución de parqueaderos, el punto fijo se ha dispuesto en la esquina, que, junto al falso volumen girado, complementa la propuesta volumétrica de fachada. El edifico lo remata un penthouse a doble altura.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
-			"builder": "Constructora Arnol",
+			"builder": "Constructora Anrol",
 			"year": 2014,
 			"length": 1600,
 			"thumb": "/data/03-projects/102/Thumb.jpg",
@@ -1098,7 +1098,7 @@
 		{
 			"id": 103,
 			"name": "Picasso",
-			"description": "",
+			"description": "Picasso es el segundo edificio de Vivienda Multifamiliar de Constructora Guigo en el barrio El Poblado, sector de Castropol, con dirección Calle 13 # 36ª-156. Fue diseñado por Alex toro Arquitectos en el año 2014… El Giro Intencional en la planta típica, responde a las curvas de nivel y a su vez genera movimiento en la fachada, que se complementa con una rotonda interior a modo de car lobby, dándole importancia a su acceso. A pesar de estar accediendo desde la mitad del edificio, se buscó desde el principio ubicar el área social en la esquina para maximizar las vistas del valle de aburrá. Desde el momento que se abre el portón principal, el usuario puede sentir la imponencia del espacio; El baño social, es usado como tamiz, para dar privacidad al área de alcobas, y con el tamaño suficiente para no generar grandes recorridos. Este edificio de 17 pisos es rematado por dos penthouse de todo un piso, con grandes áreas sociales y amplias alcobas. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1118,13 +1118,13 @@
 				"/data/03-projects/103/10.jpg",
 				"/data/03-projects/103/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/6EaByY0mISc"],
 			"virtualTours": []
 		},
 		{
 			"id": 110,
 			"name": "Luxenburgo",
-			"description": "",
+			"description": "En la Transversal 39 # 77-12 del barrio Laureles, en Medellín, se encuentra situado este edificio de vivienda Multifamiliar, llamado Luxemburgo. Fue diseñado para Constructora Croacia, por Alex Toro Arquitectos en el año 2015, este edificio de 10 pisos consta de apartamentos de 70 m2 y 97 m2 en los primeros pisos y Apartamentos de 115 en los pisos superiores.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Croacia",
@@ -1146,7 +1146,7 @@
 		{
 			"id": 112,
 			"name": "San Gabriel",
-			"description": "",
+			"description": "San Gabriel se encuentra ubicado en la Calle 17ª Sur # 44-108, en El sector de Santa María de Los Angeles del municipio de Medellín, estos 13 pisos de vivienda Multifamiliar fueron diseñados por Alex Toro Arquitectos para la constructora Grupo San Remo en el año 2015. Consta en total de 12 apartamentos, uno en cada piso, garantizando una excelente iluminación al tener disponibles las cuatro fachadas. La volumetría del edificio está enriquecida por un juego formal con los balcones.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Grupo San Remo",
@@ -1161,13 +1161,13 @@
 				"/data/03-projects/112/5.jpg",
 				"/data/03-projects/112/6.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/oXiK9e3sugY"],
 			"virtualTours": []
 		},
 		{
 			"id": 113,
 			"name": "Napoli",
-			"description": "",
+			"description": "Napoli es un proyecto de Constructora ABA ubicado en Laureles, Medellín. Este edificio de vivienda multifamiliar fue diseñado por Alex Toro Arquitectos en el año 2015 y consta de 12 apartamentos de 95 m2, con tres alcobas, salón comedor estar y biblioteca.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora ABA",
@@ -1185,7 +1185,7 @@
 		{
 			"id": 114,
 			"name": "Jarines de Calazans",
-			"description": "",
+			"description": "Jardines de Calasanz es un Edificio de 2º pisos de altura ubicado a dos cuadras de la Estación Floresta, en la Carrera 81ª # 48ª-93, Barrio Calasanz, Medellín, Este proyecto de Vivienda Multifamiliar fue diseñado por Alex toro Arquitectos, para Grupo Turipaná en el año 2015. Está compuesto por 35 apartamentos con áreas entre 85 m2 y 105 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo Turipaná",
@@ -1204,13 +1204,13 @@
 				"/data/03-projects/114/9.jpg",
 				"/data/03-projects/114/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/LqwdeLQtE2g"],
 			"virtualTours": []
 		},
 		{
 			"id": 116,
 			"name": "San Martín",
-			"description": "",
+			"description": "En 2016 Alex Toro Arquitectos tuvo la oportunidad de diseñar el edificio San Martín ubicado en el barrio Laureles, Transversal 35 # 72-105. En este lote con gran frente, se plantearon tres apartamentos por piso con áreas entre 110 m2 y 145 m2. Al estar entre medianeros, los apartamentos de los costados se iluminaron tanto por fachada principal como por la posterior, el apartamento del centro está iluminado únicamente por el frente; aun así, a todos los ambientes de los apartamentos se les garantizó una iluminación eficiente y una excelente distribución y con grandes áreas sociales.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo San Remo",
@@ -1229,16 +1229,16 @@
 				"/data/03-projects/116/9.jpg",
 				"/data/03-projects/116/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/ct46WyeVIUw"],
 			"virtualTours": []
 		},
 		{
 			"id": 117,
 			"name": "Montecarlo",
-			"description": "",
+			"description": "Montecarlo es un proyecto Residencial Multifamiliar de 14 Pisos de altura ubicado en el Barrio la Floresta, a dos cuadras de la Estación del metro. La Constructora Anrol hizo el encargo a la oficina de Alex toro Arquitectos en el año 2016. Este proyecto, en esquina, consta de 23 apartamentos, dos por piso, con áreas de 75 m2 y 105 m2, en la distribución de su interior, los espacios principales se iluminaron por fachada y las zonas de servicio como cocinas y baños hacia la parte posterior para controlar los efectos del poniente. Como propuesta formal en fachada, se propuso insinuar un falso volumen circular, delineado por la forma de los balcones, que intercepta el volumen de la esquina, imprimiendo dinamismo a la volumetría.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
-			"builder": "Constructora Arnol",
+			"builder": "Constructora Anrol",
 			"year": 2016,
 			"length": 3630,
 			"thumb": "/data/03-projects/117/Thumb.jpg",
@@ -1259,7 +1259,7 @@
 		{
 			"id": 118,
 			"name": "Balcones de Santa Teresa",
-			"description": "",
+			"description": "En la esquina de la Carrera 77 con Calle 34ª del barrio Laureles en Medellín se encuentra ubicado Balcones de Santa Teresa, un proyecto de vivienda multifamiliar diseñado por Alex Toro Arquitectos para Constructora Borinquen en el año 2016. El edificio esta conformado por 30 apartamentos distribuidos en 12 pisos de altura, con áreas entre 104 m2 y 167 m2. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Borinquen",
@@ -1271,18 +1271,15 @@
 				"/data/03-projects/118/2.jpg",
 				"/data/03-projects/118/3.jpg",
 				"/data/03-projects/118/4.jpg",
-				"/data/03-projects/118/5.jpg",
-				"/data/03-projects/118/6.jpg",
-				"/data/03-projects/118/7.jpg",
-				"/data/03-projects/118/8.jpg"
+				"/data/03-projects/118/5.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/KA21k48NA28"],
 			"virtualTours": []
 		},
 		{
 			"id": 119,
 			"name": "San Charbel",
-			"description": "",
+			"description": "San Charbel Deluxe esta ubicado en la Carrera 37ª # 1 Sur 30, Barrio Poblado, Medellín. Este Lujoso edifico Multifamiliar de 22 pisos de altura de Constructora Guigo, fue diseñado en el año 2016, por Alex Toro Arquitectos. Controlar los efectos del poniente por medio de balcones profundos, sin anular las vistas del valle, junto a una distribución eficiente en su interior, permitiendo además ventilaciones cruzadas, fueron las premisas de diseño que se tuvieron en cuenta en su diseño, para garantizar confort. La propuesta volumétrica planteada, comprende, un basamento con Car Lobby tipo hotel, el cuerpo del edificio, formado por sus plantas típicas y el remate, con un par de penthouse, que extienden sus alas al horizonte.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1303,13 +1300,13 @@
 				"/data/03-projects/119/11.jpg",
 				"/data/03-projects/119/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/Z7KUeQ2G-X4"],
 			"virtualTours": []
 		},
 		{
 			"id": 121,
 			"name": "San Patricio",
-			"description": "",
+			"description": "San Patricio es un edificio Multifamiliar ubicado en la Carrera 79 # 35-90 Barrio Laureles, Medellín, Fue diseñado Para Constructora Belarrú por Alex Toro Arquitectos en el año 2017. Estos doce pisos de altura contienen 22 apartamentos, distribuidos de a 2 por piso con áreas de 100 m2 y 140 m2. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Belarrú",
@@ -1324,13 +1321,13 @@
 				"/data/03-projects/121/5.jpg",
 				"/data/03-projects/121/6.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/uhoIzjkhVd4"],
 			"virtualTours": []
 		},
 		{
 			"id": 122,
 			"name": "Reserva de Santa Tereza",
-			"description": "",
+			"description": "Ubicado en la Carrera 78 # 35-53 Barrio Laureles, Medellín, Reserva de Santa Teresa es un edificio de Vivienda Multifamiliar diseñado por Alex Toro Arquitectos en el año 2017, para Constructora Borinquen. Tiene doce pisos de altura con 22 apartamentos, distribuidos de a 2 por piso con áreas de 112 m2 y 158 m2. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Constructora Borinquen",
@@ -1351,13 +1348,13 @@
 				"/data/03-projects/122/11.jpg",
 				"/data/03-projects/122/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/yCr255QNDDo"],
 			"virtualTours": []
 		},
 		{
 			"id": 123,
 			"name": "Galicia",
-			"description": "",
+			"description": "Galicia es un edificio de Vivienda Multifamiliar ubicado en el sector de Castropol, barrio El Poblado, Medellín, en la Calle 15 # 35-83. Fue diseñado para Constructora Guigo, en el año 2017, por Alex Toro Arquitectos. Contiene 26 apartamentos típicos de 115 m2 y 2 penthouse de 250 m2. Se han aprovechado las ventajas de tener cuatro fachadas disponibles para iluminar los diferentes ambientes, lo que brinda como resultado, distribuciones óptimas y bien zonificadas, explotando las vistas y controlando el poniente con ubicaciones precisas de las zonas de baños.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1378,13 +1375,13 @@
 				"/data/03-projects/123/11.jpg",
 				"/data/03-projects/123/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/y-bMK-DzXpg"],
 			"virtualTours": []
 		},
 		{
 			"id": 124,
-			"name": "Mosul",
-			"description": "",
+			"name": "Monsul",
+			"description": "Monsul es un proyecto de Vivienda Multifamiliar de diez pisos de altura, con solo 9 apartamentos, uno por piso, con áreas de 85 m2. Localizado al frente del Parque Malibú en la Carrera 68 # 32C-47. Fue diseñado por Alex Toro Arquitectos en el año 2017, para Estructuras Civiles SAS.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Estructuras Civiles",
@@ -1402,7 +1399,7 @@
 		{
 			"id": 125,
 			"name": "Puerto Bari",
-			"description": "",
+			"description": "En 2017, Alex Toro Arquitectos tuvo la oportunidad de diseñar para Inversiones y Construcciones Prisma, el edificio Puerto Bari. Este edificio de Vivienda Multifamiliar está ubicado en la Transversal 39ª # 71-33, barrio Laureles. En solo 10 pisos se han distribuido 23 apartamentos con tres apartamentos por piso y áreas entre 73 m2 y 164 m2. El reto en este proyecto entre medianeros fue lograr una distribución óptima de espacios, bien iluminados aprovechando al máximo el índice de ocupación.  ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -1423,13 +1420,13 @@
 				"/data/03-projects/125/11.jpg",
 				"/data/03-projects/125/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/UfQrgsJHcl8"],
 			"virtualTours": []
 		},
 		{
 			"id": 126,
 			"name": "Tibet",
-			"description": "",
+			"description": "Tibet esta ubicado en el barrio Calasanz en la Carrera 81ª # 49F-09 en Medellín. Fue diseñado por Alex Toro Arquitectos por encargo de Grupo Turipaná en el año 2017.  Este edificio de Vivienda Multifamiliar de 10 pisos de altura está compuesto por 23 apartamentos con una distribución en planta típica de a tres por piso con áreas entre 81 m2 y 105 m2. Se caracterizan estas destinaciones por sus grandes zonas sociales, cocinas abiertas, alcobas muy cómodas, con excelente iluminación, ventilaciones cruzadas, en general, con mucho confort.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo Turipaná",
@@ -1448,13 +1445,13 @@
 				"/data/03-projects/126/9.jpg",
 				"/data/03-projects/126/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/9wq4eygfegY"],
 			"virtualTours": []
 		},
 		{
 			"id": 127,
 			"name": "Zenit",
-			"description": "",
+			"description": "Zenith es un proyecto diseñado por Alex Toro Arquitectos para una empresa privada en el año 2017. Este edificio consta de 10 apartamentos con un apartamento por piso de 120 m2 en Laureles, Medellín. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Materiales y Obras",
@@ -1483,7 +1480,7 @@
 		{
 			"id": 129,
 			"name": "San Jose",
-			"description": "",
+			"description": "San José está ubicado en Laureles, Medellín, en la Calle 33AA # 78ª-104. Este edificio de Vivienda Multifamiliar fue diseñado por Alex Toro Arquitectos para la constructora Grupo San Remo en el año 2017. Con zonas sociales amplias, cocinas abiertas y alcobas perfectamente iluminadas, garantizando además ventilaciones cruzadas, se logra un excelente comfort, en estos apartamentos de 105 m2. En fachada se ha optado por una combinación de ladrillo moro en contraste con el revoque blanco y un detalle arquitectónico negro.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Grupo San Remo",
@@ -1503,13 +1500,13 @@
 				"/data/03-projects/129/10.jpg",
 				"/data/03-projects/129/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/0ejLEHA9gio"],
 			"virtualTours": []
 		},
 		{
 			"id": 130,
 			"name": "Camino de Santa Teresa",
-			"description": "",
+			"description": "Este edificio de Vivienda Multifamiliar entre medianeros está ubicado en la Circular 73B # 39-25. Camino de Santa Teresa es un proyecto de la Constructora Borinquen y fue diseñado por Alex Toro Arquitectos en 2018. Consta de 17 Apartamentos con áreas de 110 m2 y 145 m2, distribuidos en 10 pisos. Dado el poco frente con el que se contaba, se toma la decisión de ubicar la gran área social de un modo horizontal contra la fachada, para ganar impacto visual desde el acceso y la zona de alcobas se distribuye con ciertas superposiciones hacia la pare posterior.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Borinquen",
@@ -1525,13 +1522,13 @@
 				"/data/03-projects/130/6.jpg",
 				"/data/03-projects/130/7.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/S6mI-O8R8t0"],
 			"virtualTours": []
 		},
 		{
 			"id": 132,
 			"name": "Berlin",
-			"description": "",
+			"description": "Berlín Fue un proyecto de Vivienda Multifamiliar diseñado para Constructora Guigo en el año 2018. Este lujoso edificio obra de Alex Toro Arquitectos se emplaza en un lote de 3500 m2 y cuenta con 27 lujosos apartamentos de 148 m2 en 17 pisos y 3 sótanos. Para la distribución arquitectónica de cada uno de ellos se tuvieron en cuenta aspectos como: el poniente, la adecuada zonificación de espacios, las fugas visuales, y circulación cruzada, para garantizar habitabilidad y confort. La volumetría de fachada se caracteriza por la fragmentación en altura debido al juego formal entre balcones y contrastes de materiales. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1549,13 +1546,13 @@
 				"/data/03-projects/132/8.jpg",
 				"/data/03-projects/132/9.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/-limUfg8ZyI"],
 			"virtualTours": []
 		},
 		{
 			"id": 134,
 			"name": "BS Suite",
-			"description": "",
+			"description": "BS Suite es un proyecto hotelero diseñado en el año 2020 por Alex Toro Arquitectos para Constructora Guigo, con la asesoría de la prestigiosa marca BS y BH, con alto reconocimiento a nivel nacional. El proyecto, truncado por la pandemia, comprendía 160 habitaciones, locales comerciales, áreas de coworking, restaurante y excelentes zonas comunes que incluían: Lobby a doble altura, Auditorio, Gimnasio, Spa y un Rooftop, con piscina panorámica.",
 			"category": "Hotelería y Otros",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1582,13 +1579,13 @@
 				"/data/03-projects/134/17.jpg",
 				"/data/03-projects/134/18.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/QiNdzzNupsM"],
 			"virtualTours": []
 		},
 		{
 			"id": 135,
 			"name": "Zurich",
-			"description": "",
+			"description": "Zurich se encuentra ubicado en la Transversal 39 # 71-42 del Barrio Laureles, Medellín. Fue diseñado para Inversiones y Construcciones Prisma en el año 2018 por Alex Toro Arquitectos. En solo 10 pisos se han distribuido 27 apartamentos con tres apartamentos por piso y áreas entre 94 m2 y 167 m2. El reto en este proyecto entre medianeros fue lograr una distribución óptima de espacios, bien iluminados aprovechando al máximo el índice de ocupación.  ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -1606,16 +1603,16 @@
 				"/data/03-projects/135/8.jpg",
 				"/data/03-projects/135/9.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/42pB3CkfIk0"],
 			"virtualTours": []
 		},
 		{
 			"id": 136,
 			"name": "Mercados de Laureles",
-			"description": "",
+			"description": "Mercados de Laureles es un proyecto Comercial de dos pisos de altura, ubicado en Laureles en la Transversal 39CA # 74ª-35. En primer piso se distribuyen en forma de u una serie de locales pequeños que comparten el área central común para asentar a los diferentes visitantes. En segundo piso un restaurante y un bar complementan este complejo comercial. Fue diseñado por Alex Toro Arquitectos en el año 2018 para Constructora Anrol.",
 			"category": "Hotelería y Otros",
 			"priority": 2,
-			"builder": "Constructora Arnol",
+			"builder": "Constructora Anrol",
 			"year": 2018,
 			"length": 1430,
 			"thumb": "/data/03-projects/136/Thumb.jpg",
@@ -1629,16 +1626,16 @@
 				"/data/03-projects/136/7.jpg",
 				"/data/03-projects/136/8.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/_LFbithzV-8"],
 			"virtualTours": []
 		},
 		{
 			"id": 137,
 			"name": "Torre Himalaya",
-			"description": "",
+			"description": "El Edificio Torre Himalaya es un edificio de Vivienda Multifamiliar ubicado en el barrio La Castellana, Calle 33B # 83B-10, Medellín, Por encargo de Constructora Artem SAS, fue diseñado por Alex Toro Arquitectos en el año 2019. Este proyecto alberga 21 apartamentos en 10 pisos de altura. A pesar de los grandes retiros en fachada, la distribución de los diferentes apartamentos garantiza una muy buena iluminación, buenas vistas, y ventilación cruzada. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
-			"builder": "Constructora Aretem",
+			"builder": "Constructora Artem",
 			"year": 2019,
 			"length": 3485,
 			"thumb": "/data/03-projects/137/Thumb.jpg",
@@ -1656,7 +1653,7 @@
 		{
 			"id": 138,
 			"name": "Turin",
-			"description": "",
+			"description": "Turin es un exitoso proyecto de Vivienda Multifamiliar diseñado por Alex Toro Arquitectos por encargo de Constructora Guigo en el año 2019. Está ubicado en la Calle 42 # 74-58 Barrio Laureles. En 19 pisos de altura se distribuyen 69 apartamentos de 106 m2, con una acomodación de 4 por piso. Por ser un edificio entre medianeros, pero emplazado en un lote grande y con buen frente, se ha tomado la decisión de aplicar buenos retiros y elevar en altura el edificio para garantizar iluminación en los 4 costados, situación que permitió una excelente y eficiente distribución de los apartamentos. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Constructora Guigo",
@@ -1677,13 +1674,13 @@
 				"/data/03-projects/138/11.jpg",
 				"/data/03-projects/138/12.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/15JvaY0Wyl8"],
 			"virtualTours": []
 		},
 		{
 			"id": 139,
 			"name": "Senderos de Calasanz",
-			"description": "",
+			"description": "En el barrio Calasanz en la Carrera 81ª # 49-89 de Medellín se encuentra ubicado el edificio Senderos de Calasanz. Proyecto de Vivienda Multifamiliar diseñado por Alex Toro Arquitectos para el Grupo Turipaná en el año 2019. Los 40 apartamentos de que consta el proyecto están distribuidos de a tres por piso en 15 pisos de altura, con áreas entre 85 m2 y 105 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo Turipaná",
@@ -1702,13 +1699,13 @@
 				"/data/03-projects/139/9.jpg",
 				"/data/03-projects/139/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/0TIGFzRh078"],
 			"virtualTours": []
 		},
 		{
 			"id": 142,
 			"name": "San Sebastian",
-			"description": "",
+			"description": "San Sebastián está ubicado en Laureles, Medellín en la Carrera 80ª # 34B-38; fue diseñado por Alex Toro Arquitectos para la Constructora Grupo San Remo en el año 2019. La excelente distribución de estos 22 apartamentos en diez pisos de altura plantea una planta típica con dos apartamentos laterales de 105 m2 y 115 m2 que se integran a un apartamento central tipo dúplex, de 93 m2. Esta disposición permite un juego volumétrico en fachada muy interesante y de muy buena aceptación.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo San Remo",
@@ -1733,13 +1730,13 @@
 				"/data/03-projects/142/15.jpg",
 				"/data/03-projects/142/16.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/y4zXnmCGV1c"],
 			"virtualTours": []
 		},
 		{
 			"id": 143,
 			"name": "Portobelo",
-			"description": "",
+			"description": "En el sector de El Estadio, en la Carrera 77C # 48-37, Medellín, La empresa Grupo San Remo encarga a Alex Toro Arquitectos el diseño del edificio de Vivienda Multifamiliar Portobelo en el año 2020.  En 15 pisos de Altura y con 4 apartamentos por piso, se desarrollan los 49 apartamentos de que consta este edificio. Con áreas entre 80 m2 y 112 m2 los apartamentos se caracterizan por sus amplias áreas sociales dispuestas en formato horizontal, con cocinas integradas, alcobas óptimamente iluminadas. Para romper la monotonía de la repetición de plantas típicas, aparecen de modo estratégico otros balcones sinuosos que imprimen dinamismo a la fachada.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo San Remo",
@@ -1765,13 +1762,13 @@
 				"/data/03-projects/143/16.jpg",
 				"/data/03-projects/143/17.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/M7VFREfbl7Q"],
 			"virtualTours": []
 		},
 		{
 			"id": 145,
-			"name": "Burderos",
-			"description": "",
+			"name": "Burdeos",
+			"description": "Burdeos está ubicado en la Transversal 39ª # 72-124 del barrio Laurales, Medellín. Es un proyecto de Vivienda Multifamiliar diseñado por Alex Toro Arquitectos para Inversiones y Construcciones Prisma en el año 2021. Consta de 26 Apartamentos con áreas entre 80 m2 y 160 m2 en 10 pisos de altura. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -1796,13 +1793,13 @@
 				"/data/03-projects/145/15.jpg",
 				"/data/03-projects/145/16.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/UXofIZhabHA"],
 			"virtualTours": []
 		},
 		{
 			"id": 146,
 			"name": "La Ceiba",
-			"description": "",
+			"description": "La Ceiba es un proyecto de Vivienda Multifamiliar frustrado por la pandemia, fue realizado por Alex Toro Arquitectos para Grupo Constructor Aragón entre los años 2020 y 2021. Constaba de 14 Apartamentos en 10 pisos de altura con áreas entre 45 m2 y 110 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 3,
 			"builder": "Grupo Constructor Aragon",
@@ -1821,13 +1818,13 @@
 				"/data/03-projects/146/9.jpg",
 				"/data/03-projects/146/10.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/sqnilaUA6aQ"],
 			"virtualTours": []
 		},
 		{
 			"id": 148,
 			"name": "Prado Campestre",
-			"description": "",
+			"description": "Prado Campestre es un espectacular proyecto de Vivienda Multifamiliar Ubicado en ENVIGADO, en el Alto de las Flores, a 5 minutos del Centro Comercial Mayorca, en Antioquia, Colombia. Se destaca por tener las mejores zonas sociales de Envigado. Fue diseñado por Alex Toro Arquitectos para Inversiones y Construcciones Prisma en el año 2021. La ingeniosa disposición de las tres torres de apartamentos, en forma de “ye”, obedece a la lectura de la ubicación del proyecto en el entorno, para garantizar las mejores vistas sin bloquearse entre ellas mismas. Las plantas típicas de cada torre cuentan con 8 apartamentos por piso, con una excelente distribución que garantiza amplias zonas sociales dispuestas en formato horizontal, para lograr impacto visual desde el acceso, con cocinas integradas y alcobas muy bien iluminadas.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Inversiones y Construcciones Prisma",
@@ -1853,17 +1850,17 @@
 				"/data/03-projects/148/16.jpg",
 				"/data/03-projects/148/17.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/zluEZmB85xQ"],
 			"virtualTours": []
 		},
 		{
 			"id": 149,
 			"name": "Crystal Living",
-			"description": "",
+			"description": "Crystal Living es un Lujoso proyecto Hotelero emplazado en un lote de 5.000 m2 a borde de embalse en el Municipio de El Peñol, Fue diseñado por Alex Toro Arquitectos para Constructora Praga en 2023. Es un proyecto de 41 Lujosas Suites, que, a pesar de sus 10 pisos de altura, es amigable con el medio ambiente. Desde sus comienzos, se han tenido en cuenta conceptos de sostenibilidad en su diseño, abogando por una edificación que respete el entorno donde se emplaza y mejore la calidad de vida de sus ocupantes. Es por eso por lo que se ha planificado el uso de materiales sostenibles, la implementación de paneles solares para zonas comunes, recolección de aguas lluvias, recuperación de capa vegetal, control de asoleamiento, iluminación eficiente y ventilación cruzada.",
 			"category": "Hotelería y Otros",
 			"priority": 1,
 			"builder": "Constructora Praga",
-			"year": 2022,
+			"year": 2023,
 			"length": 6400,
 			"thumb": "/data/03-projects/149/Thumb.jpg",
 			"images": [
@@ -1891,13 +1888,17 @@
 				"/data/03-projects/149/22.jpg",
 				"/data/03-projects/149/23.jpg"
 			],
-			"youtube": [],
-			"virtualTours": []
+			"youtube": ["https://www.youtube.com/embed/887r7HfsoDk"],
+			"virtualTours": [
+				"https://alextoroarq.github.io/360crystal_fachada/",
+				"https://alextoroarq.github.io/360Crystal_Mastersuite1/",
+				"https://alextoroarq.github.io/360Crystal_Suite1/"
+			]
 		},
 		{
 			"id": 150,
 			"name": "Bosque Aqua",
-			"description": "",
+			"description": "En la Calle 48E Sur # con Carrera 42ª de Envigado, Antioquia, se encuentra ubicado el proyecto Bosque Aqua, un proyecto de Vivienda Multifamiliar diseñado para Grupo Tuipaná en el año 2022 por Alex Toro Arquitectos. Consta de 115 Apartamentos en 17 pisos con 9 apartamentos por piso y con áreas entre 60 m2 y 80 m2. Se complementa el proyecto con unas zonas comunes localizadas en el piso 4, que comprenden: coworking, salón social, zona de juegos, piscina y turco.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo Turipaná",
@@ -1922,17 +1923,17 @@
 				"/data/03-projects/150/15.jpg",
 				"/data/03-projects/150/16.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/UNP9-cen2xs"],
 			"virtualTours": []
 		},
 		{
 			"id": 151,
 			"name": "Grand Coral",
-			"description": "",
+			"description": "Grand Coral se encuentra ubicado en la Transversal 41ª # 74ª-46 del barrio Laureles, Medellín. Este proyecto de Vivienda Multifamiliar de 18 pisos de altura fue diseñado por Alex Toro Arquitectos en el año 2022 para Inversiones y Construcciones Prisma. Consta de 59 apartamentos. La planta Típica está compuesta por cuatro apartamentos con áreas entre 83 m2 y 119 m2. Como premisa de diseño se buscó ubicar las zonas sociales con una disposición horizontal, para generar un gran impacto visual desde que se accede a cada apartamento, complementado a una iluminación eficiente en alcobas, con la suficiente ventilación cruzada para garantizar confort. ",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Inversiones y Construcciones Prisma",
-			"year": 2021,
+			"year": 2022,
 			"length": 11200,
 			"thumb": "/data/03-projects/151/Thumb.jpg",
 			"images": [
@@ -1947,15 +1948,15 @@
 				"/data/03-projects/151/10.jpg",
 				"/data/03-projects/151/11.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/VT2BqlZknlU"],
 			"virtualTours": []
 		},
 		{
 			"id": 152,
 			"name": "Alcatraz",
-			"description": "",
+			"description": "Alcatraz es un proyecto de Vivienda Multifamiliar ubicado en el sector de La Castellana, Medellín, en la Carrera 83B # 32EE-52. Este edificio de 10 pisos de altura fue diseñado por Alex Toro Arquitectos en el año 2022 para Constructora Gira SAS. Consta de 21 apartamentos con áreas de 80 m2 y 100 m2. La excelente distribución arquitectónica es acompañada de una fachada con una volumetría interesante que incluye el elemento verde como elemento formal, de carácter ambiental.",
 			"category": "Vivienda Multifamiliar",
-			"priority": 2,
+			"priority": 1,
 			"builder": "Constructora Gira",
 			"year": 2022,
 			"length": 3575,
@@ -1978,9 +1979,9 @@
 		{
 			"id": 154,
 			"name": "Berlin - Florida Nueva",
-			"description": "",
+			"description": "Berlin-Florida Nueva está ubicado en la Carrera 72 # 45E-50. Es un proyecto diseñado por Alex Toro Arquitectos para Hormigones de Antioquia SAS en el año 2023. Este edificio de Vivienda Multifamiliar de 10 pisos de altura contiene 21 apartamentos con áreas entre 92 m2 y 102 m2. La excelente distribución arquitectónica de sus apartamentos es complementada con una fachada rica en volumetría, gracias al juego formal de sus jardines en altura y que le imprimen el sello sustentable con el que responsablemente la arquitectura responde al medio en que se inserta.",
 			"category": "Vivienda Multifamiliar",
-			"priority": 2,
+			"priority": 1,
 			"builder": "Hormigones de Antioquia SAS",
 			"year": 2023,
 			"length": 3480,
@@ -2004,7 +2005,7 @@
 		{
 			"id": 156,
 			"name": "San Angelo",
-			"description": "",
+			"description": "Ubicado en el barrio Simón Bolivar de Medellín, en la Carrera 83ª # 34B-81, el Edificio San Angelo, es un proyecto de Vivienda Multifamiliar diseñado para Grupo San Remo en el año 2024 por Alex Toro Arquitectos. Este edificio de 15 pisos de altura contiene 26 apartamentos dispuestos de a dos por piso. Las grandes áreas sociales de cada apartamento se han dispuesto en el frente del edificio para maximizar las vistas de la ciudad, mientras la zona de alcobas se dispone hacia la parte posterior. Este proyecto, amigable con el medio ambiente, refuerza su intención sostenible con grandes jardineras al lado de los balcones.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo San Remo",
@@ -2025,13 +2026,16 @@
 				"/data/03-projects/156/11.jpg",
 				"/data/03-projects/156/12.jpg"
 			],
-			"youtube": [],
-			"virtualTours": []
+			"youtube": ["https://www.youtube.com/embed/cFxInmLbtoM"],
+			"virtualTours": [
+				"https://alextoroarq.github.io/360San_Angelo_Apto/",
+				"https://alextoroarq.github.io/360_San_Angelo_Zonas_Comunes/"
+			]
 		},
 		{
 			"id": 158,
 			"name": "Vivienda Turistica Laureles",
-			"description": "",
+			"description": "En un lote con frente reducido y limitado en altura por la norma, pero con una gran ubicación en un importante sector de Laureles, se ha planteado este proyecto de vivienda Turística enfocado a las rentas cortas, con suites hoteleras entre 20 m2 y 30 m2. Fue diseñado por Alex Toro Arquitectos en el año 2024 para una empresa privada. ",
 			"category": "Hotelería y Otros",
 			"priority": 2,
 			"builder": "Constructor Privado",

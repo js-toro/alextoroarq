@@ -84,6 +84,19 @@
 		gap: var(--spacing-xl);
 	}
 
+	.list {
+		list-style-type: disc;
+	}
+
+	.p_values {
+		margin-bottom: var(--spacing-sm) !important;
+	}
+
+	.logos {
+		margin-top: calc(var(--spacing-xl) * -1);
+		margin-bottom: var(--spacing-xl);
+	}
+
 	.image {
 		@include responsiveUp("lg") {
 			grid-column: span 2;
