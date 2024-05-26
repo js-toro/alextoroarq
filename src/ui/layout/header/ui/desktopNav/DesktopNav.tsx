@@ -8,8 +8,8 @@ const DesktopNav = () => {
 		<>
 			<nav className={`${Styles.nav}`}>
 				<Link href="/nosotros">Nosotros</Link>
-				<Link href="/servicios">Servicios</Link>
 				<Link href="/portafolio">Portafolio</Link>
+				<Link href="/servicios">Servicios</Link>
 				<Link href="/contacto">Contacto</Link>
 			</nav>
 

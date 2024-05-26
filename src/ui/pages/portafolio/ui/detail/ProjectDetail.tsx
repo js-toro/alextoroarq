@@ -114,6 +114,7 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 					<div className={`${Utils.d_flex} ${Utils.justify_center}`}>
 						<Link
 							href="/portafolio"
+							onMouseEnter={(e) => e.preventDefault()}
 							className={`${Utils.button_outline_light} ${Utils.link_outline_off} ${Utils.d_flex} ${Utils.align_center}`}
 						>
 							<HiOutlineChevronLeft /> <span>Proyectos</span>

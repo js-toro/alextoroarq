@@ -21,12 +21,12 @@ const MobileNav = () => {
 					Nosotros
 				</Link>
 
-				<Link href="/servicios" onClick={handleOpen}>
-					Servicios
-				</Link>
-
 				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
+				</Link>
+
+				<Link href="/servicios" onClick={handleOpen}>
+					Servicios
 				</Link>
 
 				<Link href="/contacto" onClick={handleOpen}>
