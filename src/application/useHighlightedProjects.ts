@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 
-import { highlightedProjectsRepository } from "@/infrastructure/repositories";
-import { projectRepository } from "@/infrastructure/repositories";
+import useHighlightedProjectsRepository from "@/infrastructure/repositories/useHighlightedProjectsRepository";
+import useProjectRepository from "@/infrastructure/repositories/useProjectRepository";
 import { IProject } from "@/domain/interfaces";
 
-export const useHighlightedProjects = () => {
+const useHighlightedProjects = () => {
+	const getProjects = useProjectRepository;
+	const getHighlightedProjects = useHighlightedProjectsRepository;
+
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [highlightedProjects, setHighlightedProjects] = useState<number[]>([]);
 	const [projects, setProjects] = useState<IProject[]>([]);
@@ -12,15 +15,15 @@ export const useHighlightedProjects = () => {
 	const [showMore, setShowMore] = useState<boolean>(false);
 
 	useEffect(() => {
-		highlightedProjectsRepository().then(({ highlightedProjects }) => {
+		getHighlightedProjects().then(({ highlightedProjects }) => {
 			setHighlightedProjects(highlightedProjects);
 		});
-	}, []);
+	}, [getHighlightedProjects]);
 
 	useEffect(() => {
 		if (highlightedProjects.length === 0) return;
 
-		projectRepository().then(({ projects }) => {
+		getProjects().then(({ projects }) => {
 			const highlightedProjectsFiltered = projects.filter((project) =>
 				highlightedProjects.includes(project.id)
 			);
@@ -38,7 +41,7 @@ export const useHighlightedProjects = () => {
 			setProjects(highlightedProjectsSorted.slice(0, currentShowCount));
 			setIsLoading(false);
 		});
-	}, [highlightedProjects, currentShowCount]);
+	}, [highlightedProjects, currentShowCount, getProjects]);
 
 	const handleShowMore = () => {
 		setCurrentShowCount(currentShowCount + 6);
@@ -47,3 +50,5 @@ export const useHighlightedProjects = () => {
 
 	return { isLoading, projects, showMore, handleShowMore };
 };
+
+export default useHighlightedProjects;

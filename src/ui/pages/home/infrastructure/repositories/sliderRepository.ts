@@ -1,7 +1,8 @@
 import { ISlider } from "../../domain/interfaces/ISlider";
+import sliderExternal from "../external/sliderExternal";
 
-export default async () => {
-	const response = await fetch("/data/01-slider/slider.json");
-	const data: ISlider = await response.json();
-	return data;
+const useSliderRepository = async (): Promise<ISlider> => {
+	return await sliderExternal();
 };
+
+export default useSliderRepository;

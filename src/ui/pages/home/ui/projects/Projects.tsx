@@ -2,12 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { IProject } from "@/domain/interfaces";
-import { useHighlightedProjects } from "@/application";
-import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import Style from "./Projects.module.scss";
+import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const Projects = () => {
+import useHighlightedProjects from "@/application/useHighlightedProjects";
+import { IProject } from "@/domain/interfaces";
+
+export default function Projects(): JSX.Element {
 	const { isLoading, projects, showMore, handleShowMore } =
 		useHighlightedProjects();
 
@@ -19,7 +20,12 @@ const Projects = () => {
 		<>
 			<section className={`${Style.wrapper}`}>
 				<div
-					className={`${Utils.container} ${Utils.d_flex} ${Utils.flex_column} ${Utils.gap_sm}`}
+					className={`
+						${Utils.container}
+						${Utils.d_flex}
+						${Utils.flex_column}
+						${Utils.gap_sm}
+					`}
 				>
 					<p className={`${Utils.text_italic}`}>
 						Explora nuestra galería de proyectos, los cuales capturan la
@@ -72,7 +78,11 @@ const Projects = () => {
 				</div>
 
 				<div
-					className={`${Utils.container} ${Utils.size_full} ${Utils.d_flex}`}
+					className={`
+						${Utils.container}
+						${Utils.size_full}
+						${Utils.d_flex}
+					`}
 				>
 					{!showMore && (
 						<button
@@ -95,6 +105,4 @@ const Projects = () => {
 			</section>
 		</>
 	);
-};
-
-export default Projects;
+}

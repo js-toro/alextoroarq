@@ -1,7 +1,7 @@
 import Style from "./Welcome.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const Welcome = () => {
+export default function Welcome(): JSX.Element {
 	return (
 		<section className={`${Style.section}`}>
 			<div className={`${Utils.container}`}>
@@ -14,6 +14,4 @@ const Welcome = () => {
 			</div>
 		</section>
 	);
-};
-
-export default Welcome;
+}

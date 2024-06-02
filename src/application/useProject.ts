@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+
+import useProjectRepository from "@/infrastructure/repositories/useProjectRepository";
 import { IProject } from "@/domain/interfaces";
-import { projectRepository } from "@/infrastructure/repositories";
 import { Category } from "@/domain/enums";
 
 interface IUseProjectApplication {
@@ -12,13 +13,15 @@ interface IUseProjectApplication {
 	filterByCategory: (category: Category) => IProject[] | undefined;
 }
 
-export const useProjectApplication = (): IUseProjectApplication => {
+const useProject = (): IUseProjectApplication => {
+	const getProjects = useProjectRepository;
+
 	const [isLoading, setIsLoading] = useState(true);
 	const [projects, setProjects] = useState<IProject[]>([]);
 	const [findedProject, setFindedProject] = useState<IProject>();
 
 	useEffect(() => {
-		projectRepository().then(({ projects }) => {
+		getProjects().then(({ projects }) => {
 			const projectsSorted = projects.sort((a, b) => {
 				if (a.priority === b.priority) {
 					return b.year - a.year;
@@ -30,7 +33,7 @@ export const useProjectApplication = (): IUseProjectApplication => {
 			setProjects(projectsSorted);
 			setIsLoading(false);
 		});
-	}, []);
+	}, [getProjects]);
 
 	const findProject = (id: number) => {
 		if (isLoading) return;
@@ -49,3 +52,5 @@ export const useProjectApplication = (): IUseProjectApplication => {
 
 	return { isLoading, projects, findedProject, findProject, filterByCategory };
 };
+
+export default useProject;

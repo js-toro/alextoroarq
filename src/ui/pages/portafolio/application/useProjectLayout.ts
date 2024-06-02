@@ -21,7 +21,7 @@ export default function useProjectLayout(
 		}, 250);
 
 		return () => clearTimeout(timer);
-	}, []);
+	}, [currentScroll]);
 
 	useEffect(() => {
 		switch (activeCategory) {

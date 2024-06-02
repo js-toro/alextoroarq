@@ -1,17 +1,17 @@
 "use client";
-
-import { useLayoutEffect } from "react";
 import Image from "next/image";
+import { Fragment, useLayoutEffect } from "react";
+
 import Styles from "./RootNosotros.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const RootNosotros = () => {
+export default function RootNosotros(): JSX.Element {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	return (
-		<>
+		<Fragment>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
 					<Image
@@ -120,7 +120,12 @@ const RootNosotros = () => {
 						</p>
 
 						<ul
-							className={`${Styles.list} ${Utils.text_italic} ${Utils.d_grid} ${Utils.gap_sm}`}
+							className={`
+								${Styles.list}
+								${Utils.text_italic}
+								${Utils.d_grid}
+								${Utils.gap_sm}
+							`}
 						>
 							<li>
 								<b>Transparencia:</b> Nos comprometemos a establecer un plan de
@@ -229,8 +234,6 @@ const RootNosotros = () => {
 					</div>
 				</div>
 			</main>
-		</>
+		</Fragment>
 	);
-};
-
-export default RootNosotros;
+}

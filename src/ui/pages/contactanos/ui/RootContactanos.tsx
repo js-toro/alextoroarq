@@ -1,10 +1,10 @@
 "use client";
 import { useLayoutEffect } from "react";
 import Image from "next/image";
-import Styles from "./RootContactanos.module.scss";
-import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const RootContactanos = () => {
+import Styles from "./RootContactanos.module.scss";
+
+export default function RootContactanos(): JSX.Element {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -40,6 +40,4 @@ const RootContactanos = () => {
 			</div>
 		</section>
 	);
-};
-
-export default RootContactanos;
+}

@@ -1,6 +1,6 @@
 "use client";
-import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
 
 const loader = new Loader({
 	apiKey: process.env.NEXT_PUBLIC_MAP_API_KEY!,
@@ -54,7 +54,7 @@ const mapOptions = {
 	styles: theme,
 };
 
-const GoogleMap = () => {
+export default function GoogleMap(): JSX.Element {
 	const mapRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -93,6 +93,4 @@ const GoogleMap = () => {
 			<h6>Cargando mapa...</h6>
 		</div>
 	);
-};
-
-export default GoogleMap;
+}

@@ -1,6 +1,6 @@
 import { IContactForm } from "@/domain/interfaces";
 
-export const validateContactForm = (values: IContactForm) => {
+const validateContactForm = (values: IContactForm) => {
 	const error = "";
 	console.table(values);
 
@@ -49,3 +49,5 @@ export const validateContactForm = (values: IContactForm) => {
 
 	return error;
 };
+
+export default validateContactForm;

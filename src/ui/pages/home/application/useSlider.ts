@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import sliderRepository from "../infrastructure/repositories/sliderRepository";
 
-interface IUseSliderApplication {
+interface IGetSlider {
 	isLoading: boolean;
 	images: string[];
 	currentImage: number;
@@ -11,27 +11,10 @@ interface IUseSliderApplication {
 	handleNext: () => void;
 }
 
-export default (): IUseSliderApplication => {
+const useSlider = (): IGetSlider => {
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [images, setImages] = useState<string[]>([]);
 	const [currentImage, setCurrentImage] = useState<number>(0);
-
-	useEffect((): void => {
-		sliderRepository().then((response) => {
-			setImages(response.images);
-			setIsLoading(false);
-		});
-	}, []);
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			if (images.length > 0) {
-				handleNext();
-			}
-		}, 3000);
-
-		return () => clearInterval(interval);
-	}, [currentImage, images]);
 
 	const handlePrev = (): void => {
 		if (currentImage === 0) {
@@ -49,5 +32,26 @@ export default (): IUseSliderApplication => {
 		}
 	};
 
+	const callback = useCallback(handleNext, [currentImage, images]);
+
+	useEffect((): void => {
+		sliderRepository().then((response) => {
+			setImages(response.images);
+			setIsLoading(false);
+		});
+	}, []);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			if (images.length > 0) {
+				callback();
+			}
+		}, 3000);
+
+		return () => clearInterval(interval);
+	}, [currentImage, images, callback]);
+
 	return { isLoading, images, currentImage, handlePrev, handleNext };
 };
+
+export default useSlider;

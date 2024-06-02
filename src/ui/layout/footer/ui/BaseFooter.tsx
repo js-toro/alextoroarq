@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
-import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
-
-import useYear from "../application/useYear";
 import Style from "./BaseFooter.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const BaseFooter = () => {
+import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
+import useYear from "../application/useYear";
+
+export default function BaseFooter(): JSX.Element {
 	const year = useYear();
 
 	return (
@@ -40,6 +40,4 @@ const BaseFooter = () => {
 			</div>
 		</footer>
 	);
-};
-
-export default BaseFooter;
+}

@@ -6,7 +6,7 @@ import Welcome from "./welcome";
 import AboutUs from "./aboutUs";
 import Projects from "./projects";
 
-const RootHome = () => {
+export default function RootHome(): JSX.Element {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -19,6 +19,4 @@ const RootHome = () => {
 			<Projects />
 		</main>
 	);
-};
-
-export default RootHome;
+}

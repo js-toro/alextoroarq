@@ -1,17 +1,17 @@
 "use client";
-import { useLayoutEffect } from "react";
+import { Fragment, useLayoutEffect } from "react";
 import Image from "next/image";
 
 import Styles from "./RootServicios.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const RootServicios = () => {
+export default function RootServicios(): JSX.Element {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	return (
-		<>
+		<Fragment>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
 					<Image
@@ -117,8 +117,6 @@ const RootServicios = () => {
 					/>
 				</div>
 			</main>
-		</>
+		</Fragment>
 	);
-};
-
-export default RootServicios;
+}

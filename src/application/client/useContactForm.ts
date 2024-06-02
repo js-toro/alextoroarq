@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 
 import { IContactForm } from "@/domain/interfaces";
-import { resendRepository } from "@/infrastructure/repositories";
-import { validateContactForm } from "@/infrastructure/validation/validateContactForm";
+import validateContactForm from "@/application/validation/validateContactForm";
+import useResendRepository from "@/infrastructure/repositories/useResendRepository";
 
 const initialValues: IContactForm = {
 	name: "",
@@ -13,7 +13,8 @@ const initialValues: IContactForm = {
 	subject: "",
 };
 
-export function useContactForm() {
+const useContactForm = () => {
+	const resend = useResendRepository;
 	const [values, setValues] = useState<IContactForm>(initialValues);
 
 	const onChangeValues = (
@@ -34,7 +35,7 @@ export function useContactForm() {
 			return;
 		}
 
-		resendRepository(values).then((response) => console.log(response));
+		resend(values).then((response) => console.log(response));
 		setValues(initialValues);
 	};
 
@@ -43,4 +44,6 @@ export function useContactForm() {
 		onChangeValues,
 		handleSubmit,
 	};
-}
+};
+
+export default useContactForm;

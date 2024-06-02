@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { IScrollState } from "@/domain/entities";
-import { setScroll } from "@/infrastructure/slice/scrollSlice";
-import { IRootState } from "@/infrastructure/store/store";
+import { setScroll } from "@/infrastructure/persistence/slice/scrollSlice";
+import { IRootState } from "@/infrastructure/persistence/store/store";
 
 const useScrollRepository = () => {
 	const dispatch = useDispatch();

@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 import Styles from "./DesktopNav.module.scss";
 
-const DesktopNav = () => {
+export default function DesktopNav(): JSX.Element {
 	return (
 		<>
 			<nav className={`${Styles.nav}`}>
@@ -32,6 +32,4 @@ const DesktopNav = () => {
 			</nav>
 		</>
 	);
-};
-
-export default DesktopNav;
+}
