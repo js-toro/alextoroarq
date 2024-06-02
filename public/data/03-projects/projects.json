@@ -357,7 +357,7 @@
 		{
 			"id": 37,
 			"name": "Torre Vicenzo",
-			"description": "Torre Vicenzo es un proyecto de vivienda multifamiliar ubicado en la esquina de la carrera 77 con 33ª en Laureles, Medellín y diseñado por Alex toro Arquitectos en el año 2006… Este atrevido edificio está conformado por lujosos apartamentos de 220 m2, uno por piso y un penthouse de dos niveles de 500m2. Para controlar el poniente, el punto fijo se ubica en la esquina y es girado, estratégicamente en conjunto con les espacios del área social, para apantallar la vivienda frente a los efectos del poniente, generando buenas vistas y ambientes confortables al interior. El ladrillo bocadillo fue un gran aliado para dar la forma de doble curva a los balcones, que con su sinuosidad dan sensación de libertad.En La Circular 74ª #74-88 del barrio laureles en la ciudad de Medellín, se implanta el edificio San Remo en un lote que por su morfología permitía usar sus 4 fachadas para iluminar, ya que sólo tenia un costado medianero. En estas condiciones el equipo de Alex Toro Arquitectos, se ingenió un proyecto de vivienda multifamiliar con dos apartamentos por piso de 160 m2. Formalmente, los apartamentos están envueltos por los balcones, que en conjunto forman un cilindro interrumpido por los volúmenes girados de las alcobas principales. Las áreas de servicios absorben la irregularidad de estos giros permitiendo que las áreas principales del apartamento sean lo suficientemente funcionales para el amoblamiento. También, el uso de diferentes tipos de ladrillo ayudó a dar dinamismo a la fachada.",
+			"description": "Torre Vicenzo es un proyecto de vivienda multifamiliar ubicado en la esquina de la carrera 77 con 33ª en Laureles, Medellín y diseñado por Alex toro Arquitectos en el año 2006… Este atrevido edificio está conformado por lujosos apartamentos de 220 m2, uno por piso y un penthouse de dos niveles de 500m2. Para controlar el poniente, el punto fijo se ubica en la esquina y es girado, estratégicamente en conjunto con les espacios del área social, para apantallar la vivienda frente a los efectos del poniente, generando buenas vistas y ambientes confortables al interior. El ladrillo bocadillo fue un gran aliado para dar la forma de doble curva a los balcones, que con su sinuosidad dan sensación de libertad.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Belarrú",
@@ -783,7 +783,7 @@
 		},
 		{
 			"id": 89,
-			"name": "Bariloche Guigo",
+			"name": "Bariloche",
 			"description": "Bariloche es un proyecto de Vivienda Multifamiliar ubicado en Laureles en la Calle 33ª #70ª-21, Fue diseñado por Alex Toro Arquitectos en el año 2012 para Constructora Guigo. Cuenta con 36 apartamentos distribuidos en 12 pisos, con 4 apartamentos en por piso con áreas de 110 m2. La ingeniosa planta típica girada a 45° en ambos sentidos con respecto al eje, permite que todos los apartamentos queden disfrutando de la vista de la calle y se disminuya la cantidad de circulación común.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
@@ -1225,8 +1225,7 @@
 				"/data/03-projects/116/6.jpg",
 				"/data/03-projects/116/7.jpg",
 				"/data/03-projects/116/8.jpg",
-				"/data/03-projects/116/9.jpg",
-				"/data/03-projects/116/10.jpg"
+				"/data/03-projects/116/9.jpg"
 			],
 			"youtube": ["https://www.youtube.com/embed/ct46WyeVIUw"],
 			"virtualTours": []

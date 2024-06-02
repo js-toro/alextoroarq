@@ -63,7 +63,7 @@ export default function ProjectDetail({
 
 					{findedProject.description && (
 						<div>
-							<p className={`${Style.detail} ${Utils.text_italic}`}>
+							<p className={`${Style.description} ${Utils.text_italic}`}>
 								{findedProject.description}
 							</p>
 						</div>
