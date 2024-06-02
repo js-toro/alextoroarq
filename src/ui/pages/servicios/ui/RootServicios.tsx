@@ -4,11 +4,15 @@ import Image from "next/image";
 
 import Styles from "./RootServicios.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
+import useScroll from "@/application/client/useScroll";
 
 export default function RootServicios(): JSX.Element {
+	const { setCurrentScroll } = useScroll();
+
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+		setCurrentScroll(0);
+	}, [setCurrentScroll]);
 
 	return (
 		<Fragment>
@@ -67,7 +71,7 @@ export default function RootServicios(): JSX.Element {
 
 					<div className={`${Styles.image}`}>
 						<Image
-							src="/assets/images/servicios/servicios.jpg"
+							src="/assets/images/servicios/servicios.gif"
 							alt="Una hermosa vista de un render para un proyecto de Alex Toro Arquitectos"
 							width={1100}
 							height={395}

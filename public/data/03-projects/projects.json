@@ -255,8 +255,7 @@
 				"/data/03-projects/5/10.jpg",
 				"/data/03-projects/5/11.jpg",
 				"/data/03-projects/5/12.jpg",
-				"/data/03-projects/5/13.jpg",
-				"/data/03-projects/5/14.jpg"
+				"/data/03-projects/5/13.jpg"
 			],
 			"youtube": [],
 			"virtualTours": []
@@ -785,7 +784,7 @@
 		{
 			"id": 89,
 			"name": "Bariloche Guigo",
-			"description": "Areka esta ubicado en La Loma del Esmeraldal, en la Calle 27 Sur con Carrera 27D, es un Multifamiliar, diseñado por Alex Toro Arquitectos, para Quadra Constructores, en el año 2012. Cuenta con 66 apartamentos distribuidos en 16 pisos, con 5 apartamentos por piso áreas entre 67 m2 y 95 m2.",
+			"description": "Bariloche es un proyecto de Vivienda Multifamiliar ubicado en Laureles en la Calle 33ª #70ª-21, Fue diseñado por Alex Toro Arquitectos en el año 2012 para Constructora Guigo. Cuenta con 36 apartamentos distribuidos en 12 pisos, con 4 apartamentos en por piso con áreas de 110 m2. La ingeniosa planta típica girada a 45° en ambos sentidos con respecto al eje, permite que todos los apartamentos queden disfrutando de la vista de la calle y se disminuya la cantidad de circulación común.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
 			"builder": "Constructora Guigo",
@@ -1123,7 +1122,7 @@
 		},
 		{
 			"id": 110,
-			"name": "Luxenburgo",
+			"name": "Luxemburgo",
 			"description": "En la Transversal 39 # 77-12 del barrio Laureles, en Medellín, se encuentra situado este edificio de vivienda Multifamiliar, llamado Luxemburgo. Fue diseñado para Constructora Croacia, por Alex Toro Arquitectos en el año 2015, este edificio de 10 pisos consta de apartamentos de 70 m2 y 97 m2 en los primeros pisos y Apartamentos de 115 en los pisos superiores.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 2,
@@ -1140,7 +1139,7 @@
 				"/data/03-projects/110/6.jpg",
 				"/data/03-projects/110/7.jpg"
 			],
-			"youtube": [],
+			"youtube": ["https://www.youtube.com/embed/mb0zbEGZ1to"],
 			"virtualTours": []
 		},
 		{
@@ -1185,7 +1184,7 @@
 		{
 			"id": 114,
 			"name": "Jarines de Calazans",
-			"description": "Jardines de Calasanz es un Edificio de 2º pisos de altura ubicado a dos cuadras de la Estación Floresta, en la Carrera 81ª # 48ª-93, Barrio Calasanz, Medellín, Este proyecto de Vivienda Multifamiliar fue diseñado por Alex toro Arquitectos, para Grupo Turipaná en el año 2015. Está compuesto por 35 apartamentos con áreas entre 85 m2 y 105 m2.",
+			"description": "Jardines de Calasanz es un Edificio de 20 pisos de altura ubicado a dos cuadras de la Estación Floresta, en la Carrera 81ª # 48ª-93, Barrio Calasanz, Medellín, Este proyecto de Vivienda Multifamiliar fue diseñado por Alex toro Arquitectos, para Grupo Turipaná en el año 2015. Está compuesto por 35 apartamentos con áreas entre 85 m2 y 105 m2.",
 			"category": "Vivienda Multifamiliar",
 			"priority": 1,
 			"builder": "Grupo Turipaná",
@@ -1727,8 +1726,7 @@
 				"/data/03-projects/142/12.jpg",
 				"/data/03-projects/142/13.jpg",
 				"/data/03-projects/142/14.jpg",
-				"/data/03-projects/142/15.jpg",
-				"/data/03-projects/142/16.jpg"
+				"/data/03-projects/142/15.jpg"
 			],
 			"youtube": ["https://www.youtube.com/embed/y4zXnmCGV1c"],
 			"virtualTours": []

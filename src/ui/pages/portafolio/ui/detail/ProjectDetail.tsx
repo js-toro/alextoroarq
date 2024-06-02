@@ -6,6 +6,7 @@ import Style from "./ProjectDetail.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
 import useProject from "@/application/useProject";
+import useScroll from "@/application/client/useScroll";
 
 type ProjectDetailProps = {
 	projectKey: string;
@@ -15,10 +16,11 @@ export default function ProjectDetail({
 	projectKey,
 }: ProjectDetailProps): JSX.Element {
 	const { isLoading, findedProject, findProject } = useProject();
+	const { setCurrentScroll } = useScroll();
 
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+	}, [setCurrentScroll]);
 
 	useEffect(() => {
 		findProject(parseInt(projectKey));
@@ -61,7 +63,7 @@ export default function ProjectDetail({
 
 					{findedProject.description && (
 						<div>
-							<p className={`${Utils.text_italic}`}>
+							<p className={`${Style.detail} ${Utils.text_italic}`}>
 								{findedProject.description}
 							</p>
 						</div>
@@ -104,6 +106,7 @@ export default function ProjectDetail({
 									width="560"
 									height="315"
 									src={video}
+									className={`${Style.youtube}`}
 									title="YouTube video player"
 									allowFullScreen
 									allow="allowfullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

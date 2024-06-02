@@ -21,19 +21,31 @@ export default function BaseFooter(): JSX.Element {
 				</div>
 
 				<nav className={`${Style.socials}`}>
-					<Link href="https://www.facebook.com/alextoro.arquitectos">
+					<Link
+						href="https://www.facebook.com/alextoro.arquitectos"
+						target="_blank"
+					>
 						<FaFacebook />
 					</Link>
 
-					<Link href="https://www.instagram.com">
+					<Link
+						href="https://www.instagram.com/alextoro_arquitectos"
+						target="_blank"
+					>
 						<FaInstagram />
 					</Link>
 
-					<Link href="https://www.youtube.com/channel/UCvQWsRrgbx2oR4UU2Z5Up1Q">
+					<Link
+						href="https://www.youtube.com/channel/UCvQWsRrgbx2oR4UU2Z5Up1Q"
+						target="_blank"
+					>
 						<FaYoutube />
 					</Link>
 
-					<Link href="https://www.linkedin.com/in/alextoroarquitectos/">
+					<Link
+						href="https://www.linkedin.com/company/alextoro-arquitectos/"
+						target="_blank"
+					>
 						<FaLinkedin />
 					</Link>
 				</nav>

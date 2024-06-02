@@ -17,12 +17,12 @@ export default function MobileNav(): JSX.Element {
 			</button>
 
 			<nav className={`${Styles.nav}`}>
-				<Link href="/nosotros" onClick={handleOpen}>
-					Nosotros
-				</Link>
-
 				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
+				</Link>
+
+				<Link href="/nosotros" onClick={handleOpen}>
+					Nosotros
 				</Link>
 
 				<Link href="/servicios" onClick={handleOpen}>

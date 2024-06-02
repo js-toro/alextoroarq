@@ -3,11 +3,15 @@ import { useLayoutEffect } from "react";
 import Image from "next/image";
 
 import Styles from "./RootContactanos.module.scss";
+import useScroll from "@/application/client/useScroll";
 
 export default function RootContactanos(): JSX.Element {
+	const { setCurrentScroll } = useScroll();
+
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+		setCurrentScroll(0);
+	}, [setCurrentScroll]);
 
 	return (
 		<section className={`${Styles.cover_wrapper}`}>
