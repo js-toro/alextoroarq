@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import StoreProvider from "@/infrastructure/store";
+import StoreProvider from "./lib";
 import ThemeProvider from "@/ui/theme";
 import BaseHeader from "@/ui/layout/header";
 import BaseFooter from "@/ui/layout/footer";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Styles from "./AboutUs.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const AboutUs = () => {
+export default function AboutUs(): JSX.Element {
 	return (
 		<section className={`${Styles.section}`}>
 			<div className={`${Styles.wrapper}`}>
@@ -25,6 +25,4 @@ const AboutUs = () => {
 			</div>
 		</section>
 	);
-};
-
-export default AboutUs;
+}

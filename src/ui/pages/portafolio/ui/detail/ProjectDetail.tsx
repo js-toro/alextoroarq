@@ -1,24 +1,26 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { HiOutlineChevronLeft } from "react-icons/hi";
+import { Fragment, useEffect, useLayoutEffect } from "react";
 
 import Style from "./ProjectDetail.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
-import { useEffect, useLayoutEffect } from "react";
-import { useProjectApplication } from "@/application";
+
+import useProject from "@/application/useProject";
+import useScroll from "@/application/client/useScroll";
 
 type ProjectDetailProps = {
 	projectKey: string;
 };
 
-export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
-	const { isLoading, findedProject, findProject } = useProjectApplication();
+export default function ProjectDetail({
+	projectKey,
+}: ProjectDetailProps): JSX.Element {
+	const { isLoading, findedProject, findProject } = useProject();
+	const { setCurrentScroll } = useScroll();
 
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+	}, [setCurrentScroll]);
 
 	useEffect(() => {
 		findProject(parseInt(projectKey));
@@ -27,7 +29,7 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 	if (isLoading || !findedProject) return <></>;
 
 	return (
-		<>
+		<Fragment>
 			<div className={`${Style.cover}`}>
 				<Image
 					src={findedProject.thumb}
@@ -61,7 +63,7 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 
 					{findedProject.description && (
 						<div>
-							<p className={`${Utils.text_italic}`}>
+							<p className={`${Style.detail} ${Utils.text_italic}`}>
 								{findedProject.description}
 							</p>
 						</div>
@@ -104,24 +106,15 @@ export default function ProjectDetail({ projectKey }: ProjectDetailProps) {
 									width="560"
 									height="315"
 									src={video}
+									className={`${Style.youtube}`}
 									title="YouTube video player"
 									allowFullScreen
 									allow="allowfullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								></iframe>
+								/>
 							</div>
 						))}
-
-					<div className={`${Utils.d_flex} ${Utils.justify_center}`}>
-						<Link
-							href="/portafolio"
-							onMouseEnter={(e) => e.preventDefault()}
-							className={`${Utils.button_outline_light} ${Utils.link_outline_off} ${Utils.d_flex} ${Utils.align_center}`}
-						>
-							<HiOutlineChevronLeft /> <span>Proyectos</span>
-						</Link>
-					</div>
 				</div>
 			</main>
-		</>
+		</Fragment>
 	);
 }

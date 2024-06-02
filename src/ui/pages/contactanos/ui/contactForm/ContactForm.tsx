@@ -1,10 +1,11 @@
 "use client";
 import Styles from "./ContactForm.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
-import { useContactForm } from "@/application";
 
-const ContactForm = () => {
+import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
+import useContactForm from "@/application/client/useContactForm";
+
+export default function ContactForm(): JSX.Element {
 	const { values, onChangeValues, handleSubmit } = useContactForm();
 
 	return (
@@ -132,6 +133,4 @@ const ContactForm = () => {
 			</div>
 		</section>
 	);
-};
-
-export default ContactForm;
+}

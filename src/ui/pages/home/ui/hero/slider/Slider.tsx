@@ -1,23 +1,30 @@
 "use client";
+import { Fragment } from "react";
 import Image from "next/image";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 import Styles from "./Slider.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
-import useSliderApplication from "@/ui/pages/home/application/useSliderApplication";
 
-const Slider = (): JSX.Element => {
+import useSlider from "@/ui/pages/home/application/useSlider";
+
+export default function Slider(): JSX.Element {
 	const { isLoading, images, currentImage, handlePrev, handleNext } =
-		useSliderApplication();
+		useSlider();
 
 	if (isLoading) {
 		return <></>;
 	}
 
 	return (
-		<>
+		<Fragment>
 			<div
-				className={`${Utils.background_tertiary} ${Utils.absolute} ${Utils.position_full} ${Utils.z_index_n100}`}
+				className={`
+					${Utils.background_tertiary}
+					${Utils.absolute}
+					${Utils.position_full}
+					${Utils.z_index_n100}
+				`}
 			>
 				{images.map((image: string, index: any) => (
 					<Image
@@ -28,6 +35,7 @@ const Slider = (): JSX.Element => {
 						`}
 						src={image}
 						alt={`Una hermosa vista de un proyecto de Alex Toro Arquitectos`}
+						priority={index === 0}
 						width={1920}
 						height={1080}
 						sizes="100vw"
@@ -36,7 +44,6 @@ const Slider = (): JSX.Element => {
 							width: "auto",
 							height: "auto",
 						}}
-						priority={index === 0}
 					/>
 				))}
 			</div>
@@ -61,8 +68,6 @@ const Slider = (): JSX.Element => {
 					</span>
 				</div>
 			</div>
-		</>
+		</Fragment>
 	);
-};
-
-export default Slider;
+}

@@ -52,10 +52,6 @@ ul {
 	font-weight: var(--font-weight-regular);
 	color: var(--text-color-body);
 	text-align: justify;
-
-	@include responsiveDown("md") {
-		text-align: left;
-	}
 }
 
 ul {

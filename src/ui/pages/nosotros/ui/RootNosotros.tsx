@@ -1,17 +1,21 @@
 "use client";
-
-import { useLayoutEffect } from "react";
 import Image from "next/image";
+import { Fragment, useLayoutEffect } from "react";
+
 import Styles from "./RootNosotros.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
+import useScroll from "@/application/client/useScroll";
 
-const RootNosotros = () => {
+export default function RootNosotros(): JSX.Element {
+	const { setCurrentScroll } = useScroll();
+
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
-	}, []);
+		setCurrentScroll(0);
+	}, [setCurrentScroll]);
 
 	return (
-		<>
+		<Fragment>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
 					<Image
@@ -69,13 +73,11 @@ const RootNosotros = () => {
 						</p>
 
 						<p>
-							Nuestros primeros proyectos se centraron en el sector de laureles,
-							donde adquirimos un alto grado de experiencia en el diseño de
-							viviendas para estrato 5, en lotes entre medianeros;
-							posteriormente, hemos expandido nuestra presencia a otras áreas de
-							la ciudad, incluyendo El Poblado, Bello y Envigado, enfrentándonos
-							a desafíos y oportunidades en lotes más amplios y diversos
-							contextos urbanos.
+							Con el tiempo, hemos diversificado nuestra cartera para incluir
+							proyectos comerciales, de hotelería y vivienda unifamiliar. A lo
+							largo de los años, nos hemos comprometido con la excelencia en el
+							diseño y la innovación, buscando siempre superar las expectativas
+							y contribuir al desarrollo arquitectónico de la región.
 						</p>
 					</div>
 
@@ -120,7 +122,12 @@ const RootNosotros = () => {
 						</p>
 
 						<ul
-							className={`${Styles.list} ${Utils.text_italic} ${Utils.d_grid} ${Utils.gap_sm}`}
+							className={`
+								${Styles.list}
+								${Utils.text_italic}
+								${Utils.d_grid}
+								${Utils.gap_sm}
+							`}
 						>
 							<li>
 								<b>Transparencia:</b> Nos comprometemos a establecer un plan de
@@ -229,8 +236,6 @@ const RootNosotros = () => {
 					</div>
 				</div>
 			</main>
-		</>
+		</Fragment>
 	);
-};
-
-export default RootNosotros;
+}

@@ -1,23 +1,24 @@
 "use client";
+import { Fragment } from "react";
 import Image from "next/image";
 
 import Styles from "./RootPortafolio.module.scss";
 
 import { Category } from "@/domain/enums";
-import useScroll from "@/application/useCases/useScroll";
-
+import useScroll from "@/application/client/useScroll";
 import useProjectLayout from "@/ui/pages/portafolio/application";
+
 import Multifamiliar from "./multifamiliar";
 import Unifamiliar from "./unifamiliar";
 import Otros from "./otros";
 import FullProjects from "./fullProjects";
 
-const RootPortafolio = () => {
+export default function RootPortafolio(): JSX.Element {
 	const { scroll, category, setCategory } = useScroll();
 	const { banner } = useProjectLayout(scroll, category);
 
 	return (
-		<>
+		<Fragment>
 			<section className={`${Styles.cover_wrapper}`}>
 				<div>
 					<Image
@@ -90,8 +91,6 @@ const RootPortafolio = () => {
 			{category === Category.Multifamiliar && <Multifamiliar />}
 			{category === Category.Unifamiliar && <Unifamiliar />}
 			{category === Category.Otros && <Otros />}
-		</>
+		</Fragment>
 	);
-};
-
-export default RootPortafolio;
+}

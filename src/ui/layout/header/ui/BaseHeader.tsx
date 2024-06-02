@@ -8,7 +8,7 @@ import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 import MobileNav from "./mobileNav";
 import DesktopNav from "./desktopNav";
 
-const BaseHeader = () => {
+export default function BaseHeader(): JSX.Element {
 	return (
 		<header className={`${Styles.header}`}>
 			<div className={`${Styles.container} ${Utils.container}`}>
@@ -31,6 +31,4 @@ const BaseHeader = () => {
 			</div>
 		</header>
 	);
-};
-
-export default BaseHeader;
+}

@@ -4,13 +4,13 @@ import Link from "next/link";
 import Styles from "./Multifamiliar.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-import { useProjectApplication } from "@/application";
+import useScroll from "@/application/client/useScroll";
+import useProject from "@/application/useProject";
 import { IProject } from "@/domain/interfaces";
 import { Category } from "@/domain/enums";
-import useScroll from "@/application/useCases/useScroll";
 
-export default function Multifamiliar() {
-	const { isLoading, filterByCategory } = useProjectApplication();
+export default function Multifamiliar(): JSX.Element {
+	const { isLoading, filterByCategory } = useProject();
 	const { setCurrentScroll } = useScroll();
 
 	return (

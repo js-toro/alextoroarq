@@ -4,7 +4,7 @@ import { HiMenu } from "react-icons/hi";
 
 import Styles from "./MobileNav.module.scss";
 
-const MobileNav = () => {
+export default function MobileNav(): JSX.Element {
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen((prev) => !prev);
 
@@ -17,12 +17,12 @@ const MobileNav = () => {
 			</button>
 
 			<nav className={`${Styles.nav}`}>
-				<Link href="/nosotros" onClick={handleOpen}>
-					Nosotros
-				</Link>
-
 				<Link href="/portafolio" onClick={handleOpen}>
 					Portafolio
+				</Link>
+
+				<Link href="/nosotros" onClick={handleOpen}>
+					Nosotros
 				</Link>
 
 				<Link href="/servicios" onClick={handleOpen}>
@@ -35,6 +35,4 @@ const MobileNav = () => {
 			</nav>
 		</div>
 	);
-};
-
-export default MobileNav;
+}

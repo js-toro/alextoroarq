@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
-import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
-
-import useYear from "../application/useYear";
 import Style from "./BaseFooter.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-const BaseFooter = () => {
+import ContactForm from "@/ui/pages/contactanos/ui/contactForm";
+import useYear from "../application/useYear";
+
+export default function BaseFooter(): JSX.Element {
 	const year = useYear();
 
 	return (
@@ -21,25 +21,35 @@ const BaseFooter = () => {
 				</div>
 
 				<nav className={`${Style.socials}`}>
-					<Link href="https://www.facebook.com/alextoro.arquitectos">
+					<Link
+						href="https://www.facebook.com/alextoro.arquitectos"
+						target="_blank"
+					>
 						<FaFacebook />
 					</Link>
 
-					<Link href="https://www.instagram.com">
+					<Link
+						href="https://www.instagram.com/alextoro_arquitectos"
+						target="_blank"
+					>
 						<FaInstagram />
 					</Link>
 
-					<Link href="https://www.youtube.com/channel/UCvQWsRrgbx2oR4UU2Z5Up1Q">
+					<Link
+						href="https://www.youtube.com/channel/UCvQWsRrgbx2oR4UU2Z5Up1Q"
+						target="_blank"
+					>
 						<FaYoutube />
 					</Link>
 
-					<Link href="https://www.linkedin.com/in/alextoroarquitectos/">
+					<Link
+						href="https://www.linkedin.com/company/alextoro-arquitectos/"
+						target="_blank"
+					>
 						<FaLinkedin />
 					</Link>
 				</nav>
 			</div>
 		</footer>
 	);
-};
-
-export default BaseFooter;
+}
