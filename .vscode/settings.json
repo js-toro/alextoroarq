@@ -1,5 +1,0 @@
-{
-  "exportall.config.relExclusion": [
-    "/src/ui/pages/contactanos/ui/googlemap"
-  ]
-}
