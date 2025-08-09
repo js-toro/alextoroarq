@@ -2,7 +2,6 @@
 import Styles from "./ContactForm.module.scss";
 import Utils from "@/ui/theme/application/utils/Utils.module.scss";
 
-import GoogleMap from "@/ui/pages/contactanos/ui/googlemap";
 import useContactForm from "@/application/client/useContactForm";
 
 export default function ContactForm(): JSX.Element {
@@ -34,7 +33,7 @@ export default function ContactForm(): JSX.Element {
 						</p>
 					</div>
 
-					<GoogleMap />
+					<div />
 
 					<div>
 						<h3 className={`${Utils.mb_sm} ${Utils.text_light}`}>TELÉFONO</h3>
