@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alex Toro Arquitectos | `alextoroarquitectos`
 
-## Getting Started
+Sitio web institucional de Alex Toro Arquitectos, firma de Medellín (Colombia) con más de 20 años de experiencia en diseño arquitectónico, especializada en vivienda multifamiliar.
 
-First, run the development server:
+Está publicado en [alextoroarquitectos.com](https://alextoroarquitectos.com).
+
+## Propósito
+
+Presentar a la firma y su portafolio, y recibir solicitudes de contacto de clientes potenciales.
+
+El sitio ofrece estas secciones:
+
+- **Inicio**: presentación de la firma, galería destacada y proyectos seleccionados.
+- **Nosotros**: quiénes son y cómo trabajan.
+- **Servicios**: servicios de diseño y modelado que ofrece la firma.
+- **Portafolio**: proyectos clasificados en multifamiliar, unifamiliar y otros, con una página de detalle por proyecto.
+- **Contacto**: formulario que envía el mensaje por correo electrónico.
+
+El contenido del portafolio se mantiene como archivos JSON e imágenes en `public/data`, sin base de datos.
+
+## Stack
+
+Next.js 14 (App Router), React 18, TypeScript, SCSS, Redux Toolkit y Resend para el envío de correo.
+
+El código sigue una arquitectura por capas en `src/`: `domain`, `application`, `infrastructure` y `ui`.
+
+## Desarrollo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+El sitio queda disponible en [http://localhost:3000](http://localhost:3000). El envío de correo requiere definir las variables de entorno en un archivo `.env` local, que no debe versionarse.
