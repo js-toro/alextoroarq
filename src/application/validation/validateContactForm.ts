@@ -2,7 +2,6 @@ import { IContactForm } from "@/domain/interfaces";
 
 const validateContactForm = (values: IContactForm) => {
 	const error = "";
-	console.table(values);
 
 	if (!values.name) {
 		return "El nombre es requerido";
