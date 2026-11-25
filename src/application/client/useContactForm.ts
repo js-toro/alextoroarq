@@ -35,7 +35,7 @@ const useContactForm = () => {
 			return;
 		}
 
-		resend(values).then((response) => console.log(response));
+		resend(values);
 		setValues(initialValues);
 	};
 
